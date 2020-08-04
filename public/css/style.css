@@ -1,0 +1,340 @@
+html,
+body {
+    /* background-image: url('photo/watch.jpg'); */
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    position: absolute;
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links>a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: left;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+
+/* .wrapper {
+    display: flex;
+}
+
+#sidebar {
+    min-width: 150px;
+    max-width: 150px;
+    height: 100vh
+}
+
+#sidebar.active {
+    margin-left: -150px;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle-side::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -150px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+} */
+
+
+/*
+    ADDITIONAL DEMO STYLE, NOT IMPORTANT TO MAKE THINGS WORK BUT TO MAKE IT A BIT NICER :)
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+/* body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+} */
+
+
+/* a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar {
+    background: #23d4d4;
+    color: #fff;
+    transition: all 0.3s;
+    border-radius: 0 30px 30px 0;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    padding: 20px;
+    font-size: 1.5em;
+    display: block;
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#sidebar ul li a:hover {
+    color: #1cc0c0;
+    background: #fff;
+}
+
+#sidebar ul li a[aria-expanded="true"] {
+    color: #fff;
+    background: #1cc0c0;
+}
+
+#sidebar ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #1cc0c0;
+} */
+
+
+/* Image style Welcome page*/
+
+.welcome-image-first {
+    background-image: url('../photo/phones.jpg');
+    background-size: 100% 100%;
+}
+
+.welcome-image-second {
+    background-image: url('../photo/Macbook.jpg');
+    background-size: 100% 100%;
+}
+
+.welcome-image-third {
+    background-image: url('../photo/watch.jpg');
+    background-size: 100% 100%;
+}
+
+.welcome-image-forth {
+    background-image: url('../photo/headphones-orange.jpg');
+    background-size: 100% 100%;
+}
+
+
+/* Nav Bar - main */
+
+.navbar {
+    background: #ec9a2e !important;
+    color: #fff !important;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.dropdown-menu {
+    background-color: #ec9a2e !important;
+    min-width: 20px;
+}
+
+.dropdown-menu a {
+    color: #fff;
+}
+
+.dropdown-menu a:hover {
+    color: #ec9a2e;
+}
+
+button {
+    background-color: #ec9a2e !important;
+    color: #fff !important;
+}
+
+
+/* Test sidebar from stack overflow */
+
+#wrapper {
+    transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+    width: 150px;
+    background: #23d4d4;
+    height: 70%;
+    position: fixed;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: all 0.4s ease 0s;
+    border-radius: 0 30px 30px 0;
+    margin-top: 170px;
+}
+
+#sidebar-wrapper.activeNav {
+    margin-left: -150px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+}
+
+.sidebar-nav {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Styling-nav */
+
+#sidebar-wrapper ul.components {
+    padding: 20px 0;
+}
+
+#sidebar-wrapper ul li a {
+    color: #fff;
+    padding: 20px;
+    font-size: 1.5em;
+    display: block;
+}
+
+#sidebar-wrapper ul li a:hover {
+    color: #1cc0c0;
+    background: #fff;
+}
+
+#sidebar-wrapper ul li a[aria-expanded="true"] {
+    color: #fff;
+    background: #1cc0c0;
+}
+
+#sidebar-wrapper ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #1cc0c0;
+}
+
+
+/* logo-sidebar */
+
+.fixed-top-logo {
+    margin-left: 30px;
+    margin-top: 30px;
+    position: fixed;
+    width: 60px;
+    outline: none;
+}
+
+
+/*  Mobile responsive  */
+
+@media (max-width:767px) {
+    #wrapper {
+        padding-left: 0;
+    }
+    #sidebar-wrapper {
+        height: 50%;
+        width: 90px;
+        margin-top: 200px;
+    }
+    #sidebar-wrapper ul li a {
+        padding: 15px;
+        font-size: 1.0em;
+    }
+    #wrapper.activeNav {
+        position: relative;
+        left: 150px;
+    }
+    #wrapper.activeNav #sidebar-wrapper {
+        left: 150px;
+        width: 150px;
+        transition: all 0.4s ease 0s;
+    }
+    .fixed-top-logo {
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 40px;
+    }
+}
+
+
+/* Welcome pictures */
+
+.welcome-size-1 {
+    height: 850px;
+}
+
+.welcome-size-2 {
+    height: 500px;
+}
