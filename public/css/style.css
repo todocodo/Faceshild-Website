@@ -299,6 +299,9 @@ button {
 
 /*  Mobile responsive  */
 
+
+/* Welcome page - mobile */
+
 @media (max-width:767px) {
     #wrapper {
         padding-left: 0;
@@ -326,6 +329,13 @@ button {
         margin-top: 20px;
         width: 40px;
     }
+}
+
+
+/* Contact paage */
+
+.shield-blue {
+    background-color: #23d4d4;
 }
 
 
