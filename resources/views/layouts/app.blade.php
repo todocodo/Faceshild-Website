@@ -99,7 +99,7 @@
             </div>
         </nav>
 
-        <main class="container py-4 mt-5">
+        <main>
             @yield('content')
         </main>
 

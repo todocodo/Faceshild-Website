@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container py-4 mt-5">
 
     @if (session()->has('success'))
     <div class="alert alert-success">
@@ -59,7 +59,7 @@
                 <span style="color: #23d4d4; font-size: 25px;">
                     <i class="fas fa-map-marker-alt"></i>
                 </span>
-                <p>Sofia, CA 94126</p>
+                <p>Sofia, Gara Iskar, 10 Nedelcho Bonchev Str., Warehouse 10</p>
                 <p>Bulgaria</p>
             </div>
 

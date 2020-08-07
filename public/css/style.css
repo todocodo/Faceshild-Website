@@ -55,116 +55,7 @@ body {
     margin-bottom: 30px;
 }
 
-
-/* .wrapper {
-    display: flex;
-}
-
-#sidebar {
-    min-width: 150px;
-    max-width: 150px;
-    height: 100vh
-}
-
-#sidebar.active {
-    margin-left: -150px;
-}
-
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-.dropdown-toggle-side::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -150px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-} */
-
-
-/*
-    ADDITIONAL DEMO STYLE, NOT IMPORTANT TO MAKE THINGS WORK BUT TO MAKE IT A BIT NICER :)
-*/
-
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
-/* body {
-    font-family: 'Poppins', sans-serif;
-    background: #fafafa;
-}
-
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
-} */
-
-
-/* a,
-a:hover,
-a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-#sidebar {
-    background: #23d4d4;
-    color: #fff;
-    transition: all 0.3s;
-    border-radius: 0 30px 30px 0;
-}
-
-#sidebar ul.components {
-    padding: 20px 0;
-}
-
-#sidebar ul p {
-    color: #fff;
-    padding: 10px;
-}
-
-#sidebar ul li a {
-    color: #fff;
-    padding: 20px;
-    font-size: 1.5em;
-    display: block;
-}
-
-.vertical-center {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#sidebar ul li a:hover {
-    color: #1cc0c0;
-    background: #fff;
-}
-
-#sidebar ul li a[aria-expanded="true"] {
-    color: #fff;
-    background: #1cc0c0;
-}
-
-#sidebar ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #1cc0c0;
-} */
-
 
 /* Image style Welcome page*/
 
@@ -211,11 +102,6 @@ a:focus {
 
 .dropdown-menu a:hover {
     color: #ec9a2e;
-}
-
-button {
-    background-color: #ec9a2e !important;
-    color: #fff !important;
 }
 
 
@@ -332,7 +218,7 @@ button {
 }
 
 
-/* Contact paage */
+/* Contact page */
 
 .shield-blue {
     background-color: #23d4d4;
@@ -346,5 +232,12 @@ button {
 }
 
 .welcome-size-2 {
+    height: 500px;
+}
+
+
+/* About page */
+
+.line-size {
     height: 500px;
 }
