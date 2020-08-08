@@ -50,7 +50,7 @@
                                 <a class="dropdown-item" href="{{ route('image') }}">Images</a>
                                 <a class="dropdown-item" href="#">Videos</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Demos</a>
+                                <a class="dropdown-item" href="demos">Demos</a>
                             </div>
                         </li>
                         <li class="nav-item">

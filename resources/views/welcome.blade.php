@@ -40,7 +40,7 @@
                 <ul class="collapse list-unstyled" id="pageSubmenu">
                     <li><a href="image">Images</a></li>
                     <li><a href="#">Videos</a></li>
-                    <li><a href="#">Demos</a></li>
+                    <li><a href="demos">Demos</a></li>
                 </ul>
                 <li><a href="goal">Goal</a></li>
                 <li><a href="order">Order</a></li>

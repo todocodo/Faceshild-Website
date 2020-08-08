@@ -242,11 +242,25 @@ body {
     height: 500px;
 }
 
+.bodyshop {
+    height: 350px;
+}
+
+.bottom-text {
+    font-size: 35px;
+}
+
 
 /* Ahout page - mobile */
 
 @media (max-width:767px) {
     .line-size {
         height: 750px;
+    }
+    .bodyshop {
+        height: 100px;
+    }
+    .bottom-text {
+        font-size: 20px;
     }
 }

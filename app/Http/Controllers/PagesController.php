@@ -29,6 +29,10 @@ class PagesController extends Controller
         return view('pages.order');
     }
 
+    public function demos() {
+        return view('pages.demos');
+    }
+
     public function contacts() {
         return view('pages.contacts');
     }
