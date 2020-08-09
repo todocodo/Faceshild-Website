@@ -29,32 +29,27 @@
     <div id="app">
         <nav class="navbar fixed-top navbar-expand-md shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand d-felx" href="{{ url('/') }}">
+                    <!-- <img src="photo/new_logo_nonbackground.png" alt="logo" style="height: 30px;" class="pr-2">  -->
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" style="outline: none;" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon" style="outline: none;"><i class="fas fa-bars"></i></span>
+                    <span class="navbar-toggler-icon text-white" style="outline: none;"><i class="fas fa-bars"></i></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('about') }}">About</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Media
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('image') }}">Images</a>
-                                <a class="dropdown-item" href="#">Videos</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="demos">Demos</a>
-                            </div>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('goal') }}">Goal</a>
+                            <a class="nav-link" href="{{ route('demos') }}">Demos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('order') }}">Order</a>
@@ -62,12 +57,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('contacts') }}">Contact</a>
                         </li>
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
+                        <!-- LOG in and REGISTER -->
+                        <!-- @guest
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
@@ -93,7 +84,7 @@
                                 </form>
                             </div>
                         </li>
-                        @endguest
+                        @endguest -->
                     </ul>
                 </div>
             </div>

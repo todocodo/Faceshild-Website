@@ -17,26 +17,26 @@
             <div class="card-body">
                 <!--Header-->
                 <div class="form-header text-center blue accent-1">
-                    <h3><span style="color: #23d4d4;"><i class="fas fa-envelope"></i></span> Write to us:</h3>
+                    <h3><span style="color: #4CB6C1;"><i class="fas fa-envelope"></i></span> Write to us:</h3>
                 </div>
                 <br>
 
                 <form action="{{ url('contacts') }}" method="POST">
                     {{ csrf_field() }}
                     <div class="md-form">
-                    <span><i class="fas fa-envelope"></i></span>
+                        <span><i class="fas fa-envelope"></i></span>
                         <label name="email">Email:</label>
                         <input id="email" name="email" class="form-control">
                     </div>
 
                     <div class="md-form pt-3">
-                    <span><i class="fas fa-tag"></i></span>
+                        <span><i class="fas fa-tag"></i></span>
                         <label name="subject">Subject:</label>
                         <input id="subject" name="subject" class="form-control">
                     </div>
 
                     <div class="form-group pt-3">
-                    <span><i class="fas fa-pencil-alt"></i></span>
+                        <span><i class="fas fa-pencil-alt"></i></span>
                         <label name="message">Message:</label>
                         <textarea id="message" name="message" class="form-control">Type your message here..</textarea>
                     </div>
@@ -56,7 +56,7 @@
         <!--Buttons-->
         <div class="row text-center">
             <div class="col-md-4">
-                <span style="color: #23d4d4; font-size: 25px;">
+                <span style="color: #4CB6C1; font-size: 25px;">
                     <i class="fas fa-map-marker-alt"></i>
                 </span>
                 <p>Sofia, Gara Iskar, 10 Nedelcho Bonchev Str., Warehouse 10</p>
@@ -64,13 +64,13 @@
             </div>
 
             <div class="col-md-4">
-                <span style="color: #23d4d4; font-size: 25px;"><i class="fas fa-phone"></i></span>
+                <span style="color: #4CB6C1; font-size: 25px;"><i class="fas fa-phone"></i></span>
                 <p>+359 899 9999</p>
                 <p>Mon - Fri, 8:00-17:00</p>
             </div>
 
             <div class="col-md-4">
-                <span style="color: #23d4d4; font-size: 25px;"><i class="fas fa-envelope"></i></span>
+                <span style="color: #4CB6C1; font-size: 25px;"><i class="fas fa-envelope"></i></span>
                 <p>info@gmail.com</p>
                 <p>sale@gmail.com</p>
             </div>

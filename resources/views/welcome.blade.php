@@ -36,13 +36,7 @@
         <nav id="sidebar-wrapper" class="activeNav navscroll">
             <ul class="sidebar-nav">
                 <li><a href="about">About</a></li>
-                <li><a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle dropdown-toggle-side">Media</a></li>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
-                    <li><a href="image">Images</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="demos">Demos</a></li>
-                </ul>
-                <li><a href="goal">Goal</a></li>
+                <li><a href="demos">Demos</a></li>
                 <li><a href="order">Order</a></li>
                 <li><a href="contacts">Contacts</a></li>
             </ul>
@@ -137,7 +131,7 @@
                             <small class="d-block pt-3 text-muted">&copy; 2020</small>
                         </div>
                         <div class="col-6 col-md">
-                        <h5><a class="text-dark" href="about">About</a></h5>
+                            <h5><a class="text-dark" href="about">About</a></h5>
                             <ul class="list-unstyled text-small">
                                 <li><a class="text-muted" href="#">Our Story</a></li>
                                 <li><a class="text-muted" href="#">Our Goal</a></li>
@@ -146,7 +140,7 @@
                             </ul>
                         </div>
                         <div class="col-6 col-md">
-                        <h5><a class="text-dark" href="#">Media</a></h5>
+                            <h5><a class="text-dark" href="#">Media</a></h5>
                             <ul class="list-unstyled text-small">
                                 <li><a class="text-muted" href="image">Images</a></li>
                                 <li><a class="text-muted" href="#">Videos</a></li>
@@ -154,7 +148,7 @@
                             </ul>
                         </div>
                         <div class="col-6 col-md">
-                        <h5><a class="text-dark" href="order">Order</a></h5>
+                            <h5><a class="text-dark" href="order">Order</a></h5>
                             <ul class="list-unstyled text-small">
                                 <li><a class="text-muted" href="#">Single</a></li>
                                 <li><a class="text-muted" href="#">Box</a></li>

@@ -91,6 +91,14 @@ body {
     color: #fff;
 }
 
+.navbar-brand {
+    font-size: 23px;
+}
+
+.nav-item {
+    font-size: 15px;
+}
+
 .dropdown-menu {
     background-color: #ec9a2e !important;
     min-width: 20px;
@@ -113,7 +121,7 @@ body {
 
 #sidebar-wrapper {
     width: 150px;
-    background: #23d4d4;
+    background: #4CB6C1;
     height: 70%;
     position: fixed;
     overflow-y: auto;
@@ -156,19 +164,8 @@ body {
 }
 
 #sidebar-wrapper ul li a:hover {
-    color: #1cc0c0;
+    color: #4CB6C1;
     background: #fff;
-}
-
-#sidebar-wrapper ul li a[aria-expanded="true"] {
-    color: #fff;
-    background: #1cc0c0;
-}
-
-#sidebar-wrapper ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #1cc0c0;
 }
 
 
@@ -221,7 +218,7 @@ body {
 /* Contact page */
 
 .shield-blue {
-    background-color: #23d4d4;
+    background-color: #4CB6C1;
 }
 
 
@@ -250,6 +247,14 @@ body {
     font-size: 35px;
 }
 
+.icon-size {
+    height: 100px;
+}
+
+.icon-size-content {
+    height: 55px;
+}
+
 
 /* Ahout page - mobile */
 
@@ -262,5 +267,11 @@ body {
     }
     .bottom-text {
         font-size: 20px;
+    }
+    #icon-font {
+        font-size: 15px;
+    }
+    .icon-size {
+        height: 65px;
     }
 }

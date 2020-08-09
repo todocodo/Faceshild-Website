@@ -56,7 +56,7 @@
                         <input type="number" id="europallet" name="europallet" min="1" max="9999" class="form-control">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-lg btn-block text-white" style="background-color: #23d4d4;">Order Now</button>
+                <button type="submit" class="btn btn-lg btn-block text-white" style="background-color: #4CB6C1;">Order Now</button>
         </form>
     </div>
 </div>
