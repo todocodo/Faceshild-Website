@@ -49,6 +49,9 @@
                             <a class="nav-link" href="{{ route('about') }}">About</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="{{ route('certificate') }}">Certificate</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="{{ route('demos') }}">Demos</a>
                         </li>
                         <li class="nav-item">
@@ -106,33 +109,33 @@
                 <div class="col-6 col-md">
                     <h5><a class="text-dark" href="about">About</a></h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Our Story</a></li>
-                        <li><a class="text-muted" href="#">Our Goal</a></li>
-                        <li><a class="text-muted" href="#">Team</a></li>
-                        <li><a class="text-muted" href="#">Product</a></li>
+                        <li>Product</li>
+                        <li>Disinfection</li>
+                        <li>Storage</li>
+                        <li>Certificate</li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
-                    <h5><a class="text-dark" href="#">Media</a></h5>
+                    <h5><a class="text-dark" href="demos">Demos</a></h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="image">Images</a></li>
-                        <li><a class="text-muted" href="#">Videos</a></li>
-                        <li><a class="text-muted" href="#">Demos</a></li>
+                        <li>Replace the window</li>
+                        <li>Adjust the frame</li>
+                        <li>Our Video</li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
                     <h5><a class="text-dark" href="order">Order</a></h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Single</a></li>
-                        <li><a class="text-muted" href="#">Box</a></li>
-                        <li><a class="text-muted" href="#">Europallet</a></li>
+                        <li>Single</li>
+                        <li>Box</li>
+                        <li>Europallet</li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
                     <h5><a class="text-dark" href="contacts">Contacts</a></h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Email: blabla@bla.com</a></li>
-                        <li><a class="text-muted" href="#">Phone: +35989999999</a></li>
+                        <li>Email: blabla@bla.com</li>
+                        <li>Phone: +35989999999</li>
                     </ul>
                 </div>
             </div>

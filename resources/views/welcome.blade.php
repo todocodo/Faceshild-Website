@@ -36,6 +36,7 @@
         <nav id="sidebar-wrapper" class="activeNav navscroll">
             <ul class="sidebar-nav">
                 <li><a href="about">About</a></li>
+                <li><a href="certificate">Certificate</a></li>
                 <li><a href="demos">Demos</a></li>
                 <li><a href="order">Order</a></li>
                 <li><a href="contacts">Contacts</a></li>
@@ -123,46 +124,26 @@
 
                 <footer class="container py-5">
                     <div class="row">
-                        <div class="col-6 col-md">
-                            <div class="d-flex">
+                        <div class="col-md">
+                            <div id="footer-logo" class="d-flex">
                                 <img src="photo/new_logo_nonbackground.png" alt="logo" style="height: 30px; border-right: 1px solid #636b6f" class="pr-3">
-                                <h5 class="pl-3"><a class="text-dark" herf="{{ url('/') }}">Faceshield</a></h5>
+                                <h4 class="pl-3"><a style="color:#ec9a2e;" herf="{{ url('/') }}">Faceshield</a></h4>
                             </div>
-                            <small class="d-block pt-3 text-muted">&copy; 2020</small>
                         </div>
                         <div class="col-6 col-md">
-                            <h5><a class="text-dark" href="about">About</a></h5>
-                            <ul class="list-unstyled text-small">
-                                <li><a class="text-muted" href="#">Our Story</a></li>
-                                <li><a class="text-muted" href="#">Our Goal</a></li>
-                                <li><a class="text-muted" href="#">Team</a></li>
-                                <li><a class="text-muted" href="#">Product</a></li>
-                            </ul>
+                            <h5 class="text-center"><a style="color: #ec9a2e;" href="about">About</a></h5>
                         </div>
                         <div class="col-6 col-md">
-                            <h5><a class="text-dark" href="#">Media</a></h5>
-                            <ul class="list-unstyled text-small">
-                                <li><a class="text-muted" href="image">Images</a></li>
-                                <li><a class="text-muted" href="#">Videos</a></li>
-                                <li><a class="text-muted" href="#">Demos</a></li>
-                            </ul>
+                            <h5 class="text-center"><a style="color: #ec9a2e;" href="demos">Demos</a></h5>
                         </div>
                         <div class="col-6 col-md">
-                            <h5><a class="text-dark" href="order">Order</a></h5>
-                            <ul class="list-unstyled text-small">
-                                <li><a class="text-muted" href="#">Single</a></li>
-                                <li><a class="text-muted" href="#">Box</a></li>
-                                <li><a class="text-muted" href="#">Europallet</a></li>
-                            </ul>
+                            <h5 class="text-center"><a style="color: #ec9a2e;" href="order">Order</a></h5>
                         </div>
                         <div class="col-6 col-md">
-                            <h5><a class="text-dark" href="contacts">Contacts</a></h5>
-                            <ul class="list-unstyled text-small">
-                                <li><a class="text-muted" href="#">Email: blabla@bla.com</a></li>
-                                <li><a class="text-muted" href="#">Phone: +35989999999</a></li>
-                            </ul>
+                            <h5 class="text-center"><a style="color: #ec9a2e;" href="contacts">Contacts</a></h5>
                         </div>
                     </div>
+                    <small class="d-block pt-3 text-center" style="color: #4CB6C1;">&copy; 2020</small>
                 </footer>
 
             </div>

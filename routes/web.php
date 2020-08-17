@@ -24,7 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/about', 'PagesController@about')->name('about');
 
-Route::get('/image', 'PagesController@image')->name('image');
+Route::get('/certificate', 'PagesController@certificate')->name('certificate');
 
 Route::get('/goal', 'PagesController@goal')->name('goal');
 

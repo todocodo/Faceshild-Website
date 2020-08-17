@@ -1,6 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+<!-- Certificate Button -->
+<div class="">
+    <a class="btn btn-lg rounded-circle certificate-button fixed-bottom" href="certificate">
+        <span style="color: #4CB6C1; font-size: 30px;">
+            <i class="fas fa-award"></i>
+        </span>
+    </a>
+</div>
 <!-- Main content -->
 <div class="p-3 p-md-5 mt-5 text-center bg-light line-size">
     <div class="row">
@@ -147,7 +155,14 @@
 <div class="p-3 p-md-5 m-lg-3 bg-secondary line-size">
     <div class="row">
         <div class="col-md-5 order-md-12 p-lg-5 mx-auto my-3 text-white">
-            <h1 class="font-weight-normal text-center" style="color: #ec9a2e;">Size and Adjustment </h1>
+            <div class="row">
+                <div class="col-xl-8 order-xl-12 text-center">
+                    <h1 class="font-weight-normal" style="color: #ec9a2e;">Size and Adjustment</h1>
+                </div>
+                <div class="col-xl-4 order-xl-1 text-center">
+                    <img src="../icon/icon - lightwaight.png" alt="icon-splash" class="icon-size-content">
+                </div>
+            </div>
             <br><br>
             <p class="lead font-weight-normal">Easy adjustment of the eraser for a personalized and secure fit.</p>
             <p class="lead"><span style="color: #4CB6C1;"><i class="fas fa-circle mr-2"></i></span> Moderate size, suitable for most face shapes.</p>

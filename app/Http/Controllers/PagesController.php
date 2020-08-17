@@ -17,8 +17,8 @@ class PagesController extends Controller
         return view('pages.about');
     }
 
-    public function image() {
-        return view('pages.image');
+    public function certificate() {
+        return view('pages.certificate');
     }
 
     public function goal() {

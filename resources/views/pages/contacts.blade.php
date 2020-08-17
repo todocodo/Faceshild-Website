@@ -1,6 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
+
+<!-- Certificate Button -->
+<div>
+    <a class="btn btn-lg rounded-circle fixed-bottom-certificate" href="certificate" style="background-color: #fff">
+        <span style="color: #4CB6C1; font-size: 30px;">
+            <i class="fas fa-award"></i>
+        </span>
+    </a>
+</div>
+
 <div class="container py-4 mt-5">
 
     @if (session()->has('success'))
@@ -8,6 +18,7 @@
         {{ session('success') }}
     </div>
     @endif
+
 
 
     <div class="col-lg-10 mb-4 mx-auto">

@@ -180,6 +180,34 @@ body {
 }
 
 
+/* Certificate Button */
+
+
+/* .fixed-bottom-certificate {
+    background-color: #fff;
+    margin-left: 1760px;
+    margin-top: 800px;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    outline: none;
+} */
+
+.certificate-button {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    outline: none;
+}
+
+
+/* Footer */
+
+#footer-logo .text-center {
+    flex-grow: 1;
+}
+
+
 /*  Mobile responsive  */
 
 
@@ -256,7 +284,7 @@ body {
 }
 
 
-/* Ahout page - mobile */
+/* About page - mobile */
 
 @media (max-width:767px) {
     .line-size {
