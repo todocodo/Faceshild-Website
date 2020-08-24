@@ -25,9 +25,9 @@
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet"> -->
 
 </head>
 
@@ -88,63 +88,138 @@
                     </div>
                 </div>
 
-                <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-                    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                        <div class="my-3 p-3">
-                            <h2 class="display-5">Another headline</h2>
-                            <p class="lead">And an even wittier subheading.</p>
-                        </div>
-                        <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-                    </div>
-                    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                        <div class="my-3 py-3">
-                            <h2 class="display-5">Another headline</h2>
-                            <p class="lead">And an even wittier subheading.</p>
-                        </div>
-                        <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-                    </div>
-                </div>
-
-                <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-                    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                        <div class="my-3 p-3">
-                            <h2 class="display-5">Another headline</h2>
-                            <p class="lead">And an even wittier subheading.</p>
-                        </div>
-                        <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-                    </div>
-                    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                        <div class="my-3 py-3">
-                            <h2 class="display-5">Another headline</h2>
-                            <p class="lead">And an even wittier subheading.</p>
-                        </div>
-                        <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-                    </div>
-                </div>
-
-                <footer class="container py-5">
-                    <div class="row">
-                        <div class="col-md">
-                            <div id="footer-logo" class="d-flex">
-                                <img src="photo/new_logo_nonbackground.png" alt="logo" style="height: 30px; border-right: 1px solid #636b6f" class="pr-3">
-                                <h4 class="pl-3"><a style="color:#ec9a2e;" herf="{{ url('/') }}">Faceshield</a></h4>
+                <!-- Carousel with images -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../photo/Macbook.jpg" alt="macbook" style="height: 100%; width: 100%;">
+                            <div class="container">
+                                <div class="carousel-caption text-left">
+                                    <h1>Example headline.</h1>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                        metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md">
-                            <h5 class="text-center"><a style="color: #ec9a2e;" href="about">About</a></h5>
+                        <div class="carousel-item">
+                            <img src="../photo/headphones-orange.jpg" alt="macbook" style="height: 100%; width: 100%;">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>Another example headline.</h1>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                        metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-6 col-md">
-                            <h5 class="text-center"><a style="color: #ec9a2e;" href="demos">Demos</a></h5>
-                        </div>
-                        <div class="col-6 col-md">
-                            <h5 class="text-center"><a style="color: #ec9a2e;" href="order">Order</a></h5>
-                        </div>
-                        <div class="col-6 col-md">
-                            <h5 class="text-center"><a style="color: #ec9a2e;" href="contacts">Contacts</a></h5>
+                        <div class="carousel-item">
+                            <img src="../photo/watch.jpg" alt="macbook" style="height: 100%; width: 100%;">
+                            <div class="container">
+                                <div class="carousel-caption text-right">
+                                    <h1>One more for good measure.</h1>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                        metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <small class="d-block pt-3 text-center" style="color: #4CB6C1;">&copy; 2020</small>
-                </footer>
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!-- END of Carousel -->
+
+                <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+                    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 p-3">
+                            <h2 class="display-5">Another headline</h2>
+                            <p class="lead">And an even wittier subheading.</p>
+                        </div>
+                        <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                    </div>
+                    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 py-3">
+                            <h2 class="display-5">Another headline</h2>
+                            <p class="lead">And an even wittier subheading.</p>
+                        </div>
+                        <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                    </div>
+                </div>
+
+                <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+                    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 p-3">
+                            <h2 class="display-5">Another headline</h2>
+                            <p class="lead">And an even wittier subheading.</p>
+                        </div>
+                        <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                    </div>
+                    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 py-3">
+                            <h2 class="display-5">Another headline</h2>
+                            <p class="lead">And an even wittier subheading.</p>
+                        </div>
+                        <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+
+                <footer class="container py-5">
+            <div class="row">
+                <div class="col-6 col-md">
+                    <div class="d-flex">
+                        <img src="photo/new_logo_nonbackground.png" alt="logo" style="height: 30px; border-right: 1px solid #636b6f" class="pr-3">
+                        <h5 class="pl-3"><a class="text-dark" herf="{{ url('/') }}">Faceshield</a></h5>
+                    </div>
+                    <small class="d-block pt-3 text-muted">&copy; 2020</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5><a class="text-dark" href="about">About</a></h5>
+                    <ul class="list-unstyled text-small">
+                        <li>Product</li>
+                        <li>Disinfection</li>
+                        <li>Storage</li>
+                        <li>Certificate</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5><a class="text-dark" href="demos">Demos</a></h5>
+                    <ul class="list-unstyled text-small">
+                        <li>Replace the window</li>
+                        <li>Adjust the frame</li>
+                        <li>Our Video</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5><a class="text-dark" href="order">Order</a></h5>
+                    <ul class="list-unstyled text-small">
+                        <li>Single</li>
+                        <li>Box</li>
+                        <li>Europallet</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5><a class="text-dark" href="contacts">Contacts</a></h5>
+                    <ul class="list-unstyled text-small">
+                        <li>Email: blabla@bla.com</li>
+                        <li>Phone: +35989999999</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
             </div>
         </div>
