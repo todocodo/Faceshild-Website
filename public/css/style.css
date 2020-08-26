@@ -180,11 +180,15 @@ body {
     outline: none;
 }
 
+.welcome-title {
+    margin-left: 50px;
+    font-size: 30px;
+}
+
 
 /* Certificate Button */
 
-
-/* .fixed-bottom-certificate {
+.fixed-bottom-certificate {
     background-color: #fff;
     margin-left: 1760px;
     margin-top: 800px;
@@ -192,7 +196,7 @@ body {
     width: 60px;
     height: 60px;
     outline: none;
-} */
+}
 
 .certificate-button {
     background-color: #fff;
@@ -265,6 +269,9 @@ body {
         height: 50%;
         width: 90px;
         margin-top: 200px;
+    }
+    .sidebar-nav {
+        width: 90px;
     }
     #sidebar-wrapper ul li a {
         padding: 15px;

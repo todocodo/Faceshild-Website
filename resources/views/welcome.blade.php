@@ -37,8 +37,8 @@
             <ul class="sidebar-nav">
                 <li><a href="about">About</a></li>
                 <li><a href="certificate">Certificate</a></li>
-                <li><a href="demos">Demos</a></li>
-                <li><a href="order">Order</a></li>
+                <li><a href="demos">Videos</a></li>
+                <li><a href="custom">Custom</a></li>
                 <li><a href="contacts">Contacts</a></li>
             </ul>
         </nav>
@@ -47,9 +47,11 @@
 
                 <input type="image" src="photo/new_logo_nonbackground.png" id="sidebarCollapse" class="fixed-top-logo" />
 
-                <div class="p-3 p-md-5 m-lg-3 text-center welcome-image-first welcome-size-1">
-                    <div class="col-md-5 p-lg-5 mx-auto my-5">
-                        <h1 class="display-4 font-weight-normal">Faceshield</h1>
+                <div class="p-3 p-md-5 m-lg-3 welcome-image-first welcome-size-1">
+                    <h1 class="text-dark welcome-title"><span style="color: #ec9a2e;"><i class="fas fa-arrow-left"></i></span><a id="sidebarCollapse" class="ml-3">Menu</a></h1>
+
+                    <div class="col-md-5 p-lg-5 text-center mx-auto my-5">
+                        <h1 class="display-4 font-weight-normal">Faceshield 5 in 1</h1>
                         <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
                         <a class="btn btn-outline-secondary" href="#">Coming soon</a>
                     </div>
@@ -178,48 +180,48 @@
                 <!-- Footer -->
 
                 <footer class="container py-5">
-            <div class="row">
-                <div class="col-6 col-md">
-                    <div class="d-flex">
-                        <img src="photo/new_logo_nonbackground.png" alt="logo" style="height: 30px; border-right: 1px solid #636b6f" class="pr-3">
-                        <h5 class="pl-3"><a class="text-dark" herf="{{ url('/') }}">Faceshield</a></h5>
+                    <div class="row">
+                        <div class="col-6 col-md">
+                            <div class="d-flex">
+                                <img src="photo/new_logo_nonbackground.png" alt="logo" style="height: 30px; border-right: 1px solid #636b6f" class="pr-3">
+                                <h5 class="pl-3"><a class="text-dark" herf="{{ url('/') }}">Faceshield</a></h5>
+                            </div>
+                            <small class="d-block pt-3 text-muted">&copy; 2020</small>
+                        </div>
+                        <div class="col-6 col-md">
+                            <h5><a class="text-dark" href="about">About</a></h5>
+                            <ul class="list-unstyled text-small">
+                                <li>Product</li>
+                                <li>Disinfection</li>
+                                <li>Storage</li>
+                                <li>Certificate</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md">
+                            <h5><a class="text-dark" href="demos">Videos</a></h5>
+                            <ul class="list-unstyled text-small">
+                                <li>Replace the window</li>
+                                <li>Adjust the frame</li>
+                                <li>Our Video</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md">
+                            <h5><a class="text-dark" href="order">Order</a></h5>
+                            <ul class="list-unstyled text-small">
+                                <li>Single</li>
+                                <li>Box</li>
+                                <li>Europallet</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md">
+                            <h5><a class="text-dark" href="contacts">Contacts</a></h5>
+                            <ul class="list-unstyled text-small">
+                                <li>Email: blabla@bla.com</li>
+                                <li>Phone: +35989999999</li>
+                            </ul>
+                        </div>
                     </div>
-                    <small class="d-block pt-3 text-muted">&copy; 2020</small>
-                </div>
-                <div class="col-6 col-md">
-                    <h5><a class="text-dark" href="about">About</a></h5>
-                    <ul class="list-unstyled text-small">
-                        <li>Product</li>
-                        <li>Disinfection</li>
-                        <li>Storage</li>
-                        <li>Certificate</li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5><a class="text-dark" href="demos">Demos</a></h5>
-                    <ul class="list-unstyled text-small">
-                        <li>Replace the window</li>
-                        <li>Adjust the frame</li>
-                        <li>Our Video</li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5><a class="text-dark" href="order">Order</a></h5>
-                    <ul class="list-unstyled text-small">
-                        <li>Single</li>
-                        <li>Box</li>
-                        <li>Europallet</li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5><a class="text-dark" href="contacts">Contacts</a></h5>
-                    <ul class="list-unstyled text-small">
-                        <li>Email: blabla@bla.com</li>
-                        <li>Phone: +35989999999</li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+                </footer>
 
             </div>
         </div>

@@ -30,6 +30,8 @@ Route::get('/goal', 'PagesController@goal')->name('goal');
 
 Route::get('/order', 'PagesController@order')->name('order');
 
+Route::get('/custom', 'PagesController@custom')->name('custom');
+
 Route::get('/demos', 'PagesController@demos')->name('demos');
 
 Route::get('/contacts', 'PagesController@contacts')->name('contacts');

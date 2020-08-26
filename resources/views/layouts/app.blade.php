@@ -52,10 +52,10 @@
                             <a class="nav-link" href="{{ route('certificate') }}">Certificate</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('demos') }}">Demos</a>
+                            <a class="nav-link" href="{{ route('demos') }}">Videos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('order') }}">Order</a>
+                            <a class="nav-link" href="{{ route('custom') }}">Custom</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('contacts') }}">Contact</a>
@@ -116,7 +116,7 @@
                     </ul>
                 </div>
                 <div class="col-6 col-md">
-                    <h5><a class="text-dark" href="demos">Demos</a></h5>
+                    <h5><a class="text-dark" href="demos">Videos</a></h5>
                     <ul class="list-unstyled text-small">
                         <li>Replace the window</li>
                         <li>Adjust the frame</li>
