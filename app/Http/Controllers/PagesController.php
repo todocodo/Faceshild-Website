@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Facade\FlareClient\Http\Client as HttpClient;
 use illuminate\Http\Request;
 
 
@@ -10,6 +11,7 @@ use illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 use PharIo\Manifest\Email;
+use GuzzleHttp\Client;
 
 class PagesController extends Controller
 {
@@ -47,7 +49,28 @@ class PagesController extends Controller
 
     public function postContact() {
         //$this->validate($request, ['email' => 'required|email','subject' => 'min:3','message' => 'min:5']);
+        $token = request()->input('g-recaptcha-response');
+        // dd($token);
+        if($token) {
+            $client = new Client();
+            $response = $client->post('https://www.google.com/recaptcha/api/siteverify', [
+                    'form_params' => array(
+                    'secret' => '6LfMFMQZAAAAAGn_rUWR7QCponC8lSUGwW-IEk4J',
+                    'response' => $token
+                )
+            ]);
+            $result = json_decode($response->getBody()->getContents());
 
+            if ($result->success) {
+                // dd($result);
+                Session::flash('success', 'Yes we know you are human');
+            } else {
+                Session::flash('error', 'You are a Robot!');
+                return redirect('/');
+            }
+        } else {
+            Session::flash('error', 'Please tick the box');
+        }
         // dd(request()->subject);
         Mail::send(new \App\Mail\ContactMail());
         // echo 'successful sent email!';

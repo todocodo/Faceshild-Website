@@ -19,6 +19,12 @@
     </div>
     @endif
 
+    @if (session()->has('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+    @endif
+
 
 
     <div class="col-lg-10 mb-4 mx-auto">
@@ -32,7 +38,7 @@
                 </div>
                 <br>
 
-                <form action="{{ url('contacts') }}" method="POST">
+                <form action="{{ url('contacts') }}" method="POST" id="form">
                     {{ csrf_field() }}
                     <div class="md-form">
                         <span><i class="fas fa-envelope"></i></span>
@@ -51,6 +57,9 @@
                         <label name="message">Message:</label>
                         <textarea id="message" name="message" class="form-control">Type your message here..</textarea>
                     </div>
+
+                    <!-- The captcha will be generated in this element -->
+                    <div class="g-recaptcha" data-sitekey="6LfMFMQZAAAAAMPmSfRSNSEoLzBwlcSch8Ze6KEN"></div>
 
                     <div class="text-center mt-4">
                         <input type="submit" value="Send Message" class="btn shield-blue text-white">
@@ -89,4 +98,5 @@
     </div>
 
 </div>
+
 @endsection

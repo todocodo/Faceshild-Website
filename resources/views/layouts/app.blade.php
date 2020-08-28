@@ -13,6 +13,7 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -23,6 +24,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="resources/css/style.css" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
+    
 </head>
 
 <body>
@@ -141,6 +144,19 @@
             </div>
         </footer>
     </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $('#form').submit(function(event) {
+                var verified = grecaptcha.getResponse();
+                if (verified.length === 0) {
+                    event.preventDefault();
+                } 
+            });
+        });
+    </script>
 </body>
 
 </html>
