@@ -2,15 +2,6 @@
 
 @section('content')
 
-<!-- Certificate Button -->
-<div>
-    <a class="btn btn-lg rounded-circle fixed-bottom-certificate" href="certificate" style="background-color: #fff">
-        <span style="color: #4CB6C1; font-size: 30px;">
-            <i class="fas fa-award"></i>
-        </span>
-    </a>
-</div>
-
 <div class="container py-4 mt-5">
 
     @if (session()->has('success'))
@@ -52,10 +43,14 @@
                         <textarea id="message" name="message" class="form-control">Type your message here..</textarea>
                     </div>
 
+                    <!-- The captcha will be generated in this element -->
+                    <div class="g-recaptcha" data-sitekey="6LfMFMQZAAAAAMPmSfRSNSEoLzBwlcSch8Ze6KEN"></div>
+
                     <div class="text-center mt-4">
                         <input type="submit" value="Send Message" class="btn shield-blue text-white">
                     </div>
                 </form>
+
             </div>
         </div>
     </div>
@@ -89,4 +84,5 @@
     </div>
 
 </div>
+
 @endsection
