@@ -40,22 +40,31 @@
 
                 <form action="{{ url('contacts') }}" method="POST" id="form">
                     {{ csrf_field() }}
-                    <div class="md-form">
+                    <div class="md-form ">
                         <span><i class="fas fa-envelope"></i></span>
                         <label name="email">Email:</label>
                         <input id="email" name="email" class="form-control">
+                        @error('email')
+                        <span class="text-danger">{{$message}}</span>
+                        @enderror
                     </div>
 
                     <div class="md-form pt-3">
                         <span><i class="fas fa-tag"></i></span>
                         <label name="subject">Subject:</label>
                         <input id="subject" name="subject" class="form-control">
+                        @error('subject')
+                        <span class="text-danger">{{$message}}</span>
+                        @enderror
                     </div>
 
                     <div class="form-group pt-3">
                         <span><i class="fas fa-pencil-alt"></i></span>
                         <label name="message">Message:</label>
                         <textarea id="message" name="message" class="form-control">Type your message here..</textarea>
+                        @error('message')
+                        <span class="text-danger">{{$message}}</span>
+                        @enderror
                     </div>
 
                     <!-- The captcha will be generated in this element -->

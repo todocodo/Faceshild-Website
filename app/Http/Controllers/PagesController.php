@@ -12,49 +12,64 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 use PharIo\Manifest\Email;
 use GuzzleHttp\Client;
+use App\Http\Requests\StoreBlogPostRequest;
 
 class PagesController extends Controller
 {
-    public function about() {
+    public function about()
+    {
         return view('pages.about');
     }
 
-    public function certificate() {
+    public function certificate()
+    {
         return view('pages.certificate');
     }
 
-    public function goal() {
+    public function goal()
+    {
         return view('pages.goal');
     }
 
-    public function order() {
+    public function order()
+    {
         return view('pages.order');
     }
 
-    public function custom() {
+    public function custom()
+    {
         return view('pages.custom');
     }
 
-    public function demos() {
+    public function demos()
+    {
         return view('pages.demos');
     }
 
-    public function contacts() {
+    public function contacts()
+    {
         return view('pages.contacts');
     }
 
-    public function orders() {
+    public function orders()
+    {
         dd(request()->all());
     }
 
-    public function postContact() {
-        //$this->validate($request, ['email' => 'required|email','subject' => 'min:3','message' => 'min:5']);
+    public function postContact()
+    {
+        request()->validate([
+            'email' => 'required',
+            'subject' => 'required',
+            'message' => 'required'
+        ]);
+
         $token = request()->input('g-recaptcha-response');
         // dd($token);
-        if($token) {
+        if ($token) {
             $client = new Client();
             $response = $client->post('https://www.google.com/recaptcha/api/siteverify', [
-                    'form_params' => array(
+                'form_params' => array(
                     'secret' => '6LfMFMQZAAAAAGn_rUWR7QCponC8lSUGwW-IEk4J',
                     'response' => $token
                 )

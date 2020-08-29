@@ -32,14 +32,14 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        return $this->subject(request()->subject)
-            ->from(request()->email)
-            ->to('todomdo12@gmail.com')
-            ->view('emails.contact');
-        // ->with([
-        //     'email' => $this->data->email,
-        //     'subject' => $this->data->subject,
-        //     'bodyMessage' => $this->data->message,
-        // ]);
+            return $this->subject(request()->subject)
+                ->from(request()->email)
+                ->to('todomdo12@gmail.com')
+                ->view('emails.contact');
+            // ->with([
+            //     'email' => $this->data->email,
+            //     'subject' => $this->data->subject,
+            //     'bodyMessage' => $this->data->message,
+            // ]);
     }
 }

@@ -45,7 +45,7 @@
         <div id="page-content-wrapper">
             <div class="page-content">
 
-                <input type="image" src="photo/new_logo_nonbackground.png" id="sidebarCollapse" class="fixed-top-logo" />
+                <input type="image" src="photo/new_logo_nonbackground.png" id="sidebarCollapse" class="fixed-top" />
 
                 <div class="p-3 p-md-5 m-lg-3 welcome-image-first welcome-size-1">
                     <h1 class="text-dark welcome-title"><span style="color: #ec9a2e;"><i class="fas fa-arrow-left"></i></span><a id="sidebarCollapse" class="ml-3">Menu</a></h1>
@@ -55,8 +55,6 @@
                         <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
                         <a class="btn btn-outline-secondary" href="#">Coming soon</a>
                     </div>
-                    <!-- <div class="product-device shadow-sm d-none d-md-block">Hello</div>
-                    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div> -->
                 </div>
 
                 <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">

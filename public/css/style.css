@@ -128,7 +128,7 @@ body {
     z-index: 1000;
     transition: all 0.4s ease 0s;
     border-radius: 0 30px 30px 0;
-    margin-top: 170px;
+    margin-top: 8%;
 }
 
 #sidebar-wrapper.activeNav {
@@ -172,10 +172,9 @@ body {
 
 /* logo-sidebar */
 
-.fixed-top-logo {
+#sidebarCollapse.fixed-top {
     margin-left: 30px;
-    margin-top: 30px;
-    position: fixed;
+    margin-top: 46px;
     width: 60px;
     outline: none;
 }
@@ -268,7 +267,7 @@ body {
     #sidebar-wrapper {
         height: 50%;
         width: 90px;
-        margin-top: 200px;
+        margin-top: 50%;
     }
     .sidebar-nav {
         width: 90px;
@@ -286,9 +285,9 @@ body {
         width: 150px;
         transition: all 0.4s ease 0s;
     }
-    .fixed-top-logo {
+    #sidebarCollapse.fixed-top {
         margin-left: 20px;
-        margin-top: 20px;
+        margin-top: 36px;
         width: 40px;
     }
     /* Bump up size of carousel content */
@@ -298,7 +297,7 @@ body {
         line-height: 1.4;
     }
     .welcome-title {
-        margin-top: 20px;
+        margin-top: 36px;
         font-size: 20px;
     }
 }
@@ -308,6 +307,19 @@ body {
 
 .shield-blue {
     background-color: #4CB6C1;
+}
+
+.g-recaptcha {
+    width: 400px !important;
+}
+
+
+/* Contact page - mobile */
+
+@media (max-width:767px) {
+    .g-recaptcha {
+        width: 100px !important;
+    }
 }
 
 
@@ -358,7 +370,7 @@ body {
 /* Certificate page */
 
 .download-text {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .img-size {
@@ -367,9 +379,9 @@ body {
 
 @media (max-width:767px) {
     .download-text {
-        font-size: 25px;
+        font-size: 22px;
     }
     .img-size {
-        height: 550px;
+        height: 520px;
     }
 }
