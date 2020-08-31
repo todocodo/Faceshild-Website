@@ -5,7 +5,7 @@
 <!-- Certificate Button -->
 <div>
     <a class="btn btn-lg rounded-circle fixed-bottom-certificate" href="certificate" style="background-color: #fff">
-        <span style="color: #4CB6C1; font-size: 30px;">
+        <span style="color: #07b0b7; font-size: 30px;">
             <i class="fas fa-award"></i>
         </span>
     </a>
@@ -34,7 +34,7 @@
             <div class="card-body">
                 <!--Header-->
                 <div class="form-header text-center blue accent-1">
-                    <h3><span style="color: #4CB6C1;"><i class="fas fa-envelope"></i></span> Write to us:</h3>
+                    <h3><span style="color: #07b0b7;"><i class="fas fa-envelope"></i></span> Write to us:</h3>
                 </div>
                 <br>
 
@@ -61,13 +61,16 @@
                     <div class="form-group pt-3">
                         <span><i class="fas fa-pencil-alt"></i></span>
                         <label name="message">Message:</label>
-                        <textarea id="message" name="message" class="form-control">Type your message here..</textarea>
+                        <textarea placeholder="Type your message here.." id="message" name="message" class="form-control"></textarea>
                         @error('message')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                     </div>
 
                     <!-- The captcha will be generated in this element -->
+                    <div>
+                        <strong>Please fill the box before sending</strong>
+                    </div>
                     <div class="g-recaptcha" data-sitekey="6LfMFMQZAAAAAMPmSfRSNSEoLzBwlcSch8Ze6KEN"></div>
 
                     <div class="text-center mt-4">
@@ -85,7 +88,7 @@
         <!--Buttons-->
         <div class="row text-center">
             <div class="col-md-4">
-                <span style="color: #4CB6C1; font-size: 25px;">
+                <span style="color: #07b0b7; font-size: 25px;">
                     <i class="fas fa-map-marker-alt"></i>
                 </span>
                 <p>Sofia, Gara Iskar, 10 Nedelcho Bonchev Str., Warehouse 10</p>
@@ -93,13 +96,13 @@
             </div>
 
             <div class="col-md-4">
-                <span style="color: #4CB6C1; font-size: 25px;"><i class="fas fa-phone"></i></span>
+                <span style="color: #07b0b7; font-size: 25px;"><i class="fas fa-phone"></i></span>
                 <p>+359 899 9999</p>
                 <p>Mon - Fri, 8:00-17:00</p>
             </div>
 
             <div class="col-md-4">
-                <span style="color: #4CB6C1; font-size: 25px;"><i class="fas fa-envelope"></i></span>
+                <span style="color: #07b0b7; font-size: 25px;"><i class="fas fa-envelope"></i></span>
                 <p>info@gmail.com</p>
                 <p>sale@gmail.com</p>
             </div>

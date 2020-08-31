@@ -52,7 +52,7 @@
                             <a class="nav-link" href="{{ route('about') }}">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('certificate') }}">Certificate</a>
+                            <a class="nav-link" href="{{ route('certificate') }}">Documents</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('demos') }}">Videos</a>
@@ -119,19 +119,19 @@
                     </ul>
                 </div>
                 <div class="col-6 col-md">
+                    <h5><a class="text-dark" href="certificate">Documents</a></h5>
+                    <ul class="list-unstyled text-small">
+                        <li>Certificate</li>
+                        <li>Technical Data</li>
+                        <li>Instructions</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
                     <h5><a class="text-dark" href="demos">Videos</a></h5>
                     <ul class="list-unstyled text-small">
                         <li>Replace the window</li>
                         <li>Adjust the frame</li>
                         <li>Our Video</li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5><a class="text-dark" href="order">Order</a></h5>
-                    <ul class="list-unstyled text-small">
-                        <li>Single</li>
-                        <li>Box</li>
-                        <li>Europallet</li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">

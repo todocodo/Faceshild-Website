@@ -48,7 +48,7 @@
                 <input type="image" src="photo/new_logo_nonbackground.png" id="sidebarCollapse" class="fixed-top" />
 
                 <div class="p-3 p-md-5 m-lg-3 welcome-image-first welcome-size-1">
-                    <h1 class="text-dark welcome-title"><span style="color: #ec9a2e;"><i class="fas fa-arrow-left"></i></span><a id="sidebarCollapse" class="ml-3">Menu</a></h1>
+                    <h1 class="text-dark welcome-title"><span style="color: #f59f0d;"><i class="fas fa-arrow-left"></i></span><a id="sidebarCollapse" class="ml-3">Menu</a></h1>
 
                     <div class="col-md-5 p-lg-5 text-center mx-auto my-5">
                         <h1 class="display-4 font-weight-normal">Faceshield 5 in 1</h1>
@@ -196,19 +196,19 @@
                             </ul>
                         </div>
                         <div class="col-6 col-md">
+                            <h5><a class="text-dark" href="certificate">Documents</a></h5>
+                            <ul class="list-unstyled text-small">
+                                <li>Certificate</li>
+                                <li>Technical Data</li>
+                                <li>Instructions</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md">
                             <h5><a class="text-dark" href="demos">Videos</a></h5>
                             <ul class="list-unstyled text-small">
                                 <li>Replace the window</li>
                                 <li>Adjust the frame</li>
                                 <li>Our Video</li>
-                            </ul>
-                        </div>
-                        <div class="col-6 col-md">
-                            <h5><a class="text-dark" href="order">Order</a></h5>
-                            <ul class="list-unstyled text-small">
-                                <li>Single</li>
-                                <li>Box</li>
-                                <li>Europallet</li>
                             </ul>
                         </div>
                         <div class="col-6 col-md">

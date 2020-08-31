@@ -83,7 +83,7 @@ body {
 /* Nav Bar - main */
 
 .navbar {
-    background: #ec9a2e !important;
+    background: #f59f0d !important;
     color: #fff !important;
 }
 
@@ -100,7 +100,7 @@ body {
 }
 
 .dropdown-menu {
-    background-color: #ec9a2e !important;
+    background-color: #f59f0d !important;
     min-width: 20px;
 }
 
@@ -109,7 +109,7 @@ body {
 }
 
 .dropdown-menu a:hover {
-    color: #ec9a2e;
+    color: #f59f0d;
 }
 
 
@@ -121,7 +121,7 @@ body {
 
 #sidebar-wrapper {
     width: 150px;
-    background: #4CB6C1;
+    background: #07b0b7;
     height: 70%;
     position: fixed;
     overflow-y: auto;
@@ -164,7 +164,7 @@ body {
 }
 
 #sidebar-wrapper ul li a:hover {
-    color: #4CB6C1;
+    color: #07b0b7;
     background: #fff;
     text-decoration: none;
 }
@@ -306,7 +306,7 @@ body {
 /* Contact page */
 
 .shield-blue {
-    background-color: #4CB6C1;
+    background-color: #07b0b7;
 }
 
 .g-recaptcha {

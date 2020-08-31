@@ -51,6 +51,11 @@ class PagesController extends Controller
         return view('pages.contacts');
     }
 
+    public function test()
+    {
+        return view('pages.test');
+    }
+
     public function orders()
     {
         dd(request()->all());
@@ -59,9 +64,9 @@ class PagesController extends Controller
     public function postContact()
     {
         request()->validate([
-            'email' => 'required',
-            'subject' => 'required',
-            'message' => 'required'
+            'email' => 'required | email',
+            'subject' => 'required | max:100',
+            'message' => 'required | min:5'
         ]);
 
         $token = request()->input('g-recaptcha-response');

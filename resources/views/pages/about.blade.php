@@ -4,7 +4,7 @@
 <!-- Certificate Button -->
 <div class="">
     <a class="btn btn-lg rounded-circle certificate-button fixed-bottom-certificate" href="certificate">
-        <span style="color: #4CB6C1; font-size: 30px;">
+        <span style="color: #07b0b7; font-size: 30px;">
             <i class="fas fa-award"></i>
         </span>
     </a>
@@ -15,7 +15,7 @@
         <div class="col-md-6 p-lg-5 mx-auto my-5">
             <div class="row">
                 <div class="col-xl-6">
-                    <h1 class="font-weight-normal" style="color: #ec9a2e">Protect the eyes nose and face</h1>
+                    <h1 class="font-weight-normal" style="color: #f59f0d">Protect the eyes nose and face</h1>
                 </div>
                 <div class="col-xl-6">
                     <img src="../icon/icon - dust.png" alt="icon-dust" class="icon-size-content">
@@ -38,15 +38,15 @@
         <div class="col-md-5 order-md-12 p-lg-5 mx-auto my-5 text-dark">
             <div class="row">
                 <div class="col-xl-8 order-xl-12 text-center">
-                    <h1 class="font-weight-normal" style="color: #ec9a2e;">One Set consists of:</h1>
+                    <h1 class="font-weight-normal" style="color: #f59f0d;">One Set consists of:</h1>
                 </div>
                 <div class="col-xl-4 order-xl-1 text-center">
                     <img src="../icon/icon - lightwaight.png" alt="icon-splash" class="icon-size-content">
                 </div>
             </div>
             <br><br>
-            <p class="lead"><span style="color: #4CB6C1;"><i class="fas fa-circle mr-2"></i></i></span> 1 Frame made of PP with protector of EVA and eraser with width 10.5mm </p>
-            <p class="lead"><span style="color: #4CB6C1;"><i class="fas fa-circle mr-2"></i></i></span> 5 Front Protective Windows that are 0.2mm thick and made of PET</p>
+            <p class="lead"><span style="color: #07b0b7;"><i class="fas fa-circle mr-2"></i></i></span> 1 Frame made of PP with protector of EVA and eraser with width 10.5mm </p>
+            <p class="lead"><span style="color: #07b0b7;"><i class="fas fa-circle mr-2"></i></i></span> 5 Front Protective Windows that are 0.2mm thick and made of PET</p>
         </div>
         <div class="col-md-4 order-md-1 text-center">
             <img src="../photo/orange_shoe.png" alt="shoe" style="height: 530px;">
@@ -90,7 +90,7 @@
         <div class="col-md-6 p-lg-5 mx-auto my-5">
             <div class="row">
                 <div class="col-xl-6">
-                    <h1 class="font-weight-normal" style="color: #ec9a2e">Frame and Window</h1>
+                    <h1 class="font-weight-normal" style="color: #f59f0d">Frame and Window</h1>
                 </div>
                 <div class="col-xl-6">
                     <img src="../icon/icon - reusable.png" alt="icon-reusable" class="icon-size-content">
@@ -113,7 +113,7 @@
         <div class="col-md-5 order-md-12 p-lg-5 mx-auto my-5 text-white">
             <div class="row">
                 <div class="col-xl-8 order-xl-12 text-center">
-                    <h1 class="font-weight-normal" style="color: #ec9a2e;">Easy window replacement</h1>
+                    <h1 class="font-weight-normal" style="color: #f59f0d;">Easy window replacement</h1>
                 </div>
                 <div class="col-xl-4 order-xl-1 text-center">
                     <img src="../icon/icon - reusable.png" alt="icon-reusable" class="icon-size-content">
@@ -121,7 +121,7 @@
             </div>
             <br><br>
             <p class="lead font-weight-normal">nTr Professional Faceshield has an innovative window fastening system that help you to easily replace the window anytime and anywhere without the help of any adjustments.</p>
-            <a class="btn btn-lg mt-3" style="background-color: #4CB6C1; color:white;" href="demos">Demonstration</a>
+            <a class="btn btn-lg mt-3" style="background-color: #07b0b7; color:white;" href="demos">Demonstration</a>
         </div>
         <div class="col-md-4 order-md-1">
             <img src="../photo/can_beer.png" alt="beer" style="height: 350px;">
@@ -135,7 +135,7 @@
         <div class="col-md-5 p-lg-5 mx-auto my-5">
             <div class="row">
                 <div class="col-xl-6">
-                    <h1 class="font-weight-normal" style="color: #ec9a2e">Masks and Glasses</h1>
+                    <h1 class="font-weight-normal" style="color: #f59f0d">Masks and Glasses</h1>
                 </div>
                 <div class="col-xl-6">
                     <img src="../icon/icon - lightwaight.png" alt="icon-lightwaight" class="icon-size-content">
@@ -157,7 +157,7 @@
         <div class="col-md-5 order-md-12 p-lg-5 mx-auto my-3 text-white">
             <div class="row">
                 <div class="col-xl-8 order-xl-12 text-center">
-                    <h1 class="font-weight-normal" style="color: #ec9a2e;">Size and Adjustment</h1>
+                    <h1 class="font-weight-normal" style="color: #f59f0d;">Size and Adjustment</h1>
                 </div>
                 <div class="col-xl-4 order-xl-1 text-center">
                     <img src="../icon/icon - lightwaight.png" alt="icon-splash" class="icon-size-content">
@@ -165,9 +165,9 @@
             </div>
             <br><br>
             <p class="lead font-weight-normal">Easy adjustment of the eraser for a personalized and secure fit.</p>
-            <p class="lead"><span style="color: #4CB6C1;"><i class="fas fa-circle mr-2"></i></span> Moderate size, suitable for most face shapes.</p>
-            <p class="lead"><span style="color: #4CB6C1;"><i class="fas fa-circle mr-2"></i></span> Suitable for men and women.</p>
-            <a class="btn btn-lg mt-3 text-center" style="background-color: #4CB6C1; color:white;" href="demos">Demonstration</a>
+            <p class="lead"><span style="color: #07b0b7;"><i class="fas fa-circle mr-2"></i></span> Moderate size, suitable for most face shapes.</p>
+            <p class="lead"><span style="color: #07b0b7;"><i class="fas fa-circle mr-2"></i></span> Suitable for men and women.</p>
+            <a class="btn btn-lg mt-3 text-center" style="background-color: #07b0b7; color:white;" href="demos">Demonstration</a>
         </div>
         <div class="col-md-4 order-md-1 text-center">
             <img src="../photo/new_logo_nonbackground.png" alt="logo" style="height: 250px; margin-top: 65px;">
@@ -181,7 +181,7 @@
         <div class="col-md-5 p-lg-5 mx-auto my-5">
             <div class="row">
                 <div class="col-xl-8">
-                    <h1 class="font-weight-normal" style="color: #ec9a2e">Disinfection and Storage</h1>
+                    <h1 class="font-weight-normal" style="color: #f59f0d">Disinfection and Storage</h1>
                 </div>
                 <div class="col-xl-4">
                     <img src="../icon/icon - virus.png" alt="icon-virus" class="icon-size-content">
@@ -195,5 +195,5 @@
         </div>
     </div>
 </div>
-<h1 class="text-center mb-3 bottom-text" style="color: #ec9a2e;">Store in a dry place with temperature from -25C to +50C in its box for no longer than 5 years.</h1>
+<h1 class="text-center mb-3 bottom-text" style="color: #f59f0d;">Store in a dry place with temperature from -25C to +50C in its box for no longer than 5 years.</h1>
 @endsection

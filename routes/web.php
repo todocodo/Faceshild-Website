@@ -36,6 +36,8 @@ Route::get('/demos', 'PagesController@demos')->name('demos');
 
 Route::get('/contacts', 'PagesController@contacts')->name('contacts');
 
+Route::get('/test', 'PagesController@test')->name('test');
+
 Route::post('/contacts', 'PagesController@postContact');
 
 Route::post('/orders', 'PagesController@orders');
