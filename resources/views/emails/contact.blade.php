@@ -7,8 +7,10 @@
     <title>Faceshield-contacts-email</title>
 </head>
 <body>
-    <h1>{{ request()->subject }}</h1>
+    <p>From {{ request()->email }} with this subject {{ request()->subject }}</p>
+    <br>
     <p>{{ request()->message }}</p>
+    <br>
     <p>Thank you!</p>
 
 </body>

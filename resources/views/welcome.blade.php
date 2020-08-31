@@ -36,7 +36,7 @@
         <nav id="sidebar-wrapper" class="activeNav navscroll">
             <ul class="sidebar-nav">
                 <li><a href="about">About</a></li>
-                <li><a href="certificate">Certificate</a></li>
+                <li><a href="certificate">Documents</a></li>
                 <li><a href="demos">Videos</a></li>
                 <li><a href="custom">Custom</a></li>
                 <li><a href="contacts">Contacts</a></li>
