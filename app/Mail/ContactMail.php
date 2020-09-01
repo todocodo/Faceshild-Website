@@ -35,6 +35,7 @@ class ContactMail extends Mailable
             return $this->subject(request()->subject)
                 ->from(request()->email)
                 ->to('ranchevv0@gmail.com')
+                ->replyTo(request()->email)
                 ->view('emails.contact');
             // ->with([
             //     'email' => $this->data->email,
