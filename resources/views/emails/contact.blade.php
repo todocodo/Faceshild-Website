@@ -25,8 +25,6 @@
 
 <body>
 
-    <!-- <img src="{{ $message->embed(photo/nTrShield_email_beginnnig.png) }}" alt="email_beginning" style="width: 590px;">
-    <br><br> -->
     <p class="ml-5" style="color: black;">From:  {{ request()->email }}</p>
     <p class="ml-5" style="color: black;"> With subject: {{ request()->subject }}</p>
     <br>
@@ -34,7 +32,6 @@
     <br>
     <p class="ml-5" style="color: black;">Thank you!</p>
     <br>
-    <!-- <img src="{{ $message->embed(photo/nTrShield_email_ending.png) }}" alt="email_ending" style="width: 590px;"><br> -->
     <p style="margin-left: 220px; color: black;">www.ntrfaceshield.com</p>
 
     <!-- Bootstrap tooltips -->

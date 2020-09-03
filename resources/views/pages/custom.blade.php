@@ -55,7 +55,7 @@
         <!-- COLOR  -->
         <div class="row mt-5">
             <div class="col-sm-6">
-                <h3>COLOR</h3>
+                <h3 class="font-weight-bold mb-0">Color</h3>
                 <p>Choose a color and take a look</p>
                 <p class="text-center"><a id="btn-original" class="btn btn-lg text-white" role="button" style="width: 90px; background-color: #60C3A7;">Original</a></p>
 

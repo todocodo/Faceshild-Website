@@ -30,6 +30,12 @@
 
 <body>
     <div id="app">
+
+        <a href="{{ url('/') }}">
+            <img src="photo/new_logo_nonbackground.png" alt="logo_image" class="fixed-top" style="margin-left: 30px; margin-top: 76px; width: 60px; outline: none;">
+            <p class="fixed-top" style="margin-top: 150px; margin-left: 25px; color: #f59f0d;">Main Page</p>
+        </a>
+
         <nav class="navbar fixed-top navbar-expand-md shadow-sm">
             <div class="container">
                 <a class="navbar-brand d-felx" href="{{ url('/') }}">
