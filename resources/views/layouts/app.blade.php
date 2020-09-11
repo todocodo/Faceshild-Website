@@ -16,8 +16,8 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Styles -->
@@ -30,16 +30,14 @@
 
 <body>
     <div id="app">
+        <input type="image" src="photo/new_logo_nonbackground.png" id="sidebarCollapse" class="fixed-top" />
+        <span class="fixed-top menu_logo_arrow"><i class="fas fa-arrow-up"></i></span>
+        <strong class="fixed-top menu_logo">Menu</strong>
 
-        <a href="{{ url('/') }}">
-            <img src="photo/new_logo_nonbackground.png" alt="logo_image" class="fixed-top" style="margin-left: 30px; margin-top: 76px; width: 60px; outline: none;">
-            <p class="fixed-top" style="margin-top: 150px; margin-left: 25px; color: #f59f0d;">Main Page</p>
-        </a>
-
-        <nav class="navbar fixed-top navbar-expand-md shadow-sm">
+        <!-- MAIN Fixed top Menu -->
+        <!-- <nav class="navbar fixed-top navbar-expand-md shadow-sm">
             <div class="container">
                 <a class="navbar-brand d-felx" href="{{ url('/') }}">
-                    <!-- <img src="photo/new_logo_nonbackground.png" alt="logo" style="height: 30px;" class="pr-2">  -->
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" style="outline: none;" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -47,12 +45,10 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
 
                     </ul>
 
-                    <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('about') }}">About</a>
@@ -69,44 +65,28 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('contacts') }}">Contact</a>
                         </li>
-                        <!-- LOG in and REGISTER -->
-                        <!-- @guest
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                        </li>
-                        @if (Route::has('register'))
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                        </li>
-                        @endif
-                        @else
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
 
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
-                                </a>
-
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    @csrf
-                                </form>
-                            </div>
-                        </li>
-                        @endguest -->
                     </ul>
                 </div>
             </div>
+        </nav> -->
+
+        <nav id="sidebar-wrapper" class="activeNav navscroll">
+            <ul class="sidebar-nav">
+                <li><a href="/">Welcome</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="certificate">Documents</a></li>
+                <li><a href="demos">Videos</a></li>
+                <li><a href="custom">Custom</a></li>
+                <li><a href="contacts">Contacts</a></li>
+            </ul>
         </nav>
 
         <main>
             @yield('content')
         </main>
 
-        <footer class="container py-5 border-top">
+        <footer class="container py-5">
             <div class="row">
                 <div class="col-6 col-md">
                     <div class="d-flex">
@@ -118,33 +98,71 @@
                 <div class="col-6 col-md">
                     <h5><a class="text-dark" href="about">About</a></h5>
                     <ul class="list-unstyled text-small">
-                        <li>Product</li>
-                        <li>Disinfection</li>
-                        <li>Storage</li>
-                        <li>Certificate</li>
+                        <a class="text-muted" href="about">
+                            <li>Product</li>
+                        </a>
+                        <a class="text-muted" href="about">
+                            <li>Disinfection</li>
+                        </a>
+                        <a class="text-muted" href="about">
+                            <li>Storage</li>
+                        </a>
+                        <a class="text-muted" href="about">
+                            <li>Certificate</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
                     <h5><a class="text-dark" href="certificate">Documents</a></h5>
                     <ul class="list-unstyled text-small">
-                        <li>Certificate</li>
-                        <li>Technical Data</li>
-                        <li>Instructions</li>
+                        <a class="text-muted" href="certificate">
+                            <li>Certificate</li>
+                        </a>
+                        <a class="text-muted" href="certificate">
+                            <li>Technical Data</li>
+                        </a>
+                        <a class="text-muted" href="certificate">
+                            <li>Instructions</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
                     <h5><a class="text-dark" href="demos">Videos</a></h5>
                     <ul class="list-unstyled text-small">
-                        <li>Replace the window</li>
-                        <li>Adjust the frame</li>
-                        <li>Our Video</li>
+                        <a class="text-muted" href="demos">
+                            <li>Replace the window</li>
+                        </a>
+                        <a class="text-muted" href="demos">
+                            <li>Adjust the frame</li>
+                        </a>
+                        <a class="text-muted" href="demos">
+                            <li>Our Video</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5><a class="text-dark" href="custom">Custom</a></h5>
+                    <ul class="list-unstyled text-small">
+                        <a class="text-muted" href="custom">
+                            <li>Change color</li>
+                        </a>
+                        <a class="text-muted" href="custom">
+                            <li>Branding</li>
+                        </a>
+                        <a class="text-muted" href="custom">
+                            <li>Different package</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
                     <h5><a class="text-dark" href="contacts">Contacts</a></h5>
                     <ul class="list-unstyled text-small">
-                        <li>Email: blabla@bla.com</li>
-                        <li>Phone: +35989999999</li>
+                        <a class="text-muted" href="contacts">
+                            <li>Email: shield@transgraph.eu</li>
+                        </a>
+                        <a class="text-muted" href="contacts">
+                            <li>Phone: +359899904690</li>
+                        </a>
                     </ul>
                 </div>
             </div>
@@ -160,6 +178,29 @@
                 if (verified.length === 0) {
                     event.preventDefault();
                 }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar-wrapper').toggleClass('activeNav');
+            });
+
+        });
+
+        var isActive = document.getElementsByClassName('activeNav');
+
+        $(document).ready(function() {
+            $(function() {
+                $(window).scroll(function() {
+
+                    if ($(this).scrollTop() > 100 && (isActive.length <= 0)) {
+                        $('.navscroll').toggleClass('activeNav');
+                    }
+                });
             });
         });
     </script>

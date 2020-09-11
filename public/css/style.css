@@ -140,7 +140,7 @@ body {
     z-index: 1000;
     transition: all 0.4s ease 0s;
     border-radius: 0 30px 30px 0;
-    margin-top: 8%;
+    margin-top: 10%;
 }
 
 #sidebar-wrapper.activeNav {
@@ -208,6 +208,19 @@ body {
     margin-left: 53px;
 }
 
+.main_logo {
+    margin-left: 30px;
+    margin-top: 76px;
+    width: 60px;
+    outline: none;
+}
+
+.main_logo_text {
+    margin-top: 150px;
+    margin-left: 45px;
+    color: #f59f0d;
+}
+
 
 /* Certificate Button */
 
@@ -268,38 +281,45 @@ body {
 /* Declare heights because of positioning of img element */
 
 .carousel-item {
-    height: 52rem;
+    height: 72rem;
 }
 
 .carousel-item>img {
     top: 0;
     left: 0;
-    min-width: 100%;
-    height: 32rem;
+    width: 100%;
+    height: auto;
 }
 
-
-/* Carousel images */
-
-
-/* #image_1 {
-    background-image: url('../realphotos/barber.jpg');
-    height: 100%;
-    width: 100%;
+.text_custom_carousel {
+    font-size: 50px;
 }
 
-
-#image_2 {
-    background-image: url('../realphotos/barber_package.jpg');
-    height: 100%;
-    width: 100%;
+.text_custom_main {
+    font-size: 50px;
 }
 
-#image_2 {
-    background-image: url('../realphotos/barber_glasses_1.jpg');
-    height: 100%;
-    width: 100%;
-} */
+.text_custom_secondary {
+    font-size: 30px;
+}
+
+@media (max-width:1650px) {
+    .carousel-item {
+        height: 52rem;
+    }
+    .carousel-item>img {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+    .text_custom_main {
+        font-size: 40px;
+    }
+    .text_custom_secondary {
+        font-size: 25px;
+    }
+}
 
 
 /* Welcome font */
@@ -312,6 +332,7 @@ body {
     text-decoration: none;
     font-size: 50.5pt;
     text-indent: 0pt;
+    margin-left: 100px;
 }
 
 .s3 {
@@ -320,9 +341,10 @@ body {
     font-style: italic;
     font-weight: bold;
     text-decoration: none;
-    font-size: 55.5pt;
-    text-indent: -20pt;
+    font-size: 57.5pt;
+    text-indent: -22pt;
     line-height: 20pt;
+    margin-left: 120px;
 }
 
 
@@ -331,12 +353,22 @@ body {
 
 /* Welcome page - mobile */
 
+@media (max-width:1380px) {
+    #sidebar-wrapper {
+        height: 60%;
+        margin-top: 20%;
+    }
+    .text_custom_carousel {
+        font-size: 35px;
+    }
+}
+
 @media (max-width:767px) {
     #wrapper {
         padding-left: 0;
     }
     #sidebar-wrapper {
-        height: 50%;
+        height: 55%;
         width: 90px;
         margin-top: 50%;
     }
@@ -361,6 +393,17 @@ body {
         margin-top: 36px;
         width: 40px;
     }
+    .main_logo {
+        margin-left: 20px;
+        margin-top: 76px;
+        width: 40px;
+        outline: none;
+    }
+    .main_logo_text {
+        margin-top: 130px;
+        margin-left: 20px;
+        color: #f59f0d;
+    }
     /* Bump up size of carousel content */
     .carousel-caption p {
         margin-bottom: 1.25rem;
@@ -368,7 +411,21 @@ body {
         line-height: 1.4;
     }
     .carousel-item {
-        height: 32rem;
+        width: 100%;
+        height: auto;
+    }
+    .carousel-item>img {
+        width: 100%;
+        height: auto;
+    }
+    .text_custom_carousel {
+        font-size: 25px;
+    }
+    .text_custom_main {
+        font-size: 30px;
+    }
+    .text_custom_secondary {
+        font-size: 20px;
     }
     .welcome-title {
         margin-top: 36px;
@@ -384,10 +441,34 @@ body {
     }
     #heading {
         font-size: 30.5pt;
+        margin-left: 0px;
     }
     .s3 {
+        margin-left: 5px;
         font-size: 35.5pt;
     }
+    .welcome-size-1 {
+        height: 700px;
+    }
+    .welcome-image-first {
+        background-image: url('../realphotos/big_welcome_1_mobile_low.jpg');
+    }
+    .welcome-image-second {
+        background-image: url('../realphotos/big_welcome_2_mobile_low_72.jpg');
+    }
+    .welcome-image-third {
+        background-image: url('../realphotos/upwards_1_low.jpg');
+    }
+}
+
+@media (max-width:450px) {
+    /* .carousel-item {
+        width: 450px;
+        height: auto;
+    }
+    .carousel_image {
+        text-align: center;
+    } */
 }
 
 
@@ -433,12 +514,45 @@ body {
     height: 55px;
 }
 
+.image_about {
+    width: 100%;
+}
+
+.image_2_package {
+    height: 450px;
+}
+
 
 /* About page - mobile */
 
+@media (max-width: 1000px) {
+    .image_about {
+        height: 220px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .image_about {
+        margin-top: 100px;
+    }
+    .image_2_package {
+        margin-top: 90px;
+        height: 280px;
+    }
+}
+
 @media (max-width:767px) {
+    .image_about {
+        margin-top: 0;
+        height: auto;
+    }
+    .image_2_package {
+        margin-top: 0;
+        height: 280px;
+        width: auto;
+    }
     .line-size {
-        height: 750px;
+        height: 850px;
     }
     .bodyshop {
         height: 100px;
@@ -471,6 +585,21 @@ body {
     }
     .img-size {
         height: 520px;
+    }
+}
+
+
+/* Video Page */
+
+.video-text {
+    font-size: 35px;
+    color: #f59f0d;
+}
+
+@media (max-width:767px) {
+    .video-text {
+        margin-left: 20px;
+        font-size: 27px;
     }
 }
 
@@ -556,7 +685,7 @@ body {
 }
 
 
-/* Packageing ============================== */
+/* Packaging ============================== */
 
 .hover-2 .hover-overlay {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
@@ -594,4 +723,30 @@ body {
 
 .hover-2:hover .hover-overlay {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+}
+
+
+/* COLLAGE */
+
+.custom_collage {
+    height: 700px;
+}
+
+.button_position {
+    margin-top: 150px;
+}
+
+@media (max-width:1300px) {
+    .button_position {
+        margin-top: 70px;
+    }
+    .custom_collage {
+        height: 500px;
+    }
+}
+
+@media (max-width:767px) {
+    .button_position {
+        margin-top: 0;
+    }
 }

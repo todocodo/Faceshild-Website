@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container py-4 mt-5">
+<div class="container py-4">
     <!-- Certificate -->
     <div class="text-center">
         <img class="img-fluid img-size" src="../documents/TG_Certificate_CE_en.jpg" alt="test-certificate">

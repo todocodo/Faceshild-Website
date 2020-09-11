@@ -1,16 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- Certificate Button -->
-<div class="">
-    <a class="btn btn-lg rounded-circle certificate-button fixed-bottom-certificate" href="certificate">
-        <span style="color: #07b0b7; font-size: 30px;">
-            <i class="fas fa-award"></i>
-        </span>
-    </a>
-</div>
 <!-- Main content -->
-<div class="p-3 p-md-5 mt-5 text-center bg-light line-size">
+<div class="p-3 p-md-5 text-center bg-light line-size">
     <div class="row">
         <div class="col-md-6 p-lg-5 mx-auto my-5">
             <div class="row">
@@ -27,13 +19,13 @@
             <p class="lead font-weight-normal">nTr Professional Faceshield guarantee the protection of the eyes, nose and face from drops and splashes of liquids, responding to the European Regulation (ЕС) 2016/425, European Standard EN166:2001 point 7.2.4 b, EN168:2008 objection 12.2 and the requirements for EN166:2001 point 6.1, 6.2, 6.3;</p>
         </div>
         <div class="col-md-4">
-            <img src="../photo/new_logo_nonbackground.png" alt="logo" style="height: 250px; margin-top: 65px;">
+            <img src="../realphotos/barber.jpg" alt="barber" class="image_about">
         </div>
     </div>
 </div>
 
 <!-- GREY -->
-<div class="p-3 p-md-5 m-lg-3 line-size" style="background-color: #cccccc;">
+<div class="p-3 p-md-5 m-lg-3 line-size" style="background-color: #fff;">
     <div class="row">
         <div class="col-md-5 order-md-12 p-lg-5 mx-auto my-5 text-dark">
             <div class="row">
@@ -49,7 +41,7 @@
             <p class="lead"><span style="color: #07b0b7;"><i class="fas fa-circle mr-2"></i></i></span> 5 Front Protective Windows that are 0.2mm thick and made of PET</p>
         </div>
         <div class="col-md-4 order-md-1 text-center">
-            <img src="../photo/orange_shoe.png" alt="shoe" style="height: 530px;">
+            <img src="../realphotos/package_front_1.png" alt="package" class="image_2_package">
         </div>
     </div>
 </div>
@@ -85,7 +77,7 @@
     </div>
 </div>
 
-<div class="p-3 p-md-5 m-lg-3 text-center bg-light line-size">
+<div class="p-3 p-md-5 m-lg-3 text-center line-size" style="background-color: #F3F2F3;">
     <div class="row">
         <div class="col-md-6 p-lg-5 mx-auto my-5">
             <div class="row">
@@ -102,7 +94,7 @@
             <p class="lead font-weight-normal">Extremely lightweight and elegant frame in which through a click system a reusable screen is installed. The frame is placed on the head with the help of an eraser that can be adjusted individually. For additional comfort a mellow protector for the forehead is placed. </p>
         </div>
         <div class="col-md-4">
-            <img src="../photo/camera_noback.png" alt="camera" style="height: 250px; margin-top: 65px;">
+            <img src="../realphotos/big_welcome_2.jpg" alt="welcome_2" class="image_about">
         </div>
     </div>
 </div>
@@ -124,7 +116,7 @@
             <a class="btn btn-lg mt-3" style="background-color: #07b0b7; color:white;" href="demos">Demonstration</a>
         </div>
         <div class="col-md-4 order-md-1">
-            <img src="../photo/can_beer.png" alt="beer" style="height: 350px;">
+            <img src="../realphotos/package_front_1.png" alt="package" class="image_2_package">
         </div>
     </div>
 </div>
@@ -146,7 +138,7 @@
             <p class="lead font-weight-normal">nTr Professional Faceshield is incredibly lightweight – only 46 g. it does not disturb the eye vision or the free movement of the head. It allows the usage of mask and glasses under the Faceshield and can be worn for hours without fatigue.</p>
         </div>
         <div class="col-md-4">
-            <img src="../photo/medicine.png" alt="medicine" style="height: 550px;">
+            <img src="../realphotos/dentist.jpg" alt="dentist" class="image_about">
         </div>
     </div>
 </div>
@@ -191,7 +183,7 @@
             <p class="lead font-weight-normal">nTr Professional Faceshield – is not disinfected. Before usage disinfect the faceshield. Suitable for disinfection are all disinfectors containing ethanol. Avoid solvents, ketones, strong acids and alkaline elements.</p>
         </div>
         <div class="col-md-4">
-            <img src="../photo/bodyshop.jpg" alt="bodyshop" class="bodyshop">
+            <img src="../realphotos/reception_1.jpg" alt="reception" class="image_about">
         </div>
     </div>
 </div>

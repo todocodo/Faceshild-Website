@@ -11,7 +11,7 @@
     </a>
 </div>
 
-<div class="container py-4 mt-5">
+<div class="container py-4">
 
     @if (session()->has('success'))
     <div class="alert alert-success">
@@ -69,7 +69,7 @@
 
                     <!-- The captcha will be generated in this element -->
                     <div>
-                        <strong>Please fill the box before sending</strong>
+                        <strong class="text-danger">Please tick the box before sending</strong>
                     </div>
                     <div class="g-recaptcha" data-sitekey="6LfMFMQZAAAAAMPmSfRSNSEoLzBwlcSch8Ze6KEN"></div>
 
@@ -97,14 +97,13 @@
 
             <div class="col-md-4">
                 <span style="color: #07b0b7; font-size: 25px;"><i class="fas fa-phone"></i></span>
-                <p>+359 899 9999</p>
+                <p>+359 89990 4690</p>
                 <p>Mon - Fri, 8:00-17:00</p>
             </div>
 
             <div class="col-md-4">
                 <span style="color: #07b0b7; font-size: 25px;"><i class="fas fa-envelope"></i></span>
-                <p>info@gmail.com</p>
-                <p>sale@gmail.com</p>
+                <p>shield@transgraph.eu</p>
             </div>
         </div>
     </div>

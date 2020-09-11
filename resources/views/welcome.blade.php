@@ -64,9 +64,9 @@
                                 <div class="row">
                                     <div class="col-xl-5">
                                         <h2 id="heading">Professional</h2>
-                                        <p class="s3 ml-3">Faceshield</p>
+                                        <p class="s3">Faceshield</p>
                                     </div>
-                                    <div class="col-xl-7">
+                                    <div class="col-xl-7 ml-1 mt-2">
                                         <img src="realphotos/Logo_5in1_noback.png" alt="5in1_logo" style="height: 120px;">
                                     </div>
                                 </div>
@@ -93,7 +93,8 @@
                     <a href="{{ route('about') }}" style="text-decoration: none; color: black;">
                         <div class="welcome-image-third pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden  welcome-size-2">
                             <div class="my-3 p-3">
-                                <h2 class="display-5" style="color: #f59f0d;">Incredibly lightweight</h2>
+                            <h2 class="display-5" style="color: #f59f0d;">Only 46 grams</h2>
+                                <p class="lead" style="color: #f59f0d;">Incredibly lightweight</p>
                             </div>
                         </div>
                     </a>
@@ -129,7 +130,7 @@
                             <img src="../realphotos/barber.jpg" alt="barber" style="height: 100%; width: 100%;">
                             <div class="container">
                                 <div class="carousel-caption text-left">
-                                    <h1 style="font-size: 50px;">Use for any occasion</h1>
+                                    <h1 class="text_custom_carousel">Use for any occasion</h1>
                                 </div>
                             </div>
                         </div>
@@ -137,7 +138,7 @@
                             <img src="../realphotos/barber_package.jpg" alt="barber_package" style="height: 100%; width: 100%;">
                             <div class="container">
                                 <div class="carousel-caption">
-                                    <h1 style="font-size: 50px;">At the office</h1>
+                                    <h1 class="text_custom_carousel">At the office</h1>
 
                                 </div>
                             </div>
@@ -146,7 +147,7 @@
                             <img src="../realphotos/barber_glasses_1.jpg" alt="barber_glasses_1" style="height: 100%; width: 100%;">
                             <div class="container">
                                 <div class="carousel-caption text-right">
-                                    <h1 style="font-size: 50px;">Or at home</h1>
+                                    <h1 class="text_custom_carousel">Or at home</h1>
                                     <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
                                         metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
@@ -213,33 +214,71 @@
                         <div class="col-6 col-md">
                             <h5><a class="text-dark" href="about">About</a></h5>
                             <ul class="list-unstyled text-small">
-                                <li>Product</li>
-                                <li>Disinfection</li>
-                                <li>Storage</li>
-                                <li>Certificate</li>
+                                <a class="text-muted" href="about">
+                                    <li>Product</li>
+                                </a>
+                                <a class="text-muted" href="about">
+                                    <li>Disinfection</li>
+                                </a>
+                                <a class="text-muted" href="about">
+                                    <li>Storage</li>
+                                </a>
+                                <a class="text-muted" href="about">
+                                    <li>Certificate</li>
+                                </a>
                             </ul>
                         </div>
                         <div class="col-6 col-md">
                             <h5><a class="text-dark" href="certificate">Documents</a></h5>
                             <ul class="list-unstyled text-small">
-                                <li>Certificate</li>
-                                <li>Technical Data</li>
-                                <li>Instructions</li>
+                                <a class="text-muted" href="certificate">
+                                    <li>Certificate</li>
+                                </a>
+                                <a class="text-muted" href="certificate">
+                                    <li>Technical Data</li>
+                                </a>
+                                <a class="text-muted" href="certificate">
+                                    <li>Instructions</li>
+                                </a>
                             </ul>
                         </div>
                         <div class="col-6 col-md">
                             <h5><a class="text-dark" href="demos">Videos</a></h5>
                             <ul class="list-unstyled text-small">
-                                <li>Replace the window</li>
-                                <li>Adjust the frame</li>
-                                <li>Our Video</li>
+                                <a class="text-muted" href="demos">
+                                    <li>Replace the window</li>
+                                </a>
+                                <a class="text-muted" href="demos">
+                                    <li>Adjust the frame</li>
+                                </a>
+                                <a class="text-muted" href="demos">
+                                    <li>Our Video</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md">
+                            <h5><a class="text-dark" href="custom">Custom</a></h5>
+                            <ul class="list-unstyled text-small">
+                                <a class="text-muted" href="custom">
+                                    <li>Change color</li>
+                                </a>
+                                <a class="text-muted" href="custom">
+                                    <li>Branding</li>
+                                </a>
+                                <a class="text-muted" href="custom">
+                                    <li>Different package</li>
+                                </a>
                             </ul>
                         </div>
                         <div class="col-6 col-md">
                             <h5><a class="text-dark" href="contacts">Contacts</a></h5>
                             <ul class="list-unstyled text-small">
-                                <li>Email: blabla@bla.com</li>
-                                <li>Phone: +35989999999</li>
+                                <a class="text-muted" href="contacts">
+                                    <li>Email: shield@transgraph.eu</li>
+                                </a>
+                                <a class="text-muted" href="contacts">
+                                    <li>Phone: +359899904690</li>
+                                </a>
                             </ul>
                         </div>
                     </div>
