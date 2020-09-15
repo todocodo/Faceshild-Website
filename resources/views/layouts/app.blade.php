@@ -10,6 +10,9 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <!-- Favicon -->
+    <link rel="icon" href="{{ URL::asset('/photo/new_logo_nonbackground.png') }}" type="image/x-icon" />
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
@@ -34,43 +37,6 @@
         <span class="fixed-top menu_logo_arrow"><i class="fas fa-arrow-up"></i></span>
         <strong class="fixed-top menu_logo">Menu</strong>
 
-        <!-- MAIN Fixed top Menu -->
-        <!-- <nav class="navbar fixed-top navbar-expand-md shadow-sm">
-            <div class="container">
-                <a class="navbar-brand d-felx" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" style="outline: none;" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon text-white" style="outline: none;"><i class="fas fa-bars"></i></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('about') }}">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('certificate') }}">Documents</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('demos') }}">Videos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('custom') }}">Custom</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('contacts') }}">Contact</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </nav> -->
-
         <nav id="sidebar-wrapper" class="activeNav navscroll">
             <ul class="sidebar-nav">
                 <li><a href="/">Welcome</a></li>
@@ -82,91 +48,93 @@
             </ul>
         </nav>
 
-        <main>
-            @yield('content')
-        </main>
+        <div class="wrapper-wide mx-auto">
+            <main>
+                @yield('content')
+            </main>
 
-        <footer class="container py-5">
-            <div class="row">
-                <div class="col-6 col-md">
-                    <div class="d-flex">
-                        <img src="photo/new_logo_nonbackground.png" alt="logo" style="height: 30px; border-right: 1px solid #636b6f" class="pr-3">
-                        <h5 class="pl-3"><a class="text-dark" herf="{{ url('/') }}">Faceshield</a></h5>
+            <footer class="container py-5">
+                <div class="row">
+                    <div class="col-6 col-md">
+                        <div class="d-flex">
+                            <img src="photo/new_logo_nonbackground.png" alt="logo" style="height: 30px; border-right: 1px solid #636b6f" class="pr-3">
+                            <h5 class="pl-3"><a class="text-dark" href="{{ url('/') }}">Faceshield</a></h5>
+                        </div>
+                        <small class="d-block pt-3 text-muted">&copy; 2020</small>
                     </div>
-                    <small class="d-block pt-3 text-muted">&copy; 2020</small>
+                    <div class="col-6 col-md">
+                        <h5><a class="text-dark" href="about">About</a></h5>
+                        <ul class="list-unstyled text-small">
+                            <a class="text-muted" href="about">
+                                <li>Product</li>
+                            </a>
+                            <a class="text-muted" href="about">
+                                <li>Disinfection</li>
+                            </a>
+                            <a class="text-muted" href="about">
+                                <li>Storage</li>
+                            </a>
+                            <a class="text-muted" href="about">
+                                <li>Certificate</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5><a class="text-dark" href="certificate">Documents</a></h5>
+                        <ul class="list-unstyled text-small">
+                            <a class="text-muted" href="certificate">
+                                <li>Certificate</li>
+                            </a>
+                            <a class="text-muted" href="certificate">
+                                <li>Technical Data</li>
+                            </a>
+                            <a class="text-muted" href="certificate">
+                                <li>Instructions</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5><a class="text-dark" href="demos">Videos</a></h5>
+                        <ul class="list-unstyled text-small">
+                            <a class="text-muted" href="demos">
+                                <li>Replace the window</li>
+                            </a>
+                            <a class="text-muted" href="demos">
+                                <li>Adjust the frame</li>
+                            </a>
+                            <a class="text-muted" href="demos">
+                                <li>Our Video</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5><a class="text-dark" href="custom">Custom</a></h5>
+                        <ul class="list-unstyled text-small">
+                            <a class="text-muted" href="custom">
+                                <li>Change color</li>
+                            </a>
+                            <a class="text-muted" href="custom">
+                                <li>Branding</li>
+                            </a>
+                            <a class="text-muted" href="custom">
+                                <li>Different package</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5><a class="text-dark" href="contacts">Contacts</a></h5>
+                        <ul class="list-unstyled text-small">
+                            <a class="text-muted" href="contacts">
+                                <li>Email: shield@transgraph.eu</li>
+                            </a>
+                            <a class="text-muted" href="contacts">
+                                <li>Phone: +359899904690</li>
+                            </a>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-6 col-md">
-                    <h5><a class="text-dark" href="about">About</a></h5>
-                    <ul class="list-unstyled text-small">
-                        <a class="text-muted" href="about">
-                            <li>Product</li>
-                        </a>
-                        <a class="text-muted" href="about">
-                            <li>Disinfection</li>
-                        </a>
-                        <a class="text-muted" href="about">
-                            <li>Storage</li>
-                        </a>
-                        <a class="text-muted" href="about">
-                            <li>Certificate</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5><a class="text-dark" href="certificate">Documents</a></h5>
-                    <ul class="list-unstyled text-small">
-                        <a class="text-muted" href="certificate">
-                            <li>Certificate</li>
-                        </a>
-                        <a class="text-muted" href="certificate">
-                            <li>Technical Data</li>
-                        </a>
-                        <a class="text-muted" href="certificate">
-                            <li>Instructions</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5><a class="text-dark" href="demos">Videos</a></h5>
-                    <ul class="list-unstyled text-small">
-                        <a class="text-muted" href="demos">
-                            <li>Replace the window</li>
-                        </a>
-                        <a class="text-muted" href="demos">
-                            <li>Adjust the frame</li>
-                        </a>
-                        <a class="text-muted" href="demos">
-                            <li>Our Video</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5><a class="text-dark" href="custom">Custom</a></h5>
-                    <ul class="list-unstyled text-small">
-                        <a class="text-muted" href="custom">
-                            <li>Change color</li>
-                        </a>
-                        <a class="text-muted" href="custom">
-                            <li>Branding</li>
-                        </a>
-                        <a class="text-muted" href="custom">
-                            <li>Different package</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5><a class="text-dark" href="contacts">Contacts</a></h5>
-                    <ul class="list-unstyled text-small">
-                        <a class="text-muted" href="contacts">
-                            <li>Email: shield@transgraph.eu</li>
-                        </a>
-                        <a class="text-muted" href="contacts">
-                            <li>Phone: +359899904690</li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

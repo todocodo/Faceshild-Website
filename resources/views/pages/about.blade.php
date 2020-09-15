@@ -2,46 +2,47 @@
 
 @section('content')
 <!-- Main content -->
-<div class="p-3 p-md-5 text-center bg-light line-size">
+<div class="p-3 p-md-5 m-lg-3 line-size" style="background-color: #fff;">
     <div class="row">
-        <div class="col-md-6 p-lg-5 mx-auto my-5">
+        <div class="col-md-5 p-lg-5 mx-auto my-5 text-dark">
             <div class="row">
-                <div class="col-xl-6">
-                    <h1 class="font-weight-normal" style="color: #f59f0d">Protect the eyes nose and face</h1>
+                <div class="col-xl-8 text-center">
+                    <h1 class="font-weight-normal" style="color: #f59f0d;">One Set consists of:</h1>
                 </div>
-                <div class="col-xl-6">
-                    <img src="../icon/icon - dust.png" alt="icon-dust" class="icon-size-content">
-                    <img src="../icon/icon - splash.png" alt="icon-splash" class="icon-size-content ml-3">
-                    <img src="../icon/icon - virus.png" alt="icon-virus" class="icon-size-content ml-3">
+                <div class="col-xl-4 text-center">
+                    <img src="../icon/icon - lightwaight.png" alt="icon-splash" class="icon-size-content">
                 </div>
             </div>
             <br><br>
-            <p class="lead font-weight-normal">nTr Professional Faceshield guarantee the protection of the eyes, nose and face from drops and splashes of liquids, responding to the European Regulation (ЕС) 2016/425, European Standard EN166:2001 point 7.2.4 b, EN168:2008 objection 12.2 and the requirements for EN166:2001 point 6.1, 6.2, 6.3;</p>
+            <p class="lead"><span style="color: #07b0b7;"><i class="fas fa-circle mr-2"></i></i></span><strong>1 Frame</strong> made of PP with protector of EVA and a strap with width 10.5mm </p>
+            <p class="lead"><span style="color: #07b0b7;"><i class="fas fa-circle mr-2"></i></i></span><strong>5 Front Protective Windows</strong> that are 0.2mm thick and made of PET</p>
         </div>
-        <div class="col-md-4">
-            <img src="../realphotos/barber.jpg" alt="barber" class="image_about">
+        <div class="col-md-4 text-center">
+            <img src="../realphotos/package_front_1.png" alt="package" class="image_2_package">
         </div>
     </div>
 </div>
 
 <!-- GREY -->
-<div class="p-3 p-md-5 m-lg-3 line-size" style="background-color: #fff;">
+
+<div class="p-3 p-md-5 m-lg-3 text-center line-size" style="background-color: #F3F2F3;">
     <div class="row">
-        <div class="col-md-5 order-md-12 p-lg-5 mx-auto my-5 text-dark">
+        <div class="col-md-6 order-md-12 p-lg-5 mx-auto my-5">
             <div class="row">
-                <div class="col-xl-8 order-xl-12 text-center">
-                    <h1 class="font-weight-normal" style="color: #f59f0d;">One Set consists of:</h1>
+                <div class="col-xl-6 order-xl-12">
+                    <h1 class="font-weight-normal" style="color: #f59f0d">Frame and Window</h1>
                 </div>
-                <div class="col-xl-4 order-xl-1 text-center">
-                    <img src="../icon/icon - lightwaight.png" alt="icon-splash" class="icon-size-content">
+                <div class="col-xl-6 order-xl-1">
+                    <img src="../icon/icon - reusable.png" alt="icon-reusable" class="icon-size-content">
+                    <img src="../icon/icon - lightwaight.png" alt="icon-lightwaight" class="icon-size-content ml-3">
+                    <img src="../icon/icon - fog.png" alt="icon-fog" class="icon-size-content ml-3">
                 </div>
             </div>
             <br><br>
-            <p class="lead"><span style="color: #07b0b7;"><i class="fas fa-circle mr-2"></i></i></span> 1 Frame made of PP with protector of EVA and eraser with width 10.5mm </p>
-            <p class="lead"><span style="color: #07b0b7;"><i class="fas fa-circle mr-2"></i></i></span> 5 Front Protective Windows that are 0.2mm thick and made of PET</p>
+            <p class="lead font-weight-normal">Extremely lightweight and elegant frame in which through a click system a reusable screen is installed. The frame is placed on the head with the help of an eraser that can be adjusted individually. For additional comfort a mellow protector for the forehead is placed. </p>
         </div>
-        <div class="col-md-4 order-md-1 text-center">
-            <img src="../realphotos/package_front_1.png" alt="package" class="image_2_package">
+        <div class="col-md-4 order-md-1">
+            <img src="../realphotos/big_welcome_2_biglow.jpg" alt="welcome_2" class="image_about">
         </div>
     </div>
 </div>
@@ -77,24 +78,24 @@
     </div>
 </div>
 
-<div class="p-3 p-md-5 m-lg-3 text-center line-size" style="background-color: #F3F2F3;">
+<div class="p-3 p-md-5 text-center bg-light line-size">
     <div class="row">
         <div class="col-md-6 p-lg-5 mx-auto my-5">
             <div class="row">
                 <div class="col-xl-6">
-                    <h1 class="font-weight-normal" style="color: #f59f0d">Frame and Window</h1>
+                    <h1 class="font-weight-normal" style="color: #f59f0d">Protect the eyes nose and face</h1>
                 </div>
                 <div class="col-xl-6">
-                    <img src="../icon/icon - reusable.png" alt="icon-reusable" class="icon-size-content">
-                    <img src="../icon/icon - lightwaight.png" alt="icon-lightwaight" class="icon-size-content ml-3">
-                    <img src="../icon/icon - fog.png" alt="icon-fog" class="icon-size-content ml-3">
+                    <img src="../icon/icon - dust.png" alt="icon-dust" class="icon-size-content">
+                    <img src="../icon/icon - splash.png" alt="icon-splash" class="icon-size-content ml-3">
+                    <img src="../icon/icon - virus.png" alt="icon-virus" class="icon-size-content ml-3">
                 </div>
             </div>
             <br><br>
-            <p class="lead font-weight-normal">Extremely lightweight and elegant frame in which through a click system a reusable screen is installed. The frame is placed on the head with the help of an eraser that can be adjusted individually. For additional comfort a mellow protector for the forehead is placed. </p>
+            <p class="lead font-weight-normal">nTr Professional Faceshield guarantee the protection of the eyes, nose and face from drops and splashes of liquids, responding to the European Regulation (ЕС) 2016/425, European Standard EN166:2001 point 7.2.4 b, EN168:2008 objection 12.2 and the requirements for EN166:2001 point 6.1, 6.2, 6.3;</p>
         </div>
         <div class="col-md-4">
-            <img src="../realphotos/big_welcome_2.jpg" alt="welcome_2" class="image_about">
+            <img src="../realphotos/barber_biglow.jpg" alt="barber" class="image_about">
         </div>
     </div>
 </div>
@@ -138,7 +139,7 @@
             <p class="lead font-weight-normal">nTr Professional Faceshield is incredibly lightweight – only 46 g. it does not disturb the eye vision or the free movement of the head. It allows the usage of mask and glasses under the Faceshield and can be worn for hours without fatigue.</p>
         </div>
         <div class="col-md-4">
-            <img src="../realphotos/dentist.jpg" alt="dentist" class="image_about">
+            <img src="../realphotos/dentist_low.jpg" alt="dentist" class="image_about">
         </div>
     </div>
 </div>
@@ -183,7 +184,7 @@
             <p class="lead font-weight-normal">nTr Professional Faceshield – is not disinfected. Before usage disinfect the faceshield. Suitable for disinfection are all disinfectors containing ethanol. Avoid solvents, ketones, strong acids and alkaline elements.</p>
         </div>
         <div class="col-md-4">
-            <img src="../realphotos/reception_1.jpg" alt="reception" class="image_about">
+            <img src="../realphotos/reception_1_biglow.jpg" alt="reception" class="image_about">
         </div>
     </div>
 </div>

@@ -68,25 +68,22 @@
         <!-- Branding -->
         <div class="py-5">
             <h3 class="text_custom_main font-weight-bold mb-0">Branding</h3>
-            <p class="text_custom_secondary font-italic text-muted mb-4">You can brand the Facesheild how you want.</p>
+            <p class="text_custom_secondary font-italic text-muted mb-4">You can brand the Facesheild how you want. Tap on the pictures.</p>
             <div class="row">
                 <!-- Branding Item-->
                 <div class="col-lg-6 mb-3 mb-lg-0">
                     <div class="hover hover-1 text-white rounded"><img src="realphotos/brand_yellow.jpg" alt="">
-                        <div class="hover-overlay"></div>
                         <div class="hover-1-content px-5 py-4">
-                            <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
-                            <p class="hover-1-description font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p class="hover-1-description font-weight-light mb-0">A logo can be placed on the widest part of the frame.</p>
                         </div>
+                        <!-- <div class="hover-overlay"></div> -->
                     </div>
                 </div>
                 <!-- Branding Item-->
                 <div class="col-lg-6">
-                    <div class="hover hover-1 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786257/hoverSet-4_fbtjks.jpg" alt="">
-                        <div class="hover-overlay"></div>
+                    <div class="hover hover-1 text-white rounded"><img src="realphotos/brand_original.jpg" alt="">
                         <div class="hover-1-content px-5 py-4">
-                            <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
-                            <p class="hover-1-description font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p class="hover-1-description font-weight-light mb-0">We can brand even in the side.</p>
                         </div>
                     </div>
                 </div>
@@ -100,22 +97,18 @@
             <div class="row">
                 <!-- Package Item-->
                 <div class="col-lg-6 mb-3 mb-lg-0">
-                    <div class="hover hover-2 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786258/hoverSet-2_lt7geh.jpg" alt="">
-                        <div class="hover-overlay"></div>
-                        <div class="hover-2-content px-5 py-4">
-                            <h3 class="hover-2-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
-                            <p class="hover-2-description text-uppercase mb-0">Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit.</p>
+                    <div class="hover hover-2 text-white rounded"><img src="realphotos/custom_2_boxes_purple_green.jpg" alt="">
+                        <div class="hover-2-content px-5">
+                            <p class="hover-2-description text-uppercase text-dark mb-0">Purple & Red or Green & Red</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Package Item-->
                 <div class="col-lg-6">
-                    <div class="hover hover-2 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786261/hoverSet-1_pha5qe.jpg" alt="">
-                        <div class="hover-overlay"></div>
-                        <div class="hover-2-content px-5 py-4">
-                            <h3 class="hover-2-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
-                            <p class="hover-2-description text-uppercase mb-0">Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit.</p>
+                    <div class="hover hover-2 text-white rounded"><img src="realphotos/custom_2_boxes_pink_red.jpg" alt="">
+                        <div class="hover-2-content px-5">
+                            <p class="hover-2-description text-uppercase text-dark mb-0">Blue & Pink or Red & Yellow</p>
                         </div>
                     </div>
                 </div>
