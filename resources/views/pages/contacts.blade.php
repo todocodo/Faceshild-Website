@@ -27,22 +27,46 @@
 
 
 
-    <div class="col-lg-10 mb-4 mx-auto">
+    <div class="col-lg-10 mb-4 mx-auto mt-3">
         <!--Form with header-->
         <div class="card">
 
             <div class="card-body">
                 <!--Header-->
                 <div class="form-header text-center blue accent-1">
-                    <h3><span style="color: #07b0b7;"><i class="fas fa-envelope"></i></span> Write to us:</h3>
+                    <h3><span style="color: #07b0b7;"><i class="fas fa-envelope"></i></span>{{ __('Write to us:') }}</h3>
                 </div>
                 <br>
 
                 <form action="{{ url('contacts') }}" method="POST" id="form">
                     {{ csrf_field() }}
-                    <div class="md-form ">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-form pt-3">
+                                <span><i class="fas fa-signature"></i></span>
+                                <label name="name">*{{ __('Name:') }}</label>
+                                <input id="name" name="name" class="form-control">
+                                @error('name')
+                                <span class="text-danger">{{$message}}</span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="md-form pt-3">
+                                <span><i class="fas fa-phone"></i></span>
+                                <label name="phone">{{ __('Phone:') }}</label>
+                                <input id="phone" name="phone" class="form-control">
+                                @error('telephone')
+                                <span class="text-danger">{{$message}}</span>
+                                @enderror
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md-form pt-3">
                         <span><i class="fas fa-envelope"></i></span>
-                        <label name="email">Email:</label>
+                        <label name="email">*{{ __('Email:') }}</label>
                         <input id="email" name="email" class="form-control">
                         @error('email')
                         <span class="text-danger">{{$message}}</span>
@@ -51,7 +75,7 @@
 
                     <div class="md-form pt-3">
                         <span><i class="fas fa-tag"></i></span>
-                        <label name="subject">Subject:</label>
+                        <label name="subject">*{{ __('Subject:') }}</label>
                         <input id="subject" name="subject" class="form-control">
                         @error('subject')
                         <span class="text-danger">{{$message}}</span>
@@ -60,7 +84,7 @@
 
                     <div class="form-group pt-3">
                         <span><i class="fas fa-pencil-alt"></i></span>
-                        <label name="message">Message:</label>
+                        <label name="message">*{{ __('Message:') }}</label>
                         <textarea placeholder="Type your message here.." id="message" name="message" class="form-control"></textarea>
                         @error('message')
                         <span class="text-danger">{{$message}}</span>
@@ -69,12 +93,12 @@
 
                     <!-- The captcha will be generated in this element -->
                     <div>
-                        <strong class="text-danger">Please tick the box before sending</strong>
+                        <strong class="text-danger">*{{ __('Please tick the box before sending') }}</strong>
                     </div>
                     <div class="g-recaptcha" data-sitekey="6LfMFMQZAAAAAMPmSfRSNSEoLzBwlcSch8Ze6KEN"></div>
 
                     <div class="text-center mt-4">
-                        <input type="submit" value="Send Message" class="btn shield-blue text-white">
+                        <input type="submit" value="{{ __('Send Message') }}" class="btn shield-blue text-white">
                     </div>
                 </form>
             </div>
@@ -91,14 +115,14 @@
                 <span style="color: #07b0b7; font-size: 25px;">
                     <i class="fas fa-map-marker-alt"></i>
                 </span>
-                <p>Sofia, Gara Iskar, 10 Nedelcho Bonchev Str., Warehouse 10</p>
-                <p>Bulgaria</p>
+                <p>{{ __('Sofia, Gara Iskar, 10 Nedelcho Bonchev Str., Warehouse 10') }}</p>
+                <p>{{ __('Bulgaria') }}</p>
             </div>
 
             <div class="col-md-4">
                 <span style="color: #07b0b7; font-size: 25px;"><i class="fas fa-phone"></i></span>
                 <p>+359 89990 4690</p>
-                <p>Mon - Fri, 8:00-17:00</p>
+                <p>{{ __('Mon - Fri') }}, 8:00-17:00</p>
             </div>
 
             <div class="col-md-4">

@@ -64,6 +64,8 @@ class PagesController extends Controller
     public function postContact()
     {
         request()->validate([
+            'name' => 'required',
+            'phone' => 'numeric', 
             'email' => 'required | email',
             'subject' => 'required | max:100',
             'message' => 'required | min:5'
@@ -95,6 +97,7 @@ class PagesController extends Controller
         Mail::send(new \App\Mail\ContactMail());
         // echo 'successful sent email!';
         Session::flash('success', 'Your Email was Sent!');
+        Session::flash('error', 'Unsuccessful Email!');
 
         return redirect('/contacts');
     }

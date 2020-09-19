@@ -229,4 +229,9 @@ return [
 
     ],
 
+    'languages' => [
+        'en' => 'English',
+        'bg' => 'Български',
+    ],
+
 ];

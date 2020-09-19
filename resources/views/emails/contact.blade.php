@@ -26,6 +26,8 @@
 <body>
 
     <p class="ml-5" style="color: black;">From:  {{ request()->email }}</p>
+    <p class="ml-5" style="color: black;">With Name:  {{ request()->email }} and Telephone: {{ request()->phone }}</p>
+    <br>
     <p class="ml-5" style="color: black;"> With subject: {{ request()->subject }}</p>
     <br>
     <p class="ml-5" style="color: black;">{{ request()->message }}</p>

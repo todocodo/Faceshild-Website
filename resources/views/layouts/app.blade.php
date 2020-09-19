@@ -35,18 +35,41 @@
     <div id="app">
         <input type="image" src="photo/new_logo_nonbackground.png" id="sidebarCollapse" class="fixed-top" />
         <span class="fixed-top menu_logo_arrow"><i class="fas fa-arrow-up"></i></span>
-        <strong class="fixed-top menu_logo">Menu</strong>
+        <strong class="fixed-top menu_logo">{{ __('Menu') }}</strong>
 
         <nav id="sidebar-wrapper" class="activeNav navscroll">
             <ul class="sidebar-nav">
-                <li><a href="/">Welcome</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="certificate">Documents</a></li>
-                <li><a href="demos">Videos</a></li>
-                <li><a href="custom">Custom</a></li>
-                <li><a href="contacts">Contacts</a></li>
+                <li><a href="/">{{ __('Welcome') }}</a></li>
+                <li><a href="about">{{ __('About') }}</a></li>
+                <li><a href="certificate">{{ __('Documents') }}</a></li>
+                <li><a href="demos">{{ __('Videos') }}</a></li>
+                <li><a href="custom">{{ __('Custom') }}</a></li>
+                <li><a href="contacts">{{ __('Contacts') }}</a></li>
             </ul>
         </nav>
+
+
+        <!-- Languages - flags -->
+        <div class="row">
+            <div class="col">
+                @if(count(config('app.languages')) > 1)
+                <div class="dropdown d-md-down-none fixed-top flag-language mt-2">
+                    <a class="text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="text-decoration: none">
+                        <img src="/realphotos/bg-uk.jpg" alt="Flags" style="height: 15px;">
+                        {{ strtoupper(app()->getLocale()) }}
+
+                    </a>
+                    <div class="dropdown-menu" style="height: 80px; background-color: #e9e6e6;">
+                        @foreach(config('app.languages') as $langLocale => $langName)
+                        <a class="dropdown-item" style="font-size: 14px;" href="{{ url()->current() }}?change_language={{ $langLocale }}">{{ strtoupper($langLocale) }} {{ $langName }}</a>
+                        @endforeach
+                    </div>
+                </div>
+                @endif
+            </div>
+        </div>
+
+
 
         <div class="wrapper-wide mx-auto">
             <main>
@@ -58,77 +81,77 @@
                     <div class="col-6 col-md">
                         <div class="d-flex">
                             <img src="photo/new_logo_nonbackground.png" alt="logo" style="height: 30px; border-right: 1px solid #636b6f" class="pr-3">
-                            <h5 class="pl-3"><a class="text-dark" href="{{ url('/') }}">Faceshield</a></h5>
+                            <h5 class="pl-3"><a class="text-dark" href="{{ url('/') }}">{{ __('Faceshield') }}</a></h5>
                         </div>
                         <small class="d-block pt-3 text-muted">&copy; 2020</small>
                     </div>
                     <div class="col-6 col-md">
-                        <h5><a class="text-dark" href="about">About</a></h5>
+                        <h5><a class="text-dark" href="about">{{ __('About') }}</a></h5>
                         <ul class="list-unstyled text-small">
                             <a class="text-muted" href="about">
-                                <li>Product</li>
+                                <li>{{ __('Product') }}</li>
                             </a>
                             <a class="text-muted" href="about">
-                                <li>Disinfection</li>
+                                <li>{{ __('Disinfection') }}</li>
                             </a>
                             <a class="text-muted" href="about">
-                                <li>Storage</li>
+                                <li>{{ __('Storage') }}</li>
                             </a>
                             <a class="text-muted" href="about">
-                                <li>Certificate</li>
+                                <li>{{ __('Certificate') }}</li>
                             </a>
                         </ul>
                     </div>
                     <div class="col-6 col-md">
-                        <h5><a class="text-dark" href="certificate">Documents</a></h5>
+                        <h5><a class="text-dark" href="certificate">{{ __('Documents') }}</a></h5>
                         <ul class="list-unstyled text-small">
                             <a class="text-muted" href="certificate">
-                                <li>Certificate</li>
+                                <li>{{ __('Certificate') }}</li>
                             </a>
                             <a class="text-muted" href="certificate">
-                                <li>Technical Data</li>
+                                <li>{{ __('Technical Data') }}</li>
                             </a>
                             <a class="text-muted" href="certificate">
-                                <li>Instructions</li>
+                                <li>{{ __('Instructions') }}</li>
                             </a>
                         </ul>
                     </div>
                     <div class="col-6 col-md">
-                        <h5><a class="text-dark" href="demos">Videos</a></h5>
+                        <h5><a class="text-dark" href="demos">{{ __('Videos') }}</a></h5>
                         <ul class="list-unstyled text-small">
                             <a class="text-muted" href="demos">
-                                <li>Replace the window</li>
+                                <li>{{ __('Replace the window') }}</li>
                             </a>
                             <a class="text-muted" href="demos">
-                                <li>Adjust the frame</li>
+                                <li>{{ __('Adjust the frame') }}</li>
                             </a>
                             <a class="text-muted" href="demos">
-                                <li>Our Video</li>
+                                <li>{{ __('Our Video') }}</li>
                             </a>
                         </ul>
                     </div>
                     <div class="col-6 col-md">
-                        <h5><a class="text-dark" href="custom">Custom</a></h5>
+                        <h5><a class="text-dark" href="custom">{{ __('Custom') }}</a></h5>
                         <ul class="list-unstyled text-small">
                             <a class="text-muted" href="custom">
-                                <li>Change color</li>
+                                <li>{{ __('Change color') }}</li>
                             </a>
                             <a class="text-muted" href="custom">
-                                <li>Branding</li>
+                                <li>{{ __('Branding') }}</li>
                             </a>
                             <a class="text-muted" href="custom">
-                                <li>Different package</li>
+                                <li>{{ __('Different package') }}</li>
                             </a>
                         </ul>
                     </div>
                     <div class="col-6 col-md">
-                        <h5><a class="text-dark" href="contacts">Contacts</a></h5>
+                        <h5><a class="text-dark" href="contacts">{{ __('Contacts') }}</a></h5>
                         <ul class="list-unstyled text-small">
                             <a class="text-muted" href="contacts">
-                                <li>Email: shield@transgraph.eu</li>
+                                <li>{{ __('Email:') }} shield@transgraph.eu</li>
                             </a>
                             <a class="text-muted" href="contacts">
-                                <li>Phone: +359899904690</li>
+                                <li>{{ __('Phone:') }} +359899904690</li>
                             </a>
                         </ul>
                     </div>
