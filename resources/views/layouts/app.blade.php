@@ -39,37 +39,29 @@
 
         <nav id="sidebar-wrapper" class="activeNav navscroll">
             <ul class="sidebar-nav">
-                <li><a href="/">{{ __('Welcome') }}</a></li>
-                <li><a href="about">{{ __('About') }}</a></li>
-                <li><a href="certificate">{{ __('Documents') }}</a></li>
-                <li><a href="demos">{{ __('Videos') }}</a></li>
-                <li><a href="custom">{{ __('Custom') }}</a></li>
-                <li><a href="contacts">{{ __('Contacts') }}</a></li>
+                <li id="hover-only"><a href="/">{{ __('Welcome') }}</a></li>
+                <li id="hover-only"><a href="about">{{ __('About') }}</a></li>
+                <li id="hover-only"><a href="certificate">{{ __('Documents') }}</a></li>
+                <li id="hover-only"><a href="demos">{{ __('Videos') }}</a></li>
+                <li id="hover-only"><a href="custom">{{ __('Custom') }}</a></li>
+                <li id="hover-only"><a href="contacts">{{ __('Contacts') }}</a></li>
+                <li>
+                    @if(count(config('app.languages')) > 1)
+                    <div id="dropdown-caret" class="dropright d-md-down-none">
+                        <a class="d-flex" id="caret-language" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="text-decoration: none; outline: none;">
+                            {{ __('Language')}}
+                            <span id="caret-language-1" class="caret right"></span>
+                        </a>
+                        <div id="dropdown-caret-menu" class="dropdown-menu">
+                            @foreach(config('app.languages') as $langLocale => $langName)
+                            <a class="dropdown-item font-weight-light" href="{{ url()->current() }}?change_language={{ $langLocale }}">{{ strtoupper($langLocale) }} {{ $langName }}</a>
+                            @endforeach
+                        </div>
+                    </div>
+                    @endif
+                </li>
             </ul>
         </nav>
-
-
-        <!-- Languages - flags -->
-        <div class="row">
-            <div class="col">
-                @if(count(config('app.languages')) > 1)
-                <div class="dropdown d-md-down-none fixed-top flag-language mt-2">
-                    <a class="text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="text-decoration: none">
-                        <img src="/realphotos/bg-uk.jpg" alt="Flags" style="height: 15px;">
-                        {{ strtoupper(app()->getLocale()) }}
-
-                    </a>
-                    <div class="dropdown-menu" style="height: 80px; background-color: #e9e6e6;">
-                        @foreach(config('app.languages') as $langLocale => $langName)
-                        <a class="dropdown-item" style="font-size: 14px;" href="{{ url()->current() }}?change_language={{ $langLocale }}">{{ strtoupper($langLocale) }} {{ $langName }}</a>
-                        @endforeach
-                    </div>
-                </div>
-                @endif
-            </div>
-        </div>
-
-
 
         <div class="wrapper-wide mx-auto">
             <main>
@@ -89,16 +81,16 @@
                         <h5><a class="text-dark" href="about">{{ __('About') }}</a></h5>
                         <ul class="list-unstyled text-small">
                             <a class="text-muted" href="about">
-                                <li>{{ __('Product') }}</li>
+                                <li>{{ __('Box Content') }}</li>
                             </a>
-                            <a class="text-muted" href="about">
+                            <a class="text-muted" href="about#size">
+                                <li>{{ __('Size') }}</li>
+                            </a>
+                            <a class="text-muted" href="about#masks">
+                                <li>{{ __('Masks & Glasses') }}</li>
+                            </a>
+                            <a class="text-muted" href="about#disinfection">
                                 <li>{{ __('Disinfection') }}</li>
-                            </a>
-                            <a class="text-muted" href="about">
-                                <li>{{ __('Storage') }}</li>
-                            </a>
-                            <a class="text-muted" href="about">
-                                <li>{{ __('Certificate') }}</li>
                             </a>
                         </ul>
                     </div>
@@ -108,10 +100,10 @@
                             <a class="text-muted" href="certificate">
                                 <li>{{ __('Certificate') }}</li>
                             </a>
-                            <a class="text-muted" href="certificate">
+                            <a class="text-muted" href="certificate#tech-data">
                                 <li>{{ __('Technical Data') }}</li>
                             </a>
-                            <a class="text-muted" href="certificate">
+                            <a class="text-muted" href="certificate#instructions">
                                 <li>{{ __('Instructions') }}</li>
                             </a>
                         </ul>
@@ -122,10 +114,10 @@
                             <a class="text-muted" href="demos">
                                 <li>{{ __('Replace the window') }}</li>
                             </a>
-                            <a class="text-muted" href="demos">
+                            <a class="text-muted" href="demos#adjust-video">
                                 <li>{{ __('Adjust the frame') }}</li>
                             </a>
-                            <a class="text-muted" href="demos">
+                            <a class="text-muted" href="demos#whole-video">
                                 <li>{{ __('Our Video') }}</li>
                             </a>
                         </ul>
@@ -133,13 +125,13 @@
                     <div class="col-6 col-md">
                         <h5><a class="text-dark" href="custom">{{ __('Custom') }}</a></h5>
                         <ul class="list-unstyled text-small">
-                            <a class="text-muted" href="custom">
+                            <a class="text-muted" href="custom#color-change">
                                 <li>{{ __('Change color') }}</li>
                             </a>
-                            <a class="text-muted" href="custom">
+                            <a class="text-muted" href="custom#branding">
                                 <li>{{ __('Branding') }}</li>
                             </a>
-                            <a class="text-muted" href="custom">
+                            <a class="text-muted" href="custom#package">
                                 <li>{{ __('Different package') }}</li>
                             </a>
                         </ul>
@@ -147,10 +139,10 @@
                     <div class="col-6 col-md">
                         <h5><a class="text-dark" href="contacts">{{ __('Contacts') }}</a></h5>
                         <ul class="list-unstyled text-small">
-                            <a class="text-muted" href="contacts">
+                            <a class="text-muted" href="contacts#email-contact">
                                 <li>{{ __('Email:') }} shield@transgraph.eu</li>
                             </a>
-                            <a class="text-muted" href="contacts">
+                            <a class="text-muted" href="contacts#email-contact">
                                 <li>{{ __('Phone:') }} +359899904690</li>
                             </a>
                         </ul>
@@ -192,6 +184,16 @@
                         $('.navscroll').toggleClass('activeNav');
                     }
                 });
+            });
+        });
+
+        // Caret Left and Right
+        $(document).ready(function() {
+            $("#dropdown-caret").on("hide.bs.dropdown", function() {
+                $("#caret-language-1").replaceWith('<span id="caret-language-1" class="caret right"></span>');
+            });
+            $("#dropdown-caret").on("show.bs.dropdown", function() {
+                $("#caret-language-1").replaceWith('<span id="caret-language-1" class="caret left"></span>');
             });
         });
     </script>

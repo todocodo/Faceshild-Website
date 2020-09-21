@@ -64,14 +64,16 @@
                         </div>
                     </div>
 
-                    <div class="md-form pt-3">
-                        <span><i class="fas fa-envelope"></i></span>
-                        <label name="email">*{{ __('Email:') }}</label>
-                        <input id="email" name="email" class="form-control">
-                        @error('email')
-                        <span class="text-danger">{{$message}}</span>
-                        @enderror
-                    </div>
+                    <a name="email-contact">
+                        <div class="md-form pt-3">
+                            <span><i class="fas fa-envelope"></i></span>
+                            <label name="email">*{{ __('Email:') }}</label>
+                            <input id="email" name="email" class="form-control">
+                            @error('email')
+                            <span class="text-danger">{{$message}}</span>
+                            @enderror
+                        </div>
+                    </a>
 
                     <div class="md-form pt-3">
                         <span><i class="fas fa-tag"></i></span>

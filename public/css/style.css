@@ -151,7 +151,6 @@ body {
     background: #07b0b7;
     height: 70%;
     position: fixed;
-    overflow-y: auto;
     z-index: 1000;
     transition: all 0.4s ease 0s;
     border-radius: 0 30px 30px 0;
@@ -177,6 +176,41 @@ body {
 }
 
 
+/* CARET - left and right */
+
+.caret {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border: 5px solid transparent;
+    margin-left: 10px;
+    margin-top: 13px;
+}
+
+.caret.right {
+    border-left-color: white;
+}
+
+.caret.left {
+    border-right-color: white;
+}
+
+#dropdown-caret-menu a:hover {
+    color: #07b0b7;
+    background: #fff;
+    text-decoration: none;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#dropdown-caret-menu {
+    height: 150px;
+    background-color: #07b0b7;
+    position: absolute;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 12px;
+}
+
+
 /* Styling-nav */
 
 #sidebar-wrapper ul.components {
@@ -190,7 +224,7 @@ body {
     display: block;
 }
 
-#sidebar-wrapper ul li a:hover {
+#hover-only a:hover {
     color: #07b0b7;
     background: #fff;
     text-decoration: none;
@@ -394,11 +428,11 @@ body {
     }
     #sidebar-wrapper {
         height: 55%;
-        width: 95px;
+        width: 100px;
         margin-top: 50%;
     }
     .sidebar-nav {
-        width: 95px;
+        width: 100px;
     }
     #sidebar-wrapper ul li a {
         padding: 15px;
@@ -417,6 +451,16 @@ body {
         margin-left: 20px;
         margin-top: 36px;
         width: 40px;
+    }
+    #dropdown-caret-menu {
+        height: 120px;
+        min-width: 50px;
+        font-size: 12px;
+    }
+    .caret {
+        border: 4px solid transparent;
+        margin-left: 10px;
+        margin-top: 8px;
     }
     .main_logo {
         margin-left: 20px;
@@ -468,12 +512,12 @@ body {
         margin-left: 33px;
     }
     #heading {
-        font-size: 30.5pt;
+        font-size: 27.5pt;
         margin-left: 0px;
     }
     .s3 {
         margin-left: 5px;
-        font-size: 35.5pt;
+        font-size: 31.5pt;
     }
     .welcome-size-1 {
         height: 700px;
@@ -568,6 +612,9 @@ body {
 @media (max-width: 1000px) {
     .image_about {
         height: 220px;
+    }
+    .line-size {
+        height: 650px;
     }
 }
 

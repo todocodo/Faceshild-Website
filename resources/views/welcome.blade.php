@@ -40,37 +40,33 @@
 <body>
     <nav id="sidebar-wrapper" class="activeNav navscroll">
         <ul class="sidebar-nav">
-            <li><a href="about">{{ __('About') }}</a></li>
-            <li><a href="certificate">{{ __('Documents') }}</a></li>
-            <li><a href="demos">{{ __('Videos') }}</a></li>
-            <li><a href="custom">{{ __('Custom') }}</a></li>
-            <li><a href="contacts">{{ __('Contacts') }}</a></li>
+            <li id="hover-only"><a href="about">{{ __('About') }}</a></li>
+            <li id="hover-only"><a href="certificate">{{ __('Documents') }}</a></li>
+            <li id="hover-only"><a href="demos">{{ __('Videos') }}</a></li>
+            <li id="hover-only"><a href="custom">{{ __('Custom') }}</a></li>
+            <li id="hover-only"><a href="contacts">{{ __('Contacts') }}</a></li>
+            <li>
+                @if(count(config('app.languages')) > 1)
+                <div id="dropdown-caret" class="dropright d-md-down-none">
+                    <a class="d-flex" id="caret-language" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="text-decoration: none; outline: none;">
+                        {{ __('Language')}}
+                        <span id="caret-language-1" class="caret right"></span>
+                    </a>
+                    <div id="dropdown-caret-menu" class="dropdown-menu">
+                        @foreach(config('app.languages') as $langLocale => $langName)
+                        <a class="dropdown-item font-weight-light" href="{{ url()->current() }}?change_language={{ $langLocale }}">{{ strtoupper($langLocale) }} {{ $langName }}</a>
+                        @endforeach
+                    </div>
+                </div>
+                @endif
+            </li>
         </ul>
     </nav>
-
 
     <div class="wrapper-wide mx-auto">
         <div id="wrapper">
             <div id="page-content-wrapper">
                 <div class="page-content">
-
-                    <!-- Languages - flags -->
-
-                    @if(count(config('app.languages')) > 1)
-                    <div class="dropdown d-md-down-none fixed-top flag-language mt-2">
-                        <a class="text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="text-decoration: none; outline: none;"> 
-                            <img src="/realphotos/bg-uk.jpg" alt="Flags" style="height: 15px; outline: none;">
-                            {{ strtoupper(app()->getLocale()) }}
-
-                        </a>
-                        <div class="dropdown-menu" style="height: 80px; background-color: #e9e6e6;">
-                            @foreach(config('app.languages') as $langLocale => $langName)
-                            <a class="dropdown-item" style="font-size: 14px;" href="{{ url()->current() }}?change_language={{ $langLocale }}">{{ strtoupper($langLocale) }} {{ $langName }}</a> 
-                            @endforeach
-                        </div>
-                    </div>
-                    @endif
-
 
                     <!-- Menu - Logo -->
                     <input type="image" src="photo/new_logo_nonbackground.png" id="sidebarCollapse" class="fixed-top" />
@@ -147,6 +143,7 @@
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1"></li>
                             <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div id="image_1" class="carousel-item active">
@@ -167,10 +164,21 @@
                                 </div>
                             </div>
                             <div id="image_3" class="carousel-item">
-                                <img src="../realphotos/barber_package_biglow.jpg" alt="barber_glasses_1" style="height: 100%; width: 100%;">
+                                <img src="../realphotos/gersi_stand_train_carousel.jpg" alt="Gersi_train" style="height: 100%; width: 100%;">
                                 <div class="container">
                                     <div class="carousel-caption text-left">
-                                        <h1 class="text_custom_carousel">{{ __('Or at home') }}</h1>
+                                        <h1 class="text_custom_carousel">{{ __('At the public transport') }}</h1>
+                                        <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                        metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="image_3" class="carousel-item">
+                                <img src="../realphotos/gersi_stand_shop_carousel.jpg" alt="gersi_shop" style="height: 100%; width: 100%;">
+                                <div class="container">
+                                    <div class="carousel-caption text-left">
+                                        <h1 class="text_custom_carousel">{{ __('Even in the market') }}</h1>
                                         <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
                                         metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
@@ -238,16 +246,16 @@
                                 <h5><a class="text-dark" href="about">{{ __('About') }}</a></h5>
                                 <ul class="list-unstyled text-small">
                                     <a class="text-muted" href="about">
-                                        <li>{{ __('Product') }}</li>
+                                        <li>{{ __('Box Content') }}</li>
                                     </a>
-                                    <a class="text-muted" href="about">
+                                    <a class="text-muted" href="about#size">
+                                        <li>{{ __('Size') }}</li>
+                                    </a>
+                                    <a class="text-muted" href="about#masks">
+                                        <li>{{ __('Masks & Glasses') }}</li>
+                                    </a>
+                                    <a class="text-muted" href="about#disinfection">
                                         <li>{{ __('Disinfection') }}</li>
-                                    </a>
-                                    <a class="text-muted" href="about">
-                                        <li>{{ __('Storage') }}</li>
-                                    </a>
-                                    <a class="text-muted" href="about">
-                                        <li>{{ __('Certificate') }}</li>
                                     </a>
                                 </ul>
                             </div>
@@ -257,10 +265,10 @@
                                     <a class="text-muted" href="certificate">
                                         <li>{{ __('Certificate') }}</li>
                                     </a>
-                                    <a class="text-muted" href="certificate">
+                                    <a class="text-muted" href="certificate#tech-data">
                                         <li>{{ __('Technical Data') }}</li>
                                     </a>
-                                    <a class="text-muted" href="certificate">
+                                    <a class="text-muted" href="certificate#instructions">
                                         <li>{{ __('Instructions') }}</li>
                                     </a>
                                 </ul>
@@ -271,10 +279,10 @@
                                     <a class="text-muted" href="demos">
                                         <li>{{ __('Replace the window') }}</li>
                                     </a>
-                                    <a class="text-muted" href="demos">
+                                    <a class="text-muted" href="demos#adjust-video">
                                         <li>{{ __('Adjust the frame') }}</li>
                                     </a>
-                                    <a class="text-muted" href="demos">
+                                    <a class="text-muted" href="demos#whole-video">
                                         <li>{{ __('Our Video') }}</li>
                                     </a>
                                 </ul>
@@ -282,13 +290,13 @@
                             <div class="col-6 col-md">
                                 <h5><a class="text-dark" href="custom">{{ __('Custom') }}</a></h5>
                                 <ul class="list-unstyled text-small">
-                                    <a class="text-muted" href="custom">
+                                    <a class="text-muted" href="custom#color-change">
                                         <li>{{ __('Change color') }}</li>
                                     </a>
-                                    <a class="text-muted" href="custom">
+                                    <a class="text-muted" href="custom#branding">
                                         <li>{{ __('Branding') }}</li>
                                     </a>
-                                    <a class="text-muted" href="custom">
+                                    <a class="text-muted" href="custom#package">
                                         <li>{{ __('Different package') }}</li>
                                     </a>
                                 </ul>
@@ -296,10 +304,10 @@
                             <div class="col-6 col-md">
                                 <h5><a class="text-dark" href="contacts">{{ __('Contacts') }}</a></h5>
                                 <ul class="list-unstyled text-small">
-                                    <a class="text-muted" href="contacts">
+                                    <a class="text-muted" href="contacts#email-contact">
                                         <li>{{ __('Email:') }} shield@transgraph.eu</li>
                                     </a>
-                                    <a class="text-muted" href="contacts">
+                                    <a class="text-muted" href="contacts#email-contact">
                                         <li>{{ __('Phone:') }} +359899904690</li>
                                     </a>
                                 </ul>
@@ -359,6 +367,16 @@
             $('#bg-btn').click(function() {
                 // Change flag in BG
                 $('#img-flag').attr("src", "realphotos/bg.png");
+            });
+        });
+
+        // Caret Left and Right
+        $(document).ready(function() {
+            $("#dropdown-caret").on("hide.bs.dropdown", function() {
+                $("#caret-language-1").replaceWith('<span id="caret-language-1" class="caret right"></span>');
+            });
+            $("#dropdown-caret").on("show.bs.dropdown", function() {
+                $("#caret-language-1").replaceWith('<span id="caret-language-1" class="caret left"></span>');
             });
         });
     </script>

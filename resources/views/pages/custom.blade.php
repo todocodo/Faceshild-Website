@@ -40,80 +40,86 @@
 
     <div class="container">
         <!-- COLOR  -->
-        <div class="row mt-5">
-            <div class="col-sm-6">
-                <h3 class="text_custom_main font-weight-bold mb-0">{{ __('Color') }}</h3>
-                <p class="text_custom_secondary">{{ __('Use the buttons to change the color') }}</p>
-                <p class="text-center button_position"><a id="btn-original" class="btn btn-lg text-white" role="button" style="width: 110px; background-color: #60C3A7;">{{ __('Original') }}</a></p>
+        <a name="color-change">
+            <div class="row mt-5">
+                <div class="col-sm-6">
+                    <h3 class="text_custom_main font-weight-bold mb-0">{{ __('Color') }}</h3>
+                    <p class="text_custom_secondary">{{ __('Use the buttons to change the color') }}</p>
+                    <p class="text-center button_position"><a id="btn-original" class="btn btn-lg text-white" role="button" style="width: 110px; background-color: #60C3A7;">{{ __('Original') }}</a></p>
 
-                <div class="row text-center">
-                    <div class="col-6">
-                        <a id="btn-grey" class="btn btn-lg btn-secondary text-white" role="button" style="width: 110px;">{{ __('Grey') }}</a><br><br>
-                        <a id="btn-red" class="btn btn-lg btn-danger text-white" role="button" style="width: 110px;">{{ __('Red') }}</a><br><br>
-                        <a id="btn-blue" class="btn btn-lg btn-primary text-white mb-4" role="button" style="width: 110px;">{{ __('Blue') }}</a>
+                    <div class="row text-center">
+                        <div class="col-6">
+                            <a id="btn-grey" class="btn btn-lg btn-secondary text-white" role="button" style="width: 110px;">{{ __('Grey') }}</a><br><br>
+                            <a id="btn-red" class="btn btn-lg btn-danger text-white" role="button" style="width: 110px;">{{ __('Red') }}</a><br><br>
+                            <a id="btn-blue" class="btn btn-lg btn-primary text-white mb-4" role="button" style="width: 110px;">{{ __('Blue') }}</a>
+                        </div>
+                        <div class="col-6">
+                            <a id="btn-purple" class="btn btn-lg text-white" role="button" style="background-color: purple; width: 110px;">{{ __('Purple') }}</a><br><br>
+                            <a id="btn-yellow" class="btn btn-lg btn-warning text-dark" role="button" style="width: 110px;">{{ __('Yellow') }}</a><br><br>
+                            <a id="btn-orange" class="btn btn-lg text-white" role="button" style="background-color: orange; width: 110px;">{{ __('Orange') }}</a>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <a id="btn-purple" class="btn btn-lg text-white" role="button" style="background-color: purple; width: 110px;">{{ __('Purple') }}</a><br><br>
-                        <a id="btn-yellow" class="btn btn-lg btn-warning text-dark" role="button" style="width: 110px;">{{ __('Yellow') }}</a><br><br>
-                        <a id="btn-orange" class="btn btn-lg text-white" role="button" style="background-color: orange; width: 110px;">{{ __('Orange') }}</a>
-                    </div>
+
                 </div>
-
+                <!-- pictures -->
+                <div class="col-sm-6 text-center mt-3">
+                    <img id="color-img" class="img-fluid custom_collage" src="realphotos/custom_collage_green.jpg" alt="collage">
+                </div>
             </div>
-            <!-- pictures -->
-            <div class="col-sm-6 text-center mt-3">
-                <img id="color-img" class="img-fluid custom_collage" src="realphotos/custom_collage_green.jpg" alt="collage">
-            </div>
-        </div>
+        </a>
         <!-- Branding -->
-        <div class="py-5">
-            <h3 class="text_custom_main font-weight-bold mb-0">{{ __('Branding') }}</h3>
-            <p class="text_custom_secondary font-italic text-muted mb-4">{{ __('You can brand the Facesheild how you want. Tap on the pictures.') }}</p>
-            <div class="row">
-                <!-- Branding Item-->
-                <div class="col-lg-6 mb-3 mb-lg-0">
-                    <div class="hover hover-1 text-white rounded"><img src="realphotos/brand_yellow.jpg" alt="">
-                        <div class="hover-1-content px-5 py-4">
-                            <p class="hover-1-description font-weight-bold text-dark mb-0" style="font-size: 16px;">{{ __('A logo can be placed on the widest part of the frame.') }}</p>
+        <a name="branding">
+            <div class="py-5">
+                <h3 class="text_custom_main font-weight-bold mb-0">{{ __('Branding') }}</h3>
+                <p class="text_custom_secondary font-italic text-muted mb-4">{{ __('You can brand the Facesheild how you want. Tap on the pictures.') }}</p>
+                <div class="row">
+                    <!-- Branding Item-->
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <div class="hover hover-1 text-white rounded"><img src="realphotos/brand_yellow.jpg" alt="">
+                            <div class="hover-1-content px-5 py-4">
+                                <p class="hover-1-description font-weight-bold text-dark mb-0" style="font-size: 16px;">{{ __('A logo can be placed on the widest part of the frame.') }}</p>
+                            </div>
+                            <!-- <div class="hover-overlay"></div> -->
                         </div>
-                        <!-- <div class="hover-overlay"></div> -->
                     </div>
-                </div>
-                <!-- Branding Item-->
-                <div class="col-lg-6">
-                    <div class="hover hover-1 text-white rounded"><img src="realphotos/brand_original.jpg" alt="">
-                        <div class="hover-1-content px-5 py-4">
-                            <p class="hover-1-description font-weight-bold text-dark mb-0" style="font-size: 16px;">{{ __('We can brand even in the side.') }}</p>
+                    <!-- Branding Item-->
+                    <div class="col-lg-6">
+                        <div class="hover hover-1 text-white rounded"><img src="realphotos/brand_original.jpg" alt="">
+                            <div class="hover-1-content px-5 py-4">
+                                <p class="hover-1-description font-weight-bold text-dark mb-0" style="font-size: 16px;">{{ __('We can brand even in the side.') }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
 
         <!-- Package-->
-        <div class="py-5">
-            <h3 class="text_custom_main font-weight-bold mb-0">{{ __('Package') }}</h3>
-            <p class="text_custom_secondary font-italic text-muted mb-4">{{ __('Make the box in your style! Tap on the pictures.') }}</p>
-            <div class="row">
-                <!-- Package Item-->
-                <div class="col-lg-6 mb-3 mb-lg-0">
-                    <div class="hover hover-2 text-white rounded"><img src="realphotos/custom_2_boxes_purple_green.jpg" alt="">
-                        <div class="hover-2-content px-5">
-                            <p class="hover-2-description text-uppercase text-dark font-weight-bold mb-0">{{ __('Purple & Red or Green & Red') }}</p>
+        <a name="package">
+            <div class="py-5">
+                <h3 class="text_custom_main font-weight-bold mb-0">{{ __('Package') }}</h3>
+                <p class="text_custom_secondary font-italic text-muted mb-4">{{ __('Make the box in your style! Tap on the pictures.') }}</p>
+                <div class="row">
+                    <!-- Package Item-->
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <div class="hover hover-2 text-white rounded"><img src="realphotos/custom_2_boxes_purple_green.jpg" alt="">
+                            <div class="hover-2-content px-5">
+                                <p class="hover-2-description text-uppercase text-dark font-weight-bold mb-0">{{ __('Purple & Red or Green & Red') }}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Package Item-->
-                <div class="col-lg-6">
-                    <div class="hover hover-2 text-white rounded"><img src="realphotos/custom_2_boxes_pink_red.jpg" alt="">
-                        <div class="hover-2-content px-5">
-                            <p class="hover-2-description text-uppercase text-dark font-weight-bold mb-0">{{ __('Blue & Pink or Red & Yellow') }}</p>
+                    <!-- Package Item-->
+                    <div class="col-lg-6">
+                        <div class="hover hover-2 text-white rounded"><img src="realphotos/custom_2_boxes_pink_red.jpg" alt="">
+                            <div class="hover-2-content px-5">
+                                <p class="hover-2-description text-uppercase text-dark font-weight-bold mb-0">{{ __('Blue & Pink or Red & Yellow') }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
     </div>
 
 </div>

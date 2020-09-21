@@ -27,7 +27,7 @@
 
 <div class="p-3 p-md-5 m-lg-3 text-center line-size" style="background-color: #F3F2F3;">
     <div class="row">
-        <div class="col-md-6 order-md-12 p-lg-5 mx-auto my-5">
+        <div class="col-md-6 order-md-12 p-lg-5 mx-auto my-3">
             <div class="row">
                 <div class="col-xl-6 order-xl-12">
                     <h1 class="font-weight-normal" style="color: #f59f0d">{{ __('Frame and Window') }}</h1>
@@ -80,7 +80,7 @@
 
 <div class="p-3 p-md-5 text-center bg-light line-size">
     <div class="row">
-        <div class="col-md-6 p-lg-5 mx-auto my-5">
+        <div class="col-md-6 p-lg-5 mx-auto my-3">
             <div class="row">
                 <div class="col-xl-6">
                     <h1 class="font-weight-normal" style="color: #f59f0d">{{ __('Protect the eyes nose and face') }}</h1>
@@ -103,7 +103,7 @@
 <!-- GREY -->
 <div class="p-3 p-md-5 m-lg-3 text-center bg-white line-size">
     <div class="row">
-        <div class="col-md-5 order-md-12 p-lg-5 mx-auto my-5 lead">
+        <div class="col-md-5 order-md-12 p-lg-5 mx-auto my-3 lead">
             <div class="row">
                 <div class="col-xl-8 order-xl-12 text-center">
                     <h1 class="font-weight-normal" style="color: #f59f0d;">{{ __('Easy window replacement') }}</h1>
@@ -122,71 +122,75 @@
     </div>
 </div>
 <!-- GREY -->
-
-<div class="p-3 p-md-5 m-lg-3 text-center bg-light line-size">
-    <div class="row">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <div class="row">
-                <div class="col-xl-6">
-                    <h1 class="font-weight-normal" style="color: #f59f0d">{{ __('Masks and Glasses') }}</h1>
+<a name="masks">
+    <div class="p-3 p-md-5 m-lg-3 text-center bg-light line-size">
+        <div class="row">
+            <div class="col-md-5 p-lg-5 mx-auto my-3">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h1 class="font-weight-normal" style="color: #f59f0d">{{ __('Masks and Glasses') }}</h1>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="../icon/icon - lightwaight.png" alt="icon-lightwaight" class="icon-size-content">
+                        <img src="../icon/icon - fog.png" alt="icon-fog" class="icon-size-content ml-3">
+                    </div>
                 </div>
-                <div class="col-xl-6">
-                    <img src="../icon/icon - lightwaight.png" alt="icon-lightwaight" class="icon-size-content">
-                    <img src="../icon/icon - fog.png" alt="icon-fog" class="icon-size-content ml-3">
-                </div>
+                <br><br>
+                <p class="lead font-weight-normal">{{ __('nTr Professional Faceshield is incredibly lightweight – only 46 g. it does not disturb the eye vision or the free movement of the head. It allows the usage of mask and glasses under the Faceshield and can be worn for hours without fatigue.') }}</p>
             </div>
-            <br><br>
-            <p class="lead font-weight-normal">{{ __('nTr Professional Faceshield is incredibly lightweight – only 46 g. it does not disturb the eye vision or the free movement of the head. It allows the usage of mask and glasses under the Faceshield and can be worn for hours without fatigue.') }}</p>
-        </div>
-        <div class="col-md-4">
-            <img src="../realphotos/dentist_low.jpg" alt="dentist" class="image_about">
+            <div class="col-md-4">
+                <img src="../realphotos/dentist_low.jpg" alt="dentist" class="image_about">
+            </div>
         </div>
     </div>
-</div>
+</a>
 
 <!-- GREY -->
-<div class="p-3 p-md-5 m-lg-3 bg-white line-size">
-    <div class="row">
-        <div class="col-md-5 order-md-12 p-lg-5 mx-auto my-3 lead">
-            <div class="row">
-                <div class="col-xl-8 order-xl-12 text-center">
-                    <h1 class="font-weight-normal" style="color: #f59f0d;">{{ __('Size and Adjustment') }}</h1>
+<a name='size'>
+    <div class="p-3 p-md-5 m-lg-3 bg-white line-size">
+        <div class="row">
+            <div class="col-md-5 order-md-12 p-lg-5 mx-auto my-3 lead">
+                <div class="row">
+                    <div class="col-xl-8 order-xl-12 text-center">
+                        <h1 class="font-weight-normal" style="color: #f59f0d;">{{ __('Size and Adjustment') }}</h1>
+                    </div>
+                    <div class="col-xl-4 order-xl-1 text-center">
+                        <img src="../icon/icon - lightwaight.png" alt="icon-splash" class="icon-size-content">
+                    </div>
                 </div>
-                <div class="col-xl-4 order-xl-1 text-center">
-                    <img src="../icon/icon - lightwaight.png" alt="icon-splash" class="icon-size-content">
-                </div>
+                <br><br>
+                <p class="lead font-weight-normal text-center">{{ __('Easy adjustment of the eraser for a personalized and secure fit.') }}</p>
+                <p class="lead"><span style="color: #07b0b7;"><i class="fas fa-circle mr-2"></i></span> {{ __('Moderate size, suitable for most face shapes.') }}</p>
+                <p class="lead"><span style="color: #07b0b7;"><i class="fas fa-circle mr-2"></i></span> {{ __('Suitable for men and women.') }}</p>
+                <p class="text-center"><a class="btn btn-lg mt-3" style="background-color: #07b0b7; color:white;" href="demos">{{ __('Demonstration') }}</a></p>
             </div>
-            <br><br>
-            <p class="lead font-weight-normal text-center">{{ __('Easy adjustment of the eraser for a personalized and secure fit.') }}</p>
-            <p class="lead"><span style="color: #07b0b7;"><i class="fas fa-circle mr-2"></i></span> {{ __('Moderate size, suitable for most face shapes.') }}</p>
-            <p class="lead"><span style="color: #07b0b7;"><i class="fas fa-circle mr-2"></i></span> {{ __('Suitable for men and women.') }}</p>
-            <a class="btn btn-lg mt-3 text-center" style="background-color: #07b0b7; color:white;" href="demos">{{ __('Demonstration') }}</a>
-        </div>
-        <div class="col-md-4 order-md-1 text-center">
-            <img src="../photo/new_logo_nonbackground.png" alt="logo" style="height: 250px; margin-top: 65px;">
+            <div class="col-md-4 order-md-1 text-center">
+                <img src="../realphotos/gersi_face.jpg" alt="gersi_face" class="image_about">
+            </div>
         </div>
     </div>
-</div>
+</a>
 <!-- GREY -->
-
-<div class="p-3 p-md-5 m-lg-3 text-center bg-light line-size">
-    <div class="row">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <div class="row">
-                <div class="col-xl-8">
-                    <h1 class="font-weight-normal" style="color: #f59f0d">{{ __('Disinfection and Storage') }}</h1>
+<a name='disinfection'>
+    <div class="p-3 p-md-5 m-lg-3 text-center bg-light line-size">
+        <div class="row">
+            <div class="col-md-5 p-lg-5 mx-auto my-3">
+                <div class="row">
+                    <div class="col-xl-8">
+                        <h1 class="font-weight-normal" style="color: #f59f0d">{{ __('Disinfection and Storage') }}</h1>
+                    </div>
+                    <div class="col-xl-4">
+                        <img src="../icon/icon - virus.png" alt="icon-virus" class="icon-size-content">
+                    </div>
                 </div>
-                <div class="col-xl-4">
-                    <img src="../icon/icon - virus.png" alt="icon-virus" class="icon-size-content">
-                </div>
+                <br><br>
+                <p class="lead font-weight-normal">{{ __('nTr Professional Faceshield – is not disinfected. Before usage disinfect the faceshield. Suitable for disinfection are all disinfectors containing ethanol. Avoid solvents, ketones, strong acids and alkaline elements.') }}</p>
             </div>
-            <br><br>
-            <p class="lead font-weight-normal">{{ __('nTr Professional Faceshield – is not disinfected. Before usage disinfect the faceshield. Suitable for disinfection are all disinfectors containing ethanol. Avoid solvents, ketones, strong acids and alkaline elements.') }}</p>
-        </div>
-        <div class="col-md-4">
-            <img src="../realphotos/reception_1_biglow.jpg" alt="reception" class="image_about">
+            <div class="col-md-4">
+                <img src="../realphotos/reception_1_biglow.jpg" alt="reception" class="image_about">
+            </div>
         </div>
     </div>
-</div>
-<h1 class="text-center mb-3 bottom-text" style="color: #f59f0d;">{{ __('Store in a dry place with temperature from -25C to +50C in its box for no longer than 5 years.') }}</h1>
+</a>
+<h1 class="text-center mb-3 bottom-text" style="color: #f59f0d;">{{ __('Store in a dry place with temperature from -25°C to +50°C in its box for no longer than 5 years.') }}</h1>
 @endsection
