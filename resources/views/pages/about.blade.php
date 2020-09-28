@@ -149,7 +149,7 @@
 <a name='size'>
     <div class="p-3 p-md-5 m-lg-3 bg-white line-size">
         <div class="row">
-            <div class="col-md-5 order-md-12 p-lg-5 mx-auto my-3 lead">
+            <div class="col-md-5 order-md-12 p-lg-5 mx-auto lead">
                 <div class="row">
                     <div class="col-xl-8 order-xl-12 text-center">
                         <h1 class="font-weight-normal" style="color: #f59f0d;">{{ __('Size and Adjustment') }}</h1>
@@ -165,7 +165,7 @@
                 <p class="text-center"><a class="btn btn-lg mt-3" style="background-color: #07b0b7; color:white;" href="demos">{{ __('Demonstration') }}</a></p>
             </div>
             <div class="col-md-4 order-md-1 text-center">
-                <img src="../realphotos/gersi_face.jpg" alt="gersi_face" class="image_about">
+                <img src="../realphotos/gersi_face_blur.jpg" alt="gersi_face" class="image_about">
             </div>
         </div>
     </div>

@@ -435,7 +435,7 @@ body {
         width: 100px;
     }
     #sidebar-wrapper ul li a {
-        padding: 15px;
+        padding: 11px;
         font-size: 1.0em;
     }
     #wrapper.activeNav {
@@ -453,7 +453,7 @@ body {
         width: 40px;
     }
     #dropdown-caret-menu {
-        height: 120px;
+        height: 104px;
         min-width: 50px;
         font-size: 12px;
     }
@@ -608,6 +608,12 @@ body {
 
 
 /* About page - mobile */
+
+@media (max-width: 1300px) {
+    .line-size {
+        height: 630px;
+    }
+}
 
 @media (max-width: 1000px) {
     .image_about {

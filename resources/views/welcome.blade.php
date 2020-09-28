@@ -2,6 +2,18 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179133376-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-179133376-1');
+    </script>
+
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -70,8 +82,10 @@
 
                     <!-- Menu - Logo -->
                     <input type="image" src="photo/new_logo_nonbackground.png" id="sidebarCollapse" class="fixed-top" />
-                    <span class="fixed-top menu_logo_arrow"><i class="fas fa-arrow-up"></i></span>
-                    <strong class="fixed-top menu_logo">{{ __('Menu') }}</strong>
+                    <a href="javascript: void(0)" id="menu_button">
+                        <span class="fixed-top menu_logo_arrow"><i class="fas fa-arrow-up"></i></span>
+                        <strong class="fixed-top menu_logo">{{ __('Menu') }}</strong>
+                    </a>
 
                     <!-- Image 1 -->
                     <div class="p-3 p-md-5 mb-lg-3 welcome-image-first welcome-size-1">
@@ -164,7 +178,7 @@
                                 </div>
                             </div>
                             <div id="image_3" class="carousel-item">
-                                <img src="../realphotos/gersi_stand_train_carousel.jpg" alt="Gersi_train" style="height: 100%; width: 100%;">
+                                <img src="../realphotos/gersi_stand_train_carousel_blur.jpg" alt="Gersi_train" style="height: 100%; width: 100%;">
                                 <div class="container">
                                     <div class="carousel-caption text-left">
                                         <h1 class="text_custom_carousel">{{ __('At the public transport') }}</h1>
@@ -335,6 +349,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
     <script>
+        // logo-button 
+
         $(document).ready(function() {
 
             $('#sidebarCollapse').on('click', function() {
@@ -343,6 +359,15 @@
 
         });
 
+        // menu-button
+
+        $(function() {
+            $("#menu_button").bind("click", function() {
+                $('#sidebar-wrapper').toggleClass('activeNav');
+            });
+        });
+
+        // Close the menu when scrolling
         var isActive = document.getElementsByClassName('activeNav');
 
         $(document).ready(function() {
@@ -353,20 +378,6 @@
                         $('.navscroll').toggleClass('activeNav');
                     }
                 });
-            });
-        });
-
-        // Change flags
-
-        $(document).ready(function() {
-            $('#bg-btn').click(function() {
-                // Change flag in UK
-                $('#img-flag').attr("src", "realphotos/uk.jpg");
-            });
-
-            $('#bg-btn').click(function() {
-                // Change flag in BG
-                $('#img-flag').attr("src", "realphotos/bg.png");
             });
         });
 

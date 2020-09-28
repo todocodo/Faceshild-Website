@@ -55,9 +55,9 @@
                         <div class="col-md-6">
                             <div class="md-form pt-3">
                                 <span><i class="fas fa-phone"></i></span>
-                                <label name="phone">{{ __('Phone:') }}</label>
+                                <label name="phone">*{{ __('Phone:') }}</label>
                                 <input id="phone" name="phone" class="form-control">
-                                @error('telephone')
+                                @error('phone')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror
                             </div>

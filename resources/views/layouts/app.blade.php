@@ -2,6 +2,18 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179133376-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-179133376-1');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -34,8 +46,10 @@
 <body>
     <div id="app">
         <input type="image" src="photo/new_logo_nonbackground.png" id="sidebarCollapse" class="fixed-top" />
-        <span class="fixed-top menu_logo_arrow"><i class="fas fa-arrow-up"></i></span>
-        <strong class="fixed-top menu_logo">{{ __('Menu') }}</strong>
+        <a href="javascript: void(0)" id="menu_button">
+            <span class="fixed-top menu_logo_arrow"><i class="fas fa-arrow-up"></i></span>
+            <strong class="fixed-top menu_logo">{{ __('Menu') }}</strong>
+        </a>
 
         <nav id="sidebar-wrapper" class="activeNav navscroll">
             <ul class="sidebar-nav">
@@ -166,6 +180,8 @@
     </script>
 
     <script>
+        // logo-button 
+
         $(document).ready(function() {
 
             $('#sidebarCollapse').on('click', function() {
@@ -174,6 +190,15 @@
 
         });
 
+        // menu-button
+
+        $(function() {
+            $("#menu_button").bind("click", function() {
+                $('#sidebar-wrapper').toggleClass('activeNav');
+            });
+        });
+
+        // Close the menu when scrolling
         var isActive = document.getElementsByClassName('activeNav');
 
         $(document).ready(function() {
