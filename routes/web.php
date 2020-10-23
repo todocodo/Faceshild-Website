@@ -33,6 +33,8 @@ Route::get('/order', 'PagesController@order')->name('order');
 
 Route::get('/custom', 'PagesController@custom')->name('custom');
 
+Route::get('/packing', 'PagesController@packing')->name('packing');
+
 Route::get('/demos', 'PagesController@demos')->name('demos');
 
 Route::get('/contacts', 'PagesController@contacts')->name('contacts');

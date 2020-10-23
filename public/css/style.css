@@ -99,6 +99,38 @@ body {
     position: relative;
 }
 
+.welcome-image-sixth {
+    background-image: url('../realphotos/front_1_wide_big.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.welcome-image-seventh {
+    background-image: url('../documents/TG_Certificate_CE_en_wide_big.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.welcome-image-eight {
+    background-image: url('../realphotos/all_pack_top_wide.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.welcome-image-ninth {
+    background-image: url('../realphotos/package_front_1_biglow_wide.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 
 /* Nav Bar - main */
 
@@ -120,20 +152,6 @@ body {
 }
 
 
-/* .dropdown-menu {
-    background-color: #f59f0d !important;
-    min-width: 20px;
-}
-
-.dropdown-menu a {
-    color: #fff;
-}
-
-.dropdown-menu a:hover {
-    color: #f59f0d;
-} */
-
-
 /* Test sidebar from stack overflow */
 
 #wrapper {
@@ -147,7 +165,7 @@ body {
 }
 
 #sidebar-wrapper {
-    width: 150px;
+    width: 160px;
     background: #07b0b7;
     height: 70%;
     position: fixed;
@@ -158,7 +176,7 @@ body {
 }
 
 #sidebar-wrapper.activeNav {
-    margin-left: -150px;
+    margin-left: -160px;
 }
 
 #page-content-wrapper {
@@ -169,7 +187,7 @@ body {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    width: 150px;
+    width: 160px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -195,15 +213,31 @@ body {
     border-right-color: white;
 }
 
-#dropdown-caret-menu a:hover {
+#dropdown-language.dropdown-main-menu a:hover {
     color: #07b0b7;
     background: #fff;
     text-decoration: none;
     border-radius: 30px 30px 30px 30px;
 }
 
-#dropdown-caret-menu {
+#dropdown-language.dropdown-main-menu {
     height: 150px;
+    background-color: #07b0b7;
+    position: absolute;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 12px;
+}
+
+#dropdown-custom.dropdown-main-menu a:hover {
+    color: #07b0b7;
+    background: #fff;
+    text-decoration: none;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#dropdown-custom.dropdown-main-menu {
+    height: 150px;
+    min-width: 100px;
     background-color: #07b0b7;
     position: absolute;
     border-radius: 30px 30px 30px 30px;
@@ -253,15 +287,15 @@ body {
 }
 
 .menu_logo {
-    margin-top: 140px;
-    margin-left: 40px;
+    margin-top: 125px;
+    margin-left: 33px;
+    width: 50px;
+    font-size: 15px;
     color: #f59f0d;
 }
 
 .menu_logo_arrow {
-    color: #f59f0d;
-    margin-top: 120px;
-    margin-left: 53px;
+    font-size: 15px;
 }
 
 .main_logo {
@@ -340,12 +374,37 @@ body {
     height: 72rem;
 }
 
+#carousel_pack .carousel-item {
+    height: 15rem;
+}
+
 .carousel-item>img {
     top: 0;
     left: 0;
     width: 100%;
     height: auto;
 }
+
+
+/* Zoom effect - packing */
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+    height: 100%;
+    width: 100%;
+    border-radius: 60px 60px 0 0;
+}
+
+.inner:hover img {
+    transform: scale(1.6);
+}
+
+
+/* END Zoom effect */
 
 .text_custom_carousel {
     font-size: 50px;
@@ -422,17 +481,23 @@ body {
     }
 }
 
+@media (max-width:991px) {
+    #carousel_pack .carousel-item {
+        height: 30rem;
+    }
+}
+
 @media (max-width:767px) {
     #wrapper {
         padding-left: 0;
     }
     #sidebar-wrapper {
         height: 55%;
-        width: 100px;
+        width: 111px;
         margin-top: 50%;
     }
     .sidebar-nav {
-        width: 100px;
+        width: 111px;
     }
     #sidebar-wrapper ul li a {
         padding: 11px;
@@ -452,7 +517,12 @@ body {
         margin-top: 36px;
         width: 40px;
     }
-    #dropdown-caret-menu {
+    #dropdown-language.dropdown-main-menu {
+        height: 104px;
+        min-width: 50px;
+        font-size: 12px;
+    }
+    #dropdown-custom.dropdown-main-menu {
         height: 104px;
         min-width: 50px;
         font-size: 12px;
@@ -486,6 +556,9 @@ body {
         width: 100%;
         height: auto;
     }
+    #carousel_pack .carousel-item {
+        height: 15rem;
+    }
     .carousel-item>img {
         width: 100%;
         height: auto;
@@ -504,12 +577,13 @@ body {
         font-size: 20px;
     }
     .menu_logo {
-        margin-top: 110px;
-        margin-left: 20px;
+        margin-top: 90px;
+        margin-left: 15px;
+        width: 47px;
+        font-size: 14px;
     }
     .menu_logo_arrow {
-        margin-top: 90px;
-        margin-left: 33px;
+        font-size: 13px;
     }
     #heading {
         font-size: 27.5pt;
@@ -537,6 +611,12 @@ body {
     .welcome-image-fifth {
         background-image: url('../realphotos/brand_red_mobile_low.jpg');
     }
+    .welcome-image-sixth {
+        background-image: url('../realphotos/front_1_wide.jpg');
+    }
+    .welcome-image-seventh {
+        background-image: url('../documents/TG_Certificate_CE_en_wide.jpg');
+    }
 }
 
 
@@ -562,16 +642,15 @@ body {
     background-color: #07b0b7;
 }
 
-.g-recaptcha {
-    width: 400px !important;
-}
-
 
 /* Contact page - mobile */
 
 @media (max-width:767px) {
-    .g-recaptcha {
-        width: 100px !important;
+    .recaptcha {
+        transform: scale(0.77);
+        -webkit-transform: scale(0.77);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
     }
 }
 
@@ -694,6 +773,42 @@ body {
         margin-left: 20px;
         font-size: 27px;
     }
+}
+
+
+/* Packining page */
+
+.superpack_image {
+    background-image: url('../realphotos/all_pack_wide.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 750px;
+}
+
+.megapack_image {
+    background-image: url('../realphotos/120_pack_opened_side.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.singlepack_image {
+    background-image: url('../realphotos/package_front_1_biglow.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#packing_card.card {
+    border-radius: 60px 60px 0 0;
+}
+
+.text-pack {
+    color: black;
 }
 
 
@@ -841,5 +956,11 @@ body {
 @media (max-width:767px) {
     .button_position {
         margin-top: 0;
+    }
+    .superpack_image {
+        height: 500px;
+    }
+    .text-pack {
+        margin-left: 40px;
     }
 }

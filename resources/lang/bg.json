@@ -4,6 +4,8 @@
     "Documents": "Документи",
     "Videos": "Видео",
     "Custom": "Брандиране",
+    "Colors": "Цветове",
+    "Packing": "Пакетиране",
     "Contacts": "Контакти",
     "Language": "Език",
     "Welcome": "Начало",
@@ -20,6 +22,11 @@
     "Or at home": "Или вкъщи",
     "At the public transport": "В градския транспорт",
     "Even in the market": "В магазина",
+    "In the classroom": "В класната стая",
+    "CE Certificate": "СЕ Сертификат",
+    "How To Set The Protective Shields - Video": "Как да сложим защитният екран - Видео",
+    "Choose Between 3 Different Packages": "Избери между 3 различни опаковки",
+    "If You Have Any Questions Contact Us": "Ако имате въпроси свържете се с нас",
 
     "FOOTER": "FOOTER",
 
@@ -102,8 +109,18 @@
     "We can brand even in the side.": "Можем да брандираме дори и на страните.",
     "Package": "Кутията",
     "Make the box in your style! Tap on the pictures.": "Направете кутията по ваш избор! Натисни картинките.",
+    "Click!": "Кликни!",
+    "Look at our new packages": "Вижте новите ни кутии",
     "Purple & Red or Green & Red": "Лилаво & Червено или Зелено & Червено",
     "Blue & Pink or Red & Yellow": "Синьо & Розово или Червено & Жълто",
+
+    "PACKING PAGE": "PACKING PAGE",
+
+    "Packages": "Нашите кутии",
+    "3 Different Packages For Any Occasion": "3 Различни Кутии за Всеки Повод",
+    "Consists of 1 frame and 5 protective shields. For individual usage or small group of people.": "Съдържа 1 рамка и 5 защитни плаки. За индивидуална употреба и малки групи от хора.",
+    "Consists of 12 frame and 36 protective shields. Perfect for the whole family and small businesses.": "Съдържа 12 рамки и 36 защитни плаки. Перфектна за цялото семейство и за малкият бизнес.",
+    "Consists of 120 frame and 360 protective shields. Our pack for big companies and large institutions: schools, universities, etc.": "Съдържа 120 рамки и 360 защитни плаки. Нашата кутия за големи компании и институции: училища, университети и др.",
 
     "CONTACT PAGE": "CONTACT PAGE",
 

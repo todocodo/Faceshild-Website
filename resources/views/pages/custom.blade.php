@@ -10,7 +10,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../realphotos/brand_red_carousel_1.jpg" alt="brand_red" style="height: 100%; width: 100%;">
+                <img src="../realphotos/brand_red_carousel_wide.jpg" alt="brand_red" style="height: 100%; width: 100%;">
                 <div class="container">
                     <div class="carousel-caption text-right">
                         <h1 class="text_custom_carousel">{{ __('Brand your Faceshield') }}</h1>
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../realphotos/purple_upwards.jpg" alt="purple_upwards" style="height: 100%; width: 100%;">
+                <img src="../realphotos/purple_upwards_wide.jpg" alt="purple_upwards" style="height: 100%; width: 100%;">
                 <div class="container">
                     <div class="carousel-caption text-left">
                         <h1 class="text_custom_carousel">{{ __('Change the color') }}</h1>
@@ -99,6 +99,11 @@
             <div class="py-5">
                 <h3 class="text_custom_main font-weight-bold mb-0">{{ __('Package') }}</h3>
                 <p class="text_custom_secondary font-italic text-muted mb-4">{{ __('Make the box in your style! Tap on the pictures.') }}</p>
+                <div class="d-flex">
+
+                    <p class="text_custom_secondary font-italic text-muted">{{ __('Look at our new packages') }}   <span style="color: #f59f0d;"><i class="fas fa-arrow-right"></i></span> </p>
+                    <a href="packing" class="btn text-white ml-2" style="background-color: #07b0b7; height: 40px;">{{ __('Click!') }}</a>
+                </div>
                 <div class="row">
                     <!-- Package Item-->
                     <div class="col-lg-6 mb-3 mb-lg-0">

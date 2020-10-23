@@ -55,16 +55,28 @@
             <li id="hover-only"><a href="about">{{ __('About') }}</a></li>
             <li id="hover-only"><a href="certificate">{{ __('Documents') }}</a></li>
             <li id="hover-only"><a href="demos">{{ __('Videos') }}</a></li>
-            <li id="hover-only"><a href="custom">{{ __('Custom') }}</a></li>
+
+            <li>
+                <div id="dropdown-caret-custom" class="dropright d-md-down-none">
+                    <a class="d-flex" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="text-decoration: none; outline: none;">
+                        {{ __('Custom') }}
+                        <span id="caret-custom" class="caret right"></span>
+                    </a>
+                    <div id="dropdown-custom" class="dropdown-menu dropdown-main-menu">
+                        <a class="dropdown-item font-weight-light" href="custom">{{ __('Colors') }}</a>
+                        <a class="dropdown-item font-weight-light" href="packing">{{ __('Packing') }}</a>
+                    </div>
+                </div>
+            </li>
             <li id="hover-only"><a href="contacts">{{ __('Contacts') }}</a></li>
             <li>
                 @if(count(config('app.languages')) > 1)
-                <div id="dropdown-caret" class="dropright d-md-down-none">
-                    <a class="d-flex" id="caret-language" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="text-decoration: none; outline: none;">
+                <div id="dropdown-caret-language" class="dropright d-md-down-none">
+                    <a class="d-flex" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="text-decoration: none; outline: none;">
                         {{ __('Language')}}
-                        <span id="caret-language-1" class="caret right"></span>
+                        <span id="caret-language" class="caret right"></span>
                     </a>
-                    <div id="dropdown-caret-menu" class="dropdown-menu">
+                    <div id="dropdown-language" class="dropdown-menu dropdown-main-menu">
                         @foreach(config('app.languages') as $langLocale => $langName)
                         <a class="dropdown-item font-weight-light" href="{{ url()->current() }}?change_language={{ $langLocale }}">{{ strtoupper($langLocale) }} {{ $langName }}</a>
                         @endforeach
@@ -82,9 +94,9 @@
 
                     <!-- Menu - Logo -->
                     <input type="image" src="photo/new_logo_nonbackground.png" id="sidebarCollapse" class="fixed-top" />
-                    <a href="javascript: void(0)" id="menu_button">
-                        <span class="fixed-top menu_logo_arrow"><i class="fas fa-arrow-up"></i></span>
-                        <strong class="fixed-top menu_logo">{{ __('Menu') }}</strong>
+                    <a id="menu_button" class="btn btn-lg fixed-top menu_logo border-0 p-0" role="button">
+                        <span style="color: #f59f0d;" class="menu_logo_arrow"><i class="fas fa-arrow-up"></i></span>
+                        <p style="color: #f59f0d;">{{ __('Menu') }}</p>
                     </a>
 
                     <!-- Image 1 -->
@@ -151,6 +163,42 @@
                         </a>
                     </div>
 
+                    <!-- Section 4 -->
+                    <div class="d-md-flex flex-md-equal w-100 my-md-3">
+                        <a href="{{ route('demos') }}" style="text-decoration: none; color: black;">
+                            <div class="welcome-image-sixth mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden  welcome-size-2">
+                                <div class="my-3 p-3">
+                                    <h2 class="display-5" style="color: #f59f0d;">{{ __('How To Set The Protective Shields - Video') }}</h2>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="{{ route('certificate') }}" style="text-decoration: none; color: black;">
+                            <div class="welcome-image-seventh pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden  welcome-size-2">
+                                <div class="my-3 p-3">
+                                    <h2 class="display-5" style="color: #f59f0d;">{{ __('CE Certificate') }}</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Section 5 -->
+                    <div class="d-md-flex flex-md-equal w-100 my-md-3">
+                        <a href="{{ route('packing') }}" style="text-decoration: none; color: black;">
+                            <div class="welcome-image-eight mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden  welcome-size-2">
+                                <div class="my-3 p-3">
+                                    <h2 class="display-5" style="color: #f59f0d;">{{ __('Choose Between 3 Different Packages') }}</h2>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="{{ route('contacts') }}" style="text-decoration: none; color: black;">
+                            <div class="welcome-image-ninth pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden  welcome-size-2">
+                                <div class="my-3 p-3">
+                                    <h2 class="display-5" style="color: #f59f0d;">{{ __('If You Have Any Questions Contact Us') }}</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                     <!-- Carousel with images -->
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -158,6 +206,7 @@
                             <li data-target="#myCarousel" data-slide-to="1"></li>
                             <li data-target="#myCarousel" data-slide-to="2"></li>
                             <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div id="image_1" class="carousel-item active">
@@ -173,7 +222,14 @@
                                 <div class="container">
                                     <div class="carousel-caption text-left">
                                         <h1 class="text_custom_carousel">{{ __('At the office') }}</h1>
-
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="image_2" class="carousel-item">
+                                <img src="../realphotos/classroom_cut.jpg" alt="classroom" style="height: 100%; width: 100%;">
+                                <div class="container">
+                                    <div class="carousel-caption text-left">
+                                        <h1 class="text_custom_carousel">{{ __('In the classroom') }}</h1>
                                     </div>
                                 </div>
                             </div>
@@ -182,9 +238,6 @@
                                 <div class="container">
                                     <div class="carousel-caption text-left">
                                         <h1 class="text_custom_carousel">{{ __('At the public transport') }}</h1>
-                                        <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                                        metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
                                     </div>
                                 </div>
                             </div>
@@ -210,40 +263,6 @@
                         </a>
                     </div>
                     <!-- END of Carousel -->
-
-                    <!-- <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-                    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                        <div class="my-3 p-3">
-                            <h2 class="display-5">Another headline</h2>
-                            <p class="lead">And an even wittier subheading.</p>
-                        </div>
-                        <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-                    </div>
-                    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                        <div class="my-3 py-3">
-                            <h2 class="display-5">Another headline</h2>
-                            <p class="lead">And an even wittier subheading.</p>
-                        </div>
-                        <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-                    </div>
-                </div>
-
-                <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-                    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                        <div class="my-3 p-3">
-                            <h2 class="display-5">Another headline</h2>
-                            <p class="lead">And an even wittier subheading.</p>
-                        </div>
-                        <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-                    </div>
-                    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                        <div class="my-3 py-3">
-                            <h2 class="display-5">Another headline</h2>
-                            <p class="lead">And an even wittier subheading.</p>
-                        </div>
-                        <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-                    </div>
-                </div> -->
 
                     <!-- Footer -->
 
@@ -312,6 +331,9 @@
                                     </a>
                                     <a class="text-muted" href="custom#package">
                                         <li>{{ __('Different package') }}</li>
+                                    </a>
+                                    <a class="text-muted" href="packing">
+                                        <li>{{ __('SuperPack & MegaPack') }}</li>
                                     </a>
                                 </ul>
                             </div>
@@ -383,11 +405,17 @@
 
         // Caret Left and Right
         $(document).ready(function() {
-            $("#dropdown-caret").on("hide.bs.dropdown", function() {
-                $("#caret-language-1").replaceWith('<span id="caret-language-1" class="caret right"></span>');
+            $("#dropdown-caret-custom").on("hide.bs.dropdown", function() {
+                $("#caret-custom").replaceWith('<span id="caret-custom" class="caret right"></span>');
             });
-            $("#dropdown-caret").on("show.bs.dropdown", function() {
-                $("#caret-language-1").replaceWith('<span id="caret-language-1" class="caret left"></span>');
+            $("#dropdown-caret-custom").on("show.bs.dropdown", function() {
+                $("#caret-custom").replaceWith('<span id="caret-custom" class="caret left"></span>');
+            });
+            $("#dropdown-caret-language").on("hide.bs.dropdown", function() {
+                $("#caret-language").replaceWith('<span id="caret-language" class="caret right"></span>');
+            });
+            $("#dropdown-caret-language").on("show.bs.dropdown", function() {
+                $("#caret-language").replaceWith('<span id="caret-language" class="caret left"></span>');
             });
         });
     </script>

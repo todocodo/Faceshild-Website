@@ -93,11 +93,11 @@
                         @enderror
                     </div>
 
-                    <!-- The captcha will be generated in this element -->
+                    <!-- The Recaptcha  -->
                     <div>
                         <strong class="text-danger">*{{ __('Please tick the box before sending') }}</strong>
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6LfMFMQZAAAAAMPmSfRSNSEoLzBwlcSch8Ze6KEN"></div>
+                    <div class="g-recaptcha recaptcha" data-sitekey="6LfMFMQZAAAAAMPmSfRSNSEoLzBwlcSch8Ze6KEN"></div>
 
                     <div class="text-center mt-4">
                         <input type="submit" value="{{ __('Send Message') }}" class="btn shield-blue text-white">

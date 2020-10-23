@@ -46,10 +46,11 @@
 <body>
     <div id="app">
         <input type="image" src="photo/new_logo_nonbackground.png" id="sidebarCollapse" class="fixed-top" />
-        <a href="javascript: void(0)" id="menu_button">
-            <span class="fixed-top menu_logo_arrow"><i class="fas fa-arrow-up"></i></span>
-            <strong class="fixed-top menu_logo">{{ __('Menu') }}</strong>
+        <a id="menu_button" class="btn btn-lg fixed-top menu_logo border-0 p-0" role="button">
+            <span style="color: #f59f0d;" class="menu_logo_arrow"><i class="fas fa-arrow-up"></i></span>
+            <p style="color: #f59f0d;">{{ __('Menu') }}</p>
         </a>
+
 
         <nav id="sidebar-wrapper" class="activeNav navscroll">
             <ul class="sidebar-nav">
@@ -57,16 +58,27 @@
                 <li id="hover-only"><a href="about">{{ __('About') }}</a></li>
                 <li id="hover-only"><a href="certificate">{{ __('Documents') }}</a></li>
                 <li id="hover-only"><a href="demos">{{ __('Videos') }}</a></li>
-                <li id="hover-only"><a href="custom">{{ __('Custom') }}</a></li>
+                <li>
+                    <div id="dropdown-caret-custom" class="dropright d-md-down-none">
+                        <a class="d-flex" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="text-decoration: none; outline: none;">
+                            {{ __('Custom') }}
+                            <span id="caret-custom" class="caret right"></span>
+                        </a>
+                        <div id="dropdown-custom" class="dropdown-menu dropdown-main-menu">
+                            <a class="dropdown-item font-weight-light" href="custom">{{ __('Colors') }}</a>
+                            <a class="dropdown-item font-weight-light" href="packing">{{ __('Packing') }}</a>
+                        </div>
+                    </div>
+                </li>
                 <li id="hover-only"><a href="contacts">{{ __('Contacts') }}</a></li>
                 <li>
                     @if(count(config('app.languages')) > 1)
-                    <div id="dropdown-caret" class="dropright d-md-down-none">
-                        <a class="d-flex" id="caret-language" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="text-decoration: none; outline: none;">
+                    <div id="dropdown-caret-language" class="dropright d-md-down-none">
+                        <a class="d-flex" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="text-decoration: none; outline: none;">
                             {{ __('Language')}}
-                            <span id="caret-language-1" class="caret right"></span>
+                            <span id="caret-language" class="caret right"></span>
                         </a>
-                        <div id="dropdown-caret-menu" class="dropdown-menu">
+                        <div id="dropdown-language" class="dropdown-menu dropdown-main-menu">
                             @foreach(config('app.languages') as $langLocale => $langName)
                             <a class="dropdown-item font-weight-light" href="{{ url()->current() }}?change_language={{ $langLocale }}">{{ strtoupper($langLocale) }} {{ $langName }}</a>
                             @endforeach
@@ -81,6 +93,8 @@
             <main>
                 @yield('content')
             </main>
+
+            <!-- FOOTER -->
 
             <footer class="container py-5">
                 <div class="row">
@@ -148,6 +162,9 @@
                             <a class="text-muted" href="custom#package">
                                 <li>{{ __('Different package') }}</li>
                             </a>
+                            <a class="text-muted" href="packing">
+                                <li>{{ __('SuperPack & MegaPack') }}</li>
+                            </a>
                         </ul>
                     </div>
                     <div class="col-6 col-md">
@@ -214,11 +231,31 @@
 
         // Caret Left and Right
         $(document).ready(function() {
-            $("#dropdown-caret").on("hide.bs.dropdown", function() {
-                $("#caret-language-1").replaceWith('<span id="caret-language-1" class="caret right"></span>');
+            $("#dropdown-caret-custom").on("hide.bs.dropdown", function() {
+                $("#caret-custom").replaceWith('<span id="caret-custom" class="caret right"></span>');
             });
-            $("#dropdown-caret").on("show.bs.dropdown", function() {
-                $("#caret-language-1").replaceWith('<span id="caret-language-1" class="caret left"></span>');
+            $("#dropdown-caret-custom").on("show.bs.dropdown", function() {
+                $("#caret-custom").replaceWith('<span id="caret-custom" class="caret left"></span>');
+            });
+            $("#dropdown-caret-language").on("hide.bs.dropdown", function() {
+                $("#caret-language").replaceWith('<span id="caret-language" class="caret right"></span>');
+            });
+            $("#dropdown-caret-language").on("show.bs.dropdown", function() {
+                $("#caret-language").replaceWith('<span id="caret-language" class="caret left"></span>');
+            });
+        });
+
+        // Carousel for Packing page
+
+        $('#card_carousel').each(function() {
+            $(this).carousel({
+                interval: 3000
+            });
+            $(this).on('click', '.left', function() {
+                $(this).carousel('prev');
+            });
+            $(this).on('click', '.right', function() {
+                $(this).carousel('next');
             });
         });
     </script>

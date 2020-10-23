@@ -41,6 +41,11 @@ class PagesController extends Controller
         return view('pages.custom');
     }
 
+    public function packing()
+    {
+        return view('pages.packing');
+    }
+
     public function demos()
     {
         return view('pages.demos');
@@ -65,7 +70,7 @@ class PagesController extends Controller
     {
         request()->validate([
             'name' => 'required',
-            'phone' => 'required | numeric', 
+            'phone' => 'required | numeric',
             'email' => 'required | email',
             'subject' => 'required | max:100',
             'message' => 'required | min:5'
