@@ -95,7 +95,7 @@
             <p class="lead font-weight-normal">{{ __('nTr Professional Faceshield guarantee the protection of the eyes, nose and face from drops and splashes of liquids, responding to the European Regulation (ЕС) 2016/425, European Standard EN166:2001 point 7.2.4 b, EN168:2008 objection 12.2 and the requirements for EN166:2001 point 6.1, 6.2, 6.3;') }}</p>
         </div>
         <div class="col-md-4">
-            <img src="../realphotos/kitchen.jpg" alt="kitchen" class="image_about">
+            <img src="../realphotos/covid_single.jpg" alt="single" class="image_about">
         </div>
     </div>
 </div>

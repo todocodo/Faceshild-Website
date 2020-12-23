@@ -21,6 +21,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('logout', 'Auth\LoginController@logout');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/about', 'PagesController@about')->name('about');
@@ -29,7 +31,13 @@ Route::get('/certificate', 'PagesController@certificate')->name('certificate');
 
 Route::get('/goal', 'PagesController@goal')->name('goal');
 
-Route::get('/order', 'PagesController@order')->name('order');
+Route::get('/cart', 'PagesController@cart')->name('cart');
+
+Route::get('/checkout', 'PagesController@checkout')->name('checkout');
+
+Route::get('/products', 'PagesController@products')->name('products');
+
+Route::get('/product', 'PagesController@product')->name('product');
 
 Route::get('/custom', 'PagesController@custom')->name('custom');
 
@@ -43,4 +51,3 @@ Route::get('/test', 'PagesController@test')->name('test');
 
 Route::post('/contacts', 'PagesController@postContact');
 
-Route::post('/orders', 'PagesController@orders');

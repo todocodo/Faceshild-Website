@@ -125,6 +125,10 @@
                         </div>
                     </div>
 
+                    <div class="text-center mb-3">
+                        <a href="/products" class="btn text-white mr-3" style="background-color: #f59f0d; width: 200px; border-radius: 30px 30px 30px 30px;">Order Now</a>
+                    </div>
+
                     <!-- Section 2 -->
                     <div class="d-md-flex flex-md-equal w-100">
                         <a href="{{ route('about') }}" style="text-decoration: none; color: black;">
@@ -199,69 +203,136 @@
                         </a>
                     </div>
 
-                    <!-- Carousel with images -->
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                            <li data-target="#myCarousel" data-slide-to="3"></li>
-                            <li data-target="#myCarousel" data-slide-to="4"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div id="image_1" class="carousel-item active">
-                                <img src="../realphotos/barber_biglow.jpg" alt="barber" style="height: 100%; width: 100%;">
-                                <div class="container">
-                                    <div class="carousel-caption text-left">
-                                        <h1 class="text_custom_carousel">{{ __('Use for any occasion') }}</h1>
+                    <!-- Carousel Section -->
+                    <div id="carousel_welcome" class="d-md-flex flex-md-equal w-100 my-md-3">
+                        <div class="mt-1 mr-md-4 mt-md-1 text-center overflow-hidden">
+                            <div id="carousel_covid" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel_covid" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel_covid" data-slide-to="1"></li>
+                                    <li data-target="#carousel_covid" data-slide-to="2"></li>
+                                    <li data-target="#carousel_covid" data-slide-to="3"></li>
+                                    <li data-target="#carousel_covid" data-slide-to="4"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div id="image_1" class="carousel-item active">
+                                        <img src="../realphotos/covid_matching_blur.jpg" alt="covid" style="height: 100%; width: 100%;">
+                                        <div class="container">
+                                            <div class="carousel-caption text-left">
+                                                <h1 class="text_custom_carousel">{{ __('Perfect for the Hospital') }}</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="image_2" class="carousel-item">
+                                        <img src="../realphotos/covid_single.jpg" alt="covid" style="height: 100%; width: 100%;">
+                                        <div class="container">
+                                            <div class="carousel-caption text-left">
+                                                <h1 class="text_custom_carousel">{{ __('Comfortable with glasses') }}</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="image_2" class="carousel-item">
+                                        <img src="../realphotos/covid_patient_blur.jpg" alt="covid" style="height: 100%; width: 100%;">
+                                        <div class="container">
+                                            <div class="carousel-caption text-left">
+                                                <h1 class="text_custom_carousel">{{ __('Used by specialists') }}</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="image_2" class="carousel-item">
+                                        <img src="../realphotos/covid_second.jpg" alt="covid" style="height: 100%; width: 100%;">
+                                        <div class="container">
+                                            <div class="carousel-caption text-left">
+                                                <h1 class="text_custom_carousel">{{ __('') }}</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="image_2" class="carousel-item">
+                                        <img src="../realphotos/marian_2.jpg" alt="covid" style="height: 100%; width: 100%;">
+                                        <div class="container">
+                                            <div class="carousel-caption text-left">
+                                                <h1 class="text_custom_carousel">{{ __('') }}</h1>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div id="image_2" class="carousel-item">
-                                <img src="../realphotos/dentist_action_wide_biglow.jpg" alt="barber_package" style="height: 100%; width: 100%;">
-                                <div class="container">
-                                    <div class="carousel-caption text-left">
-                                        <h1 class="text_custom_carousel">{{ __('At the office') }}</h1>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="image_2" class="carousel-item">
-                                <img src="../realphotos/classroom_cut.jpg" alt="classroom" style="height: 100%; width: 100%;">
-                                <div class="container">
-                                    <div class="carousel-caption text-left">
-                                        <h1 class="text_custom_carousel">{{ __('In the classroom') }}</h1>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="image_3" class="carousel-item">
-                                <img src="../realphotos/gersi_stand_train_carousel_blur.jpg" alt="Gersi_train" style="height: 100%; width: 100%;">
-                                <div class="container">
-                                    <div class="carousel-caption text-left">
-                                        <h1 class="text_custom_carousel">{{ __('At the public transport') }}</h1>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="image_3" class="carousel-item">
-                                <img src="../realphotos/gersi_stand_shop_carousel.jpg" alt="gersi_shop" style="height: 100%; width: 100%;">
-                                <div class="container">
-                                    <div class="carousel-caption text-left">
-                                        <h1 class="text_custom_carousel">{{ __('Even in the market') }}</h1>
-                                        <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                                        metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
-                                    </div>
-                                </div>
+                                <a class="carousel-control-prev" href="#carousel_covid" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel_covid" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+
+                        <div class="mt-1 mt-md-1 text-center overflow-hidden">
+                            <div id="carousel_main" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel_main" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel_main" data-slide-to="1"></li>
+                                    <li data-target="#carousel_main" data-slide-to="2"></li>
+                                    <li data-target="#carousel_main" data-slide-to="3"></li>
+                                    <li data-target="#carousel_main" data-slide-to="4"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div id="image_1" class="carousel-item active">
+                                        <img src="../realphotos/barber_biglow.jpg" alt="barber" style="height: 100%; width: 100%;">
+                                        <div class="container">
+                                            <div class="carousel-caption text-left">
+                                                <h1 class="text_custom_carousel">{{ __('Use for any occasion') }}</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="image_2" class="carousel-item">
+                                        <img src="../realphotos/dentist_action_wide_biglow.jpg" alt="barber_package" style="height: 100%; width: 100%;">
+                                        <div class="container">
+                                            <div class="carousel-caption text-left">
+                                                <h1 class="text_custom_carousel">{{ __('At the office') }}</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="image_2" class="carousel-item">
+                                        <img src="../realphotos/classroom_cut.jpg" alt="classroom" style="height: 100%; width: 100%;">
+                                        <div class="container">
+                                            <div class="carousel-caption text-left">
+                                                <h1 class="text_custom_carousel">{{ __('In the classroom') }}</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="image_3" class="carousel-item">
+                                        <img src="../realphotos/gersi_stand_train_carousel_blur.jpg" alt="Gersi_train" style="height: 100%; width: 100%;">
+                                        <div class="container">
+                                            <div class="carousel-caption text-left">
+                                                <h1 class="text_custom_carousel">{{ __('At the public transport') }}</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="image_3" class="carousel-item">
+                                        <img src="../realphotos/gersi_stand_shop_carousel.jpg" alt="gersi_shop" style="height: 100%; width: 100%;">
+                                        <div class="container">
+                                            <div class="carousel-caption text-left">
+                                                <h1 class="text_custom_carousel">{{ __('Even in the market') }}</h1>
+                                                <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                        metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel_main" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel_main" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
                     <!-- END of Carousel -->
 
                     <!-- Footer -->

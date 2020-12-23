@@ -61,9 +61,24 @@ class PagesController extends Controller
         return view('pages.test');
     }
 
-    public function orders()
+    public function products()
     {
-        dd(request()->all());
+        return view('pages.products');
+    }
+
+    public function product()
+    {
+        return view('pages.product');
+    }
+
+    public function cart()
+    {
+        return view('pages.cart');
+    }
+
+    public function checkout()
+    {
+        return view('pages.checkout');
     }
 
     public function postContact()

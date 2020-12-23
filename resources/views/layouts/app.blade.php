@@ -41,6 +41,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
 
+
 </head>
 
 <body>
@@ -51,6 +52,27 @@
             <p style="color: #f59f0d;">{{ __('Menu') }}</p>
         </a>
 
+        <div class="fixed-top">
+            @if (Route::has('login'))
+            <div class="top-right links">
+                @if(Auth::user())
+                <a href="{{ url('/logout') }}">Logout</a>
+                <div class="widget-header">
+                    <a href="/cart" class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></a>
+                    <span class="badge badge-pill badge-danger notify">5</span>
+                </div>
+                @else
+                <a href="{{ route('login') }}">Login</a>
+                <a href="{{ route('register') }}">Register</a>
+                <div class="widget-header">
+                    <a href="/cart" class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></a>
+                    <span class="badge badge-pill badge-danger notify">5</span>
+                </div>
+                @endif
+
+            </div>
+            @endif
+        </div>
 
         <nav id="sidebar-wrapper" class="activeNav navscroll">
             <ul class="sidebar-nav">
@@ -256,6 +278,21 @@
             });
             $(this).on('click', '.right', function() {
                 $(this).carousel('next');
+            });
+        });
+
+        $(document).ready(function() {
+            $('.js-check :radio').change(function() {
+                var check_attr_name = $(this).attr('name');
+                if ($(this).is(':checked')) {
+                    $('input[name=' + check_attr_name + ']').closest('.js-check').removeClass('active');
+                    $(this).closest('.js-check').addClass('active');
+                    // item.find('.radio').find('span').text('Add');
+
+                } else {
+                    item.removeClass('active');
+                    // item.find('.radio').find('span').text('Unselect');
+                }
             });
         });
     </script>

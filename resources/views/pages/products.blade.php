@@ -8,7 +8,40 @@
     </div>
 
     <div class="container">
-        <form action="orders" method="POST">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="/product" class="card card-product-grid" style="text-decoration: none;">
+                    <div class="img-wrap"> <img src="../realphotos/package_front_1.png" style="height: 220px; margin-left: 70px;"> </div>
+                    <figcaption class="info-wrap">
+                        <p class="title text-truncate">OnePack</p>
+                        <small class="text-muted">1 frame - 5 protective shields</small>
+                        <div class="price mt-2">$15.00</div>
+                    </figcaption>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="card card-product-grid" style="text-decoration: none;">
+                    <div class="img-wrap"> <img src="../realphotos/12_pack_front.jpg" style="height: 230px;"> </div>
+                    <figcaption class="info-wrap">
+                        <p class="title text-truncate">SuperPack</p>
+                        <small class="text-muted">12 frames - 36 protective shields</small>
+                        <div class="price mt-2">$70.00</div>
+                    </figcaption>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="card card-product-grid" style="text-decoration: none;">
+                    <div class="img-wrap"> <img src="../realphotos/120_pack_opened_front.jpg" style="height: 230px;"> </div>
+                    <figcaption class="info-wrap">
+                        <p class="title text-truncate">MegaPack</p>
+                        <small class="text-muted">120 frames - 360 protective shields</small>
+                        <div class="price mt-2">$500.00</div>
+                    </figcaption>
+                </a>
+            </div>
+        </div>
+
+        <!-- <form action="orders" method="POST">
             @csrf
             <div class="card-deck mb-3 text-center">
                 <div class="card mb-4 shadow-sm">
@@ -57,46 +90,10 @@
                     </div>
                 </div>
                 <button type="submit" class="btn btn-lg btn-block text-white" style="background-color: #4CB6C1;">Order Now</button>
-        </form>
+        </form> -->
     </div>
 </div>
 
-<!-- <footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
-        <div class="col-12 col-md">
-            <img class="mb-2" src="../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-            <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
-        </div>
-        <div class="col-6 col-md">
-            <h5>Features</h5>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Cool stuff</a></li>
-                <li><a class="text-muted" href="#">Random feature</a></li>
-                <li><a class="text-muted" href="#">Team feature</a></li>
-                <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                <li><a class="text-muted" href="#">Another one</a></li>
-                <li><a class="text-muted" href="#">Last time</a></li>
-            </ul>
-        </div>
-        <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Resource</a></li>
-                <li><a class="text-muted" href="#">Resource name</a></li>
-                <li><a class="text-muted" href="#">Another resource</a></li>
-                <li><a class="text-muted" href="#">Final resource</a></li>
-            </ul>
-        </div>
-        <div class="col-6 col-md">
-            <h5>About</h5>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Team</a></li>
-                <li><a class="text-muted" href="#">Locations</a></li>
-                <li><a class="text-muted" href="#">Privacy</a></li>
-                <li><a class="text-muted" href="#">Terms</a></li>
-            </ul>
-        </div>
-    </div>
-</footer> -->
-</div>
 @endsection
+
+ 
