@@ -60,12 +60,7 @@ class PagesController extends Controller
     {
         return view('pages.test');
     }
-
-    public function products()
-    {
-        return view('pages.products');
-    }
-
+    
     public function product()
     {
         return view('pages.product');

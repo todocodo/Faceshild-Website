@@ -35,7 +35,13 @@ Route::get('/cart', 'PagesController@cart')->name('cart');
 
 Route::get('/checkout', 'PagesController@checkout')->name('checkout');
 
-Route::get('/products', 'PagesController@products')->name('products');
+// Routes for orders
+
+Route::get('/products', 'ProductsController@index')->name('products.index');
+
+Route::get('/products/{product}', 'ProductsController@show')->name('products.show');
+
+// END Orders
 
 Route::get('/product', 'PagesController@product')->name('product');
 

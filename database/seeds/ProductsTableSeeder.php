@@ -21,7 +21,7 @@ class ProductsTableSeeder extends Seeder
         ]);
 
         Product::create([
-            'name' => 'Supre Pack',
+            'name' => 'Super Pack',
             'slug' => 'super-pack',
             'details' => '12 frames and 36 protective shields',
             'price' => 80,

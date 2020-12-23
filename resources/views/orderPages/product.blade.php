@@ -7,7 +7,7 @@
             <aside class="col-md-6">
                 <article class="gallery-wrap">
                     <div class="card img-big-wrap">
-                        <a href="#"> <img src="../realphotos/package_front_1.jpg"></a>
+                        <a href="#"> <img src="{{ asset('orders-img/'.$product->slug.'.jpg') }}"></a>
                     </div> <!-- card img-big-wrap.// -->
                     <div class="thumbs-wrap">
                         <a href="#" class="item-thumb"> <img src="../realphotos/package_front_1.jpg"></a>
@@ -19,7 +19,7 @@
             </aside>
             <main class="col-md-6">
                 <article>
-                    <h3 class="title-product">One Pack - Faceshield</h3>
+                    <h3 class="title-product">{{ $product->name}} - Faceshield</h3>
                     <!-- <div>
                             <ul class="rating-stars">
                                 <li style="width:60%" class="stars-active">
@@ -42,7 +42,7 @@
                         <h6>Short description</h6>
                         <ul class="list-dots mb-0">
                             <li>Made in Bulgaria</li>
-                            <li>1 frame and 5 protective shields</li>
+                            <li>{{ $product->details }}</li>
                             <li>Adjustable to any head</li>
                             <li>Could be customized</li>
                         </ul>
@@ -71,7 +71,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <var class="price">$230.00</var> <br>
+                        <var class="price">$ {{$product->price}}.00</var> <br>
                     </div> <!-- price-detail-wrap .// -->
 
                     <div class="mb-4">

@@ -50,42 +50,7 @@
 </head>
 
 <body>
-    <nav id="sidebar-wrapper" class="activeNav navscroll">
-        <ul class="sidebar-nav">
-            <li id="hover-only"><a href="about">{{ __('About') }}</a></li>
-            <li id="hover-only"><a href="certificate">{{ __('Documents') }}</a></li>
-            <li id="hover-only"><a href="demos">{{ __('Videos') }}</a></li>
-
-            <li>
-                <div id="dropdown-caret-custom" class="dropright d-md-down-none">
-                    <a class="d-flex" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="text-decoration: none; outline: none;">
-                        {{ __('Custom') }}
-                        <span id="caret-custom" class="caret right"></span>
-                    </a>
-                    <div id="dropdown-custom" class="dropdown-menu dropdown-main-menu">
-                        <a class="dropdown-item font-weight-light" href="custom">{{ __('Colors') }}</a>
-                        <a class="dropdown-item font-weight-light" href="packing">{{ __('Packing') }}</a>
-                    </div>
-                </div>
-            </li>
-            <li id="hover-only"><a href="contacts">{{ __('Contacts') }}</a></li>
-            <li>
-                @if(count(config('app.languages')) > 1)
-                <div id="dropdown-caret-language" class="dropright d-md-down-none">
-                    <a class="d-flex" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="text-decoration: none; outline: none;">
-                        {{ __('Language')}}
-                        <span id="caret-language" class="caret right"></span>
-                    </a>
-                    <div id="dropdown-language" class="dropdown-menu dropdown-main-menu">
-                        @foreach(config('app.languages') as $langLocale => $langName)
-                        <a class="dropdown-item font-weight-light" href="{{ url()->current() }}?change_language={{ $langLocale }}">{{ strtoupper($langLocale) }} {{ $langName }}</a>
-                        @endforeach
-                    </div>
-                </div>
-                @endif
-            </li>
-        </ul>
-    </nav>
+    @include('partials.navbar')
 
     <div class="wrapper-wide mx-auto">
         <div id="wrapper">
@@ -337,90 +302,7 @@
 
                     <!-- Footer -->
 
-                    <footer class="container py-5">
-                        <div class="row">
-                            <div class="col-6 col-md">
-                                <div class="d-flex">
-                                    <img src="photo/new_logo_nonbackground.png" alt="logo" style="height: 30px; border-right: 1px solid #636b6f" class="pr-3">
-                                    <h5 class="pl-3"><a class="text-dark" href="{{ url('/') }}">{{ __('Faceshield') }}</a></h5>
-                                </div>
-                                <small class="d-block pt-3 text-muted">&copy; 2020</small>
-                            </div>
-                            <div class="col-6 col-md">
-                                <h5><a class="text-dark" href="about">{{ __('About') }}</a></h5>
-                                <ul class="list-unstyled text-small">
-                                    <a class="text-muted" href="about">
-                                        <li>{{ __('Box Content') }}</li>
-                                    </a>
-                                    <a class="text-muted" href="about#size">
-                                        <li>{{ __('Size') }}</li>
-                                    </a>
-                                    <a class="text-muted" href="about#masks">
-                                        <li>{{ __('Masks & Glasses') }}</li>
-                                    </a>
-                                    <a class="text-muted" href="about#disinfection">
-                                        <li>{{ __('Disinfection') }}</li>
-                                    </a>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-md">
-                                <h5><a class="text-dark" href="certificate">{{ __('Documents') }}</a></h5>
-                                <ul class="list-unstyled text-small">
-                                    <a class="text-muted" href="certificate">
-                                        <li>{{ __('Certificate') }}</li>
-                                    </a>
-                                    <a class="text-muted" href="certificate#tech-data">
-                                        <li>{{ __('Technical Data') }}</li>
-                                    </a>
-                                    <a class="text-muted" href="certificate#instructions">
-                                        <li>{{ __('Instructions') }}</li>
-                                    </a>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-md">
-                                <h5><a class="text-dark" href="demos">{{ __('Videos') }}</a></h5>
-                                <ul class="list-unstyled text-small">
-                                    <a class="text-muted" href="demos">
-                                        <li>{{ __('Replace the window') }}</li>
-                                    </a>
-                                    <a class="text-muted" href="demos#adjust-video">
-                                        <li>{{ __('Adjust the frame') }}</li>
-                                    </a>
-                                    <a class="text-muted" href="demos#whole-video">
-                                        <li>{{ __('Our Video') }}</li>
-                                    </a>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-md">
-                                <h5><a class="text-dark" href="custom">{{ __('Custom') }}</a></h5>
-                                <ul class="list-unstyled text-small">
-                                    <a class="text-muted" href="custom#color-change">
-                                        <li>{{ __('Change color') }}</li>
-                                    </a>
-                                    <a class="text-muted" href="custom#branding">
-                                        <li>{{ __('Branding') }}</li>
-                                    </a>
-                                    <a class="text-muted" href="custom#package">
-                                        <li>{{ __('Different package') }}</li>
-                                    </a>
-                                    <a class="text-muted" href="packing">
-                                        <li>{{ __('SuperPack & MegaPack') }}</li>
-                                    </a>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-md">
-                                <h5><a class="text-dark" href="contacts">{{ __('Contacts') }}</a></h5>
-                                <ul class="list-unstyled text-small">
-                                    <a class="text-muted" href="contacts#email-contact">
-                                        <li>{{ __('Email:') }} shield@transgraph.eu</li>
-                                    </a>
-                                    <a class="text-muted" href="contacts#email-contact">
-                                        <li>{{ __('Phone:') }} +359899904690</li>
-                                    </a>
-                                </ul>
-                            </div>
-                        </div>
-                    </footer>
+                    @include('partials.footer')
 
                 </div>
             </div>

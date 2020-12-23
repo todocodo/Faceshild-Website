@@ -9,36 +9,18 @@
 
     <div class="container">
         <div class="row">
+            @foreach ($products as $product)
             <div class="col-md-4">
-                <a href="/product" class="card card-product-grid" style="text-decoration: none;">
-                    <div class="img-wrap"> <img src="../realphotos/package_front_1.png" style="height: 220px; margin-left: 70px;"> </div>
+                <a href="{{ route('products.show', $product->slug) }}" class="card card-product-grid" style="text-decoration: none;">
+                    <div class="img-wrap"> <img src="{{ asset('orders-img/'.$product->slug.'.jpg') }}" style="height: 220px;"> </div>
                     <figcaption class="info-wrap">
-                        <p class="title text-truncate">OnePack</p>
-                        <small class="text-muted">1 frame - 5 protective shields</small>
-                        <div class="price mt-2">$15.00</div>
+                        <p class="title text-truncate">{{ $product->name }}</p>
+                        <small class="text-muted">{{ $product->details }}</small>
+                        <div class="price mt-2">$ {{ $product->price }}.00</div>
                     </figcaption>
                 </a>
             </div>
-            <div class="col-md-4">
-                <a href="#" class="card card-product-grid" style="text-decoration: none;">
-                    <div class="img-wrap"> <img src="../realphotos/12_pack_front.jpg" style="height: 230px;"> </div>
-                    <figcaption class="info-wrap">
-                        <p class="title text-truncate">SuperPack</p>
-                        <small class="text-muted">12 frames - 36 protective shields</small>
-                        <div class="price mt-2">$70.00</div>
-                    </figcaption>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="#" class="card card-product-grid" style="text-decoration: none;">
-                    <div class="img-wrap"> <img src="../realphotos/120_pack_opened_front.jpg" style="height: 230px;"> </div>
-                    <figcaption class="info-wrap">
-                        <p class="title text-truncate">MegaPack</p>
-                        <small class="text-muted">120 frames - 360 protective shields</small>
-                        <div class="price mt-2">$500.00</div>
-                    </figcaption>
-                </a>
-            </div>
+            @endforeach
         </div>
 
         <!-- <form action="orders" method="POST">
