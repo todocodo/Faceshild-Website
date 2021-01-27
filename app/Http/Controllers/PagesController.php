@@ -61,19 +61,19 @@ class PagesController extends Controller
         return view('pages.test');
     }
     
-    public function product()
-    {
-        return view('pages.product');
-    }
+    // public function product()
+    // {
+    //     return view('pages.product');
+    // }
 
-    public function cart()
-    {
-        return view('pages.cart');
-    }
+    // public function cart()
+    // {
+    //     return view('pages.cart');
+    // }
 
     public function checkout()
     {
-        return view('pages.checkout');
+        return view('orderPages.checkout');
     }
 
     public function postContact()

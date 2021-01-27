@@ -75,8 +75,15 @@
                     </div> <!-- price-detail-wrap .// -->
 
                     <div class="mb-4">
-                        <a href="/cart" class="btn btn-primary">Buy now</a>
-                        <a href="#" class="btn btn-light">Add to card</a>
+                        <!-- <a href="/cart" class="btn btn-primary mb-3">Buy now</a> -->
+
+                        <!-- <a href="#" class="btn btn-light">Add to card</a> -->
+
+                        <form action="{{ route('cart.store', $product) }}" method="POST">
+                            {{ csrf_field() }}
+                            <button type="submit" class="btn btn-light">Add to Cart</button>
+                        </form>
+
                     </div>
 
                 </article> <!-- product-info-aside .// -->

@@ -1280,6 +1280,10 @@ a.itemside {
     flex-grow: 1;
 }
 
+.overview-section {
+    position: fixed;
+}
+
 
 /* HEADER */
 

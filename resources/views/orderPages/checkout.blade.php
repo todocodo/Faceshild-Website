@@ -209,7 +209,7 @@
 
             </main> <!-- col.// -->
             <aside class="col-md-4">
-                <div class="card shadow">
+                <div class="card shadow overview-section">
                     <div class="card-body">
                         <h4 class="mb-3">Overview</h4>
                         <dl class="dlist-align">

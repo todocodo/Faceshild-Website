@@ -31,7 +31,7 @@ Route::get('/certificate', 'PagesController@certificate')->name('certificate');
 
 Route::get('/goal', 'PagesController@goal')->name('goal');
 
-Route::get('/cart', 'PagesController@cart')->name('cart');
+// Route::get('/cart', 'PagesController@cart')->name('cart');]
 
 Route::get('/checkout', 'PagesController@checkout')->name('checkout');
 
@@ -40,6 +40,15 @@ Route::get('/checkout', 'PagesController@checkout')->name('checkout');
 Route::get('/products', 'ProductsController@index')->name('products.index');
 
 Route::get('/products/{product}', 'ProductsController@show')->name('products.show');
+
+Route::get('/cart', 'CartController@index')->name('cart.index');
+
+Route::post('/cart/{product}', 'CartController@store')->name('cart.store');
+
+Route::delete('/cart/{product}', 'CartController@destroy')->name('cart.destroy');
+
+Route::patch('/cart/{product}', 'CartController@update')->name('cart.update');
+
 
 // END Orders
 

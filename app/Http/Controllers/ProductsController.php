@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+// use App\config\app;
 use App\Product;
+use App\Productbg;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
@@ -14,7 +16,14 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        $products = Product::get();
+        
+        $lang = app()->getLocale();
+
+        if($lang == 'en') {
+            $products = Product::get();
+        } else if($lang == 'bg') {
+            $products = Productbg::get();
+        }
 
         return view('orderPages.products')->with('products', $products);
     }
@@ -27,8 +36,14 @@ class ProductsController extends Controller
      */
     public function show($slug)
     {
-        $product = Product::where('slug', $slug)->firstOrFail();
+        $lang = app()->getLocale();
 
+        if ($lang == 'en') {
+            $product = Product::where('slug', $slug)->firstOrFail();
+        } else if ($lang == 'bg') {
+            $product = Productbg::where('slug', $slug)->firstOrFail();
+        }
+        
         return view('orderPages.product')->with('product', $product); 
     }
 }
