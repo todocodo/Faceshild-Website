@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Product')
+
 @section('content')
 <div class="container py-4 mt-5">
     <article>
@@ -71,7 +73,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <var class="price">$ {{$product->price}}.00</var> <br>
+                        <var class="price">Price: ${{$product->price}}.00</var> <br>
                     </div> <!-- price-detail-wrap .// -->
 
                     <div class="mb-4">

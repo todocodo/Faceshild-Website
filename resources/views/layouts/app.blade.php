@@ -20,7 +20,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>NTR Face Shield | @yield('title', '')</title>
 
     <!-- Favicon -->
     <link rel="icon" href="{{ URL::asset('/photo/new_logo_nonbackground.png') }}" type="image/x-icon" />
@@ -40,7 +40,7 @@
     <link href="resources/css/style.css" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
-
+    @yield('extra-head')
 
 </head>
 

@@ -1339,3 +1339,36 @@ a.itemside {
 .widget-header:hover i {
     color: #f59f0d;
 }
+
+
+/* CHECKOUT  */
+
+
+/* Cart Payment */
+
+.StripeElement {
+    background-color: white;
+    padding: 16px 16px;
+    border: 1px solid #ccc;
+}
+
+.StripeElement--focus {
+    /* box-shadow: 0 1px 3px 0 #cfd7df; */
+}
+
+.StripeElement--invalid {
+    border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+}
+
+#card-errors {
+    color: #fa755a;
+}
+
+.thankyou-page {
+    margin-top: 250px;
+    margin-bottom: 150px;
+}

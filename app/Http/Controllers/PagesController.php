@@ -55,11 +55,6 @@ class PagesController extends Controller
     {
         return view('pages.contacts');
     }
-
-    public function test()
-    {
-        return view('pages.test');
-    }
     
     // public function product()
     // {

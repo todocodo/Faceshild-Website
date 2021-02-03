@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Cart')
+
 @section('content')
 
 
@@ -64,10 +66,6 @@
                                 </td>
                                 <td>
                                     <select class="form-control quantity" data-id="{{ $item->rowId }}">
-                                        <!-- <option {{ $item->qty == 1 ? 'selected' : '' }}>1</option>
-                                        <option {{ $item->qty == 2 ? 'selected' : '' }}>2</option>
-                                        <option {{ $item->qty == 3 ? 'selected' : '' }}>3</option>
-                                        <option {{ $item->qty == 4 ? 'selected' : '' }}>4</option> -->
 
                                         @for ($i = 1; $i < 10 + 1; $i++)
                                             <option {{ $item->qty == $i ? 'selected' : '' }}>{{ $i }}</option>
@@ -98,8 +96,8 @@
                     </table>
 
                     <div class="card-body border-top">
-                        <a href="/checkout" class="btn btn-primary float-md-right"> Make Purchase <i class="fa fa-chevron-right"></i> </a>
-                        <a href="/products" class="btn btn-light"> <i class="fa fa-chevron-left"></i> Continue shopping </a>
+                        <a href="{{ route('checkout.index') }}" class="btn btn-primary float-md-right"> Make Purchase <i class="fa fa-chevron-right"></i> </a>
+                        <a href="{{ route('products.index') }}" class="btn btn-light"> <i class="fa fa-chevron-left"></i> Continue shopping </a>
                     </div>
                 </div> <!-- card.// -->
 
@@ -181,7 +179,6 @@
 @endsection
 
 @section('extra-js')
-<script src="{{ asset('js/app.js') }}"></script>
 <script>
     (function() {
         const classname = document.querySelectorAll('.quantity')

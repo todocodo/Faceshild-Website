@@ -33,7 +33,9 @@ Route::get('/goal', 'PagesController@goal')->name('goal');
 
 // Route::get('/cart', 'PagesController@cart')->name('cart');]
 
-Route::get('/checkout', 'PagesController@checkout')->name('checkout');
+// Route::get('/checkout', 'PagesController@checkout')->name('checkout');
+
+Route::get('/thankyou', 'ConfirmationController@index')->name('confirmation.index');
 
 // Routes for orders
 
@@ -48,6 +50,10 @@ Route::post('/cart/{product}', 'CartController@store')->name('cart.store');
 Route::delete('/cart/{product}', 'CartController@destroy')->name('cart.destroy');
 
 Route::patch('/cart/{product}', 'CartController@update')->name('cart.update');
+
+Route::get('/checkout', 'CheckoutController@index')->name('checkout.index');
+
+Route::post('/checkout', 'CheckoutController@store')->name('checkout.store');
 
 
 // END Orders
