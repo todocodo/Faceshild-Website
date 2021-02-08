@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'About')
+
 @section('content')
 <!-- Main content -->
 <div class="p-3 p-md-5 m-lg-3 line-size" style="background-color: #fff;">

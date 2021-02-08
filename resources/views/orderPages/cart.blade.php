@@ -57,7 +57,7 @@
                             <tr>
                                 <td>
                                     <figure class="itemside">
-                                        <div class="aside"><a href="{{ route('products.show', $item->model->slug) }}"><img src="{{ asset('orders-img/'.$item->model->slug.'.jpg') }}" class="img-sm"></a></div>
+                                        <div class="aside"><a href="{{ route('products.show', $item->model->slug) }}"><img src="{{ productImage($item->model->image) }}" class="img-sm"></a></div>
                                         <figcaption class="info">
                                             <a href="{{ route('products.show', $item->model->slug) }}" class="text-dark">{{ $item->model->name }}</a>
                                             <p class="text-muted small">{{ $item->model->details }}</p>
@@ -75,7 +75,7 @@
                                 <td>
                                     <div class="price-wrap">
                                         <var class="price">${{ $item->subtotal }}</var>
-                                        <small class="text-muted"> ${{ $item->model->price }} each </small>
+                                        <small class="text-muted"> ${{ $item->model->price / 100 }} each </small>
                                     </div> <!-- price-wrap .// -->
                                 </td>
                                 <td class="text-right">

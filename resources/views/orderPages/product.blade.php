@@ -7,21 +7,27 @@
     <article>
         <div class="row">
             <aside class="col-md-6">
+                <h3 class="title-product text-center">{{ $product->name}} - Faceshield</h3>
+                <hr>
                 <article class="gallery-wrap">
                     <div class="card img-big-wrap">
-                        <a href="#"> <img src="{{ asset('orders-img/'.$product->slug.'.jpg') }}"></a>
+                        <!-- <a href="#"> <img src="{{ asset('orders-img/'.$product->slug.'.jpg') }}"></a> -->
+                        <a href="#"> <img src="{{ productImage($product->image) }}" id="currentImage"></a>
                     </div> <!-- card img-big-wrap.// -->
                     <div class="thumbs-wrap">
-                        <a href="#" class="item-thumb"> <img src="../realphotos/package_front_1.jpg"></a>
-                        <a href="#" class="item-thumb"> <img src="../realphotos/package_front_1.jpg"></a>
-                        <a href="#" class="item-thumb"> <img src="../realphotos/package_front_1.jpg"></a>
-                        <a href="#" class="item-thumb"> <img src="../realphotos/package_front_1.jpg"></a>
+                        <div class="item-thumb selected-thumbs"> <img src="{{ productImage($product->image) }}"></div>
+                        @if ($product->images)
+
+                        @foreach (json_decode($product->images, true) as $image)
+                        <div class="item-thumb "> <img src="{{ productImage($image) }}"></div>
+                        @endforeach
+                        @endif
                     </div> <!-- thumbs-wrap .// -->
                 </article> <!-- gallery-wrap .end// -->
             </aside>
             <main class="col-md-6">
                 <article>
-                    <h3 class="title-product">{{ $product->name}} - Faceshield</h3>
+
                     <!-- <div>
                             <ul class="rating-stars">
                                 <li style="width:60%" class="stars-active">
@@ -38,9 +44,9 @@
                             </a>
                         </div> -->
 
-                    <hr>
+                    
 
-                    <div class="mb-3">
+                    <div class="mb-3 mt-5">
                         <h6>Short description</h6>
                         <ul class="list-dots mb-0">
                             <li>Made in Bulgaria</li>
@@ -48,6 +54,11 @@
                             <li>Adjustable to any head</li>
                             <li>Could be customized</li>
                         </ul>
+                    </div>
+
+                    <div class="mb-3">
+                        <h6>Usage</h6>
+                        <p>{!! $product->description !!}</p>
                     </div>
 
                     <div class="form-group">
@@ -73,7 +84,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <var class="price">Price: ${{$product->price}}.00</var> <br>
+                        <var class="price">Price: ${{$product->price / 100 }}.00</var> <br>
                     </div> <!-- price-detail-wrap .// -->
 
                     <div class="mb-4">
@@ -96,4 +107,24 @@
 </div>
 
 
+@endsection
+
+@section('extra-js')
+<script>
+    (function() {
+        const currentImage = document.querySelector('#currentImage');
+        const images = document.querySelectorAll('.item-thumb');
+
+        images.forEach((element) => element.addEventListener('click', thumbnailClick));
+
+        function thumbnailClick(e) {
+
+            currentImage.src = this.querySelector('img').src;
+
+            images.forEach((element) => element.classList.remove('selected-thumbs'));
+            this.classList.add('selected-thumbs');
+        }
+
+    })();
+</script>
 @endsection

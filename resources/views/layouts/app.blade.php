@@ -58,8 +58,10 @@
                 @if(Auth::user())
                 <a href="{{ url('/logout') }}">Logout</a>
                 <div class="widget-header">
-                    <a href="/cart" class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></a>
-                    <span class="badge badge-pill badge-danger notify">5</span>
+                    <a href="{{ route('cart.index') }}" class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></a>
+                    @if (Cart::instance('default')->count() > 0)
+                    <span class="badge badge-pill notify" style="background-color: #f59f0d; color: white;">{{ Cart::instance('default')->count()}}</span>
+                    @endif
                 </div>
                 @else
                 <a href="{{ route('login') }}">Login</a>

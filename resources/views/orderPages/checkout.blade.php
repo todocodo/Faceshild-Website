@@ -40,7 +40,7 @@
                             <div class="col-md-6">
                                 <figure class="itemside  mb-4">
                                     <div class="aside widget-header">
-                                        <img src="{{ asset('orders-img/'.$item->model->slug.'.jpg') }}" class="border img-sm">
+                                        <img src="{{ productImage($item->model->image) }}" class="border img-sm">
                                         @if (Cart::instance('default')->count() > 0)
                                         <span class="badge badge-pill notify" style="background-color: #f59f0d; color: white;">{{ $item->qty }}</span>
                                         @endif
@@ -81,6 +81,12 @@
                                     <input type="email" id="email" name="email" placeholder="example@gmail.com" class="form-control" value="{{ old('email') }}" required>
                                 </div>
                             </div> <!-- row.// -->
+                            <div class="row">
+                                <div class="col">
+                                    <label>Company (optional)</label>
+                                    <input type="company" id="company" name="company" class="form-control" value="{{ old('company') }}">
+                                </div>
+                            </div>
                         </div> <!-- card-body.// -->
                     </article> <!-- card.// -->
 
@@ -250,7 +256,7 @@
                 address_line: document.getElementById('address').value,
                 address_zip: document.getElementById('postal_code').value
             }
-        stripe.createToken(card, options).then(function(result) {
+            stripe.createToken(card, options).then(function(result) {
                 if (result.error) {
                     // Inform the user if there was an error
                     var errorElement = document.getElementById('card-errors');

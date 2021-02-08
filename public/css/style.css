@@ -1058,7 +1058,7 @@ a[class*=card]:hover .title {
 
 .gallery-wrap .img-big-wrap img {
     height: 450px;
-    width: auto;
+    width: center;
     display: inline-block;
     cursor: zoom-in;
 }
@@ -1069,8 +1069,8 @@ a[class*=card]:hover .title {
 }
 
 .gallery-wrap .thumbs-wrap .item-thumb {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 54px;
     border: 1px solid #ddd;
     border-radius: 6px;
     margin: 3px;
@@ -1079,18 +1079,22 @@ a[class*=card]:hover .title {
 }
 
 .gallery-wrap .thumbs-wrap img {
-    max-width: 100%;
     max-height: 100%;
+    max-width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
     border-radius: 4px;
-    cursor: zoom-in;
+    cursor: pointer;
+}
+
+.item-thumb .selected-thumbs {
+    border: 1px solid #000000
 }
 
 .gallery-wrap .thumbs-wrap img:hover {
     -webkit-filter: brightness(1.1);
     filter: brightness(1.1);
-    cursor: zoom-in;
+    cursor: pointer;
 }
 
 .btn-light {

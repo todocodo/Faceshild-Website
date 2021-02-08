@@ -72,3 +72,8 @@ Route::get('/test', 'PagesController@test')->name('test');
 
 Route::post('/contacts', 'PagesController@postContact');
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
