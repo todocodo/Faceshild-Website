@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Video')
+
 @section('content')
 <div class="container py-4">
     <h1 class="text-center mt-4 video-text">{{ __('How to replace the protective window') }}</h1>

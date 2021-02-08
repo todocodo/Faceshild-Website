@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Packages')
+
 @section('content')
 
 <!-- <img class="img-fluid" src="../realphotos/120_pack_opened_front.jpg" alt="12_pack"> -->

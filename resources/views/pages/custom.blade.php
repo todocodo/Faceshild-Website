@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Custom')
+
 @section('content')
 <div class="">
     <!-- Carousel with images -->

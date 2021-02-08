@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Certificate')
+
 @section('content')
 <div class="container py-4">
     <!-- Certificate -->
