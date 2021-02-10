@@ -48,7 +48,7 @@
                                     <figcaption class="info">
                                         <p>{{ $item->model->name}}</p>
                                         <p>{{ $item->model->details}}</p>
-                                        <span class="text-muted">{{ $item->qty }} X {{ $item->model->price}} = {{ $item->subtotal }}</span>
+                                        <span class="text-muted">{{ $item->qty }} X {{ presentPrice($item->model->price) }} = {{ presentPrice($item->subtotal) }}</span>
                                     </figcaption>
                                 </figure>
                             </div> <!-- col.// -->
@@ -166,7 +166,7 @@
                         <hr>
                         <dl class="dlist-align">
                             <dt>Total:</dt>
-                            <dd class="h5">{{ Cart::total() }}</dd>
+                            <dd class="h5">{{ presentPrice(Cart::total()) }}</dd>
                         </dl>
                         <hr>
                         <p class="small mb-1 text-muted">By clicking you are agree with terms of condition </p>

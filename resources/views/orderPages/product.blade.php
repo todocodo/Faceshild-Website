@@ -84,7 +84,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <var class="price">Price: ${{$product->price / 100 }}.00</var> <br>
+                        <var class="price">Price: ${{ presentPrice($product->price) }}</var> <br>
                     </div> <!-- price-detail-wrap .// -->
 
                     <div class="mb-4">

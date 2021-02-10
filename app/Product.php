@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    public function presentPrice()
-    {
-        return money_format('$%i', $this->price / 100);
-    }
+    // public function presentPrice($price)
+    // {
+    //     return number_format($price / 100, 2);
+    // }
 }

@@ -74,8 +74,8 @@
                                 </td>
                                 <td>
                                     <div class="price-wrap">
-                                        <var class="price">${{ $item->subtotal }}</var>
-                                        <small class="text-muted"> ${{ $item->model->price / 100 }} each </small>
+                                        <var class="price">${{ presentPrice($item->subtotal) }}</var>
+                                        <small class="text-muted"> ${{ presentPrice($item->model->price) }} each </small>
                                     </div> <!-- price-wrap .// -->
                                 </td>
                                 <td class="text-right">
@@ -107,34 +107,20 @@
 
             </main> <!-- col.// -->
             <aside class="col-md-3">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <form>
-                            <div class="form-group">
-                                <label>Have coupon?</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" name="" placeholder="Coupon code">
-                                    <span class="input-group-append">
-                                        <button class="btn btn-primary">Apply</button>
-                                    </span>
-                                </div>
-                            </div>
-                        </form>
-                    </div> <!-- card-body.// -->
-                </div> <!-- card .// -->
+                
                 <div class="card">
                     <div class="card-body">
                         <dl class="dlist-align">
                             <dt>Subtotal price:</dt>
-                            <dd class="text-right">{{ Cart::subtotal() }}лв.</dd>
+                            <dd class="text-right">{{ presentPrice(Cart::subtotal()) }}лв.</dd>
                         </dl>
                         <dl class="dlist-align">
                             <dt>Tax:</dt>
-                            <dd class="text-right">{{ Cart::tax() }}лв.</dd>
+                            <dd class="text-right">{{ presentPrice(Cart::tax()) }}лв.</dd>
                         </dl>
                         <dl class="dlist-align">
                             <dt>Total:</dt>
-                            <dd class="text-right  h5"><strong>{{ Cart::total() }}лв.</strong></dd>
+                            <dd class="text-right  h5"><strong>{{ presentPrice(Cart::total()) }}лв.</strong></dd>
                         </dl>
                         <hr>
 

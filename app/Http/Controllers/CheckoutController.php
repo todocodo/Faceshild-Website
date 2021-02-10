@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Order;
+use App\Product;
+use App\OrderProduct;
 use Illuminate\Http\Request;
 use App\Http\Requests\CheckoutRequest;
 use Cartalyst\Stripe\Laravel\Facades\Stripe;
@@ -45,7 +48,7 @@ class CheckoutController extends Controller
 
         try {
             $charge = Stripe::charges()->create([
-                'amount' => Cart::total(),
+                'amount' => Cart::total() / 100,
                 'currency' => 'BGN',
                 'source' => $request->stripeToken,
                 'description' => 'Order',
@@ -56,18 +59,24 @@ class CheckoutController extends Controller
                     'quantity' => Cart::instance('default')->count(),
                 ],
             ]);
+            // Insert into Orders table
+            
+
+            $this->addToOrdersTables($request, null);
+
+
             //SUCCESSFUL 
             Cart::instance('default')->destroy();
             // return back()->with('success_message', 'Thank you! Your payment has been successfully accepted!');
             return redirect()->route('confirmation.index')->with('success_message', 'Thank you! Your payment has been successfully accepted!');
 
-        } catch (PaymentActionRequired $e) {
-            // $this->addToOrdersTables($request, $e->getMessage());
-            // return back()->withErrors('Error! ' . $e->getMessage());
-            return redirect()->route(
-                'cashier.payment',
-                [$e->payment->id, 'redirect' => route('home')]
-            );
+        } catch (CardErrorException $e) {
+            $this->addToOrdersTables($request, $e->getMessage());
+            return back()->withErrors('Error! ' . $e->getMessage());
+            // return redirect()->route(
+            //     'cashier.payment',
+            //     [$e->payment->id, 'redirect' => route('home')]
+            // );
         }
     }
 
@@ -114,5 +123,59 @@ class CheckoutController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    private function getNumbers() 
+    {
+        $tax = config('cart.tax') / 100;
+        // $discount = session()->get('coupon')['discount'] ?? 0;
+        // $code = session()->get('coupon')['name'] ?? null;
+        $newSubtotal = (Cart::subtotal());
+        if ($newSubtotal < 0) {
+            $newSubtotal = 0;
+        }
+        $newTax = 0;
+        $newTotal = $newSubtotal;
+    
+        return collect([
+            'tax' => $tax,
+            'newSubtotal' => $newSubtotal,
+            'newTax' => $newTax,
+            'newTotal' => $newTotal,
+        ]);
+    }
+
+    protected function addToOrdersTables($request, $error)
+    {
+        // Insert into orders table
+        $order = Order::create([
+            // 'user_id' => auth()->user() ? auth()->user()->id : null,
+            'billing_first_name' => $request->first_name,
+            'billing_last_name' => $request->last_name,
+            'billing_phone' => $request->phone,
+            'billing_email' => $request->email,
+            'billing_company' => $request->company,
+            'billing_country' => $request->country,
+            'billing_city' => $request->city,
+            'billing_address' => $request->address,
+            'billing_postal_code' => $request->postal_code,
+            'billing_name_on_card' => $request->name_on_card,
+            'billing_subtotal' => $this->getNumbers()->get('newSubtotal'),
+            'billing_tax' => $this->getNumbers()->get('newTax'),
+            'billing_total' => $this->getNumbers()->get('newTotal'),
+            'error' => $error,
+        ]);
+
+        // Insert into otder_product table
+
+        foreach (Cart::content() as $item) {
+            OrderProduct::create([
+                'order_id' => $order->id,
+                'product_id' => $item->model->id,
+                'quantity' => $item->qty,
+            ]);
+        }
+
+        return $order;
     }
 }

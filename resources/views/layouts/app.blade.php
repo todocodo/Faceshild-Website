@@ -53,7 +53,7 @@
         </a>
 
         <div class="fixed-top">
-            @if (Route::has('login'))
+            <!-- @if (Route::has('login'))
             <div class="top-right links">
                 @if(Auth::user())
                 <a href="{{ url('/logout') }}">Logout</a>
@@ -75,7 +75,15 @@
                 @endif
 
             </div>
-            @endif
+            @endif -->
+            <div class="top-right links">
+                <div class="widget-header">
+                    <a href="{{ route('cart.index') }}" class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></a>
+                    @if (Cart::instance('default')->count() > 0)
+                    <span class="badge badge-pill notify" style="background-color: #f59f0d; color: white;">{{ Cart::instance('default')->count()}}</span>
+                    @endif
+                </div>
+            </div>
         </div>
 
         @include('partials.navbar')

@@ -16,7 +16,7 @@
                     <figcaption class="info-wrap">
                         <p class="title text-truncate">{{ $product->name }}</p>
                         <small class="text-muted">{{ $product->details }}</small>
-                        <div class="price mt-2">$ {{ $product->price / 100 }}.00</div>
+                        <div class="price mt-2">$ {{ presentPrice($product->price) }}</div>
                     </figcaption>
                 </a>
             </div>
